@@ -1,0 +1,17 @@
+set -g default-terminal "screen-256color"
+# ------- navigation---------------------------
+# create session
+bind C-c new-session
+# split current window horizontally
+bind - split-window -v
+# split current window vertically
+bind _ split-window -h
+# window navigation
+unbind n
+unbind p
+bind -r C-h previous-window # select previous window
+bind -r C-l next-window     # select next window
+bind Tab last-window        # move to last active window
+
+# toggle mouse
+bind m run "cut -c3- ~/.tmux.conf | sh -s _toggle_mouse"
