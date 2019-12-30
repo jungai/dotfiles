@@ -25,6 +25,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'yggdroot/indentline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'styled-components/vim-styled-components'
 Plugin 'tpope/vim-fugitive'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'editorconfig/editorconfig-vim'
@@ -42,12 +43,20 @@ Plugin 'mattn/emmet-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+colorscheme Blaaark
+
 " LINT THING
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
-
+let b:ale_fixers = ['eslint', 'prettier']
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint', 'prettier'],
+\		'typescript': ['eslint', 'prettier'],
+\}
 " Fix files automatically on save
 let g:ale_fix_on_save = 1
+let b:ale_fix_on_save = 1
 
 " NERDTREE
 map <C-n> :NERDTreeToggle<CR>
