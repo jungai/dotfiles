@@ -38,6 +38,7 @@ Plugin 'zivyangll/git-blame.vim'
 Plugin 'dense-analysis/ale'
 Plugin 'junegunn/fzf'
 Plugin 'mattn/emmet-vim'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,6 +47,9 @@ filetype plugin indent on    " required
 colorscheme Blaaark
 
 " LINT THING
+let g:ale_linters = {
+	\ 'go': ['gopls'],
+	\}
 let g:ale_sign_error = '❌'
 let g:ale_sign_warning = '⚠️'
 let b:ale_fixers = ['eslint', 'prettier']
@@ -81,3 +85,7 @@ let g:multi_cursor_next_key            = '<C-m>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
+
+
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
