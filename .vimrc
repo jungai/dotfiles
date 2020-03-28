@@ -7,7 +7,8 @@ set encoding=utf-8
 set tabstop=2
 set shiftwidth=2
 " set number
-set number relativenumber
+set number 
+" relativenumber
 set nu rnu
 set background=dark
 syntax on
@@ -43,8 +44,6 @@ Plugin 'fatih/vim-go'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-colorscheme Blaaark
 
 " LINT THING
 let g:ale_linters = {
