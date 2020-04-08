@@ -4,7 +4,7 @@ set tabstop=2
 set shiftwidth=2
 set number 
 set incsearch
-set nu 
+set rnu
 set noswapfile
 set nowrap
 set smartindent
