@@ -1,20 +1,20 @@
-set nocompatible 
-set exrc
-set noswapfile
-set nobackup
 set hlsearch
 set encoding=utf-8
 set tabstop=2
 set shiftwidth=2
-" set number
 set number 
-" relativenumber
-set nu rnu
-set background=dark
+set incsearch
+set nu 
+set noswapfile
+set nowrap
+set smartindent
+set expandtab
+set hidden
 syntax on
 
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-filetype off  
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -23,68 +23,57 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'yggdroot/indentline'
+Plugin 'mxw/vim-jsx'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'valloric/youcompleteme'
+Plugin 'sickill/vim-monokai'
+Plugin 'tomasr/molokai'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'styled-components/vim-styled-components'
-Plugin 'tpope/vim-fugitive'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'tpope/vim-surround'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'vim-airline/vim-airline'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'zivyangll/git-blame.vim'
-Plugin 'dense-analysis/ale'
 Plugin 'junegunn/fzf'
-Plugin 'mattn/emmet-vim'
-Plugin 'fatih/vim-go'
-
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-surround'
+Plugin 'zivyangll/git-blame.vim'
+Plugin 'prettier/vim-prettier'
+Plugin 'scrooloose/syntastic'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 
-" LINT THING
-let g:ale_linters = {
-	\ 'go': ['gopls'],
-	\}
-let g:ale_sign_error = '❌'
-let g:ale_sign_warning = '⚠️'
-let b:ale_fixers = ['eslint', 'prettier']
-let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
-\   'javascript': ['eslint', 'prettier'],
-\		'typescript': ['eslint', 'prettier'],
-\}
-" Fix files automatically on save
-let g:ale_fix_on_save = 1
-let b:ale_fix_on_save = 1
+let mapleader = " "
+
+" YCM
+
+nnoremap <leader>gd :YcmCompleter GoTo<CR>
+nnoremap <leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <leader>rr :YcmCompleter RefactorRename<CR>
+nnoremap <leader>gt :YcmCompleter GetType<CR>
+
+
+colorscheme molokai
+set background=dark
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " NERDTREE
-map <C-n> :NERDTreeToggle<CR>
-map <C-r> :NERDTreeFind<CR>
+map <leader>n :NERDTreeToggle<CR>
+map <leader>r :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 
 " FUZZY
-nnoremap <C-p> :FZF<CR>
+nnoremap <leader>p :FZF<CR>
 
-" COMMENT
-let g:NERDSpaceDelims = 1
-let g:NERDCompactSexyComs = 1
-let g:NERDDefaultAlign = 'left'
+" Molokai
+let g:molokai_original = 1
+" let g:rehash256 = 1
 
-" CURSOR
-let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_start_word_key      = '<C-m>'
-let g:multi_cursor_select_all_word_key = '<A-n>'
-let g:multi_cursor_start_key           = 'g<C-m>'
-let g:multi_cursor_select_all_key      = 'g<A-m>'
-let g:multi_cursor_next_key            = '<C-m>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
-
-
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
