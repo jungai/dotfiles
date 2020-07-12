@@ -1,6 +1,6 @@
 NT_PROMPT_SYMBOL=❱
 
-PROMPT="%F{green}${NT_PROMPT_SYMBOL}%F{red}${NT_PROMPT_SYMBOL}%F{yellow}${NT_PROMPT_SYMBOL}"
+PROMPT="%F{green}${NT_PROMPT_SYMBOL}%F{yellow}${NT_PROMPT_SYMBOL}"
 PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
