@@ -107,6 +107,7 @@ alias s="yarn start"
 alias tm="tmux"
 alias yc="yarn compile"
 alias gcm='git commit -m'
+alias tmk='tmux kill-server'
 
 # asdf thing
 . $HOME/.asdf/asdf.sh
