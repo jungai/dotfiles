@@ -1,0 +1,16 @@
+{
+  "name": "dotfiles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jungai/dotfiles.git",
+  "author": "jungai <juworaphol125@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@themer/colors-default": "^1.0.10",
+    "@themer/vim": "^3.3.0",
+    "themer": "^3.3.4"
+  },
+  "scripts": {
+    "build": "themer -c @themer/colors-default -t @themer/vim -o gen"
+  }
+}
