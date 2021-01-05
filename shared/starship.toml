@@ -1,0 +1,14 @@
+[git_branch]
+symbol = ""
+
+[git_status]
+conflicted = "🏳"
+behind = "❗️"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+stashed = "📦"
+
+[character]
+success_symbol = "[🦉 ](bold green)"
+error_symbol = "[🐶 ](bold red)"
