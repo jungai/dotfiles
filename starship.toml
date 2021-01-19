@@ -4,11 +4,14 @@ symbol = ""
 [git_status]
 conflicted = "🏳"
 behind = "❗️"
+modified = "📝"
 staged = '[++\($count\)](green)'
 renamed = "👅"
 deleted = "🗑"
 stashed = "📦"
+untracked = "U"
 
 [character]
-success_symbol = "[🦉 ](bold green)"
-error_symbol = "[🐶 ](bold red)"
+success_symbol = "[🦉](bold green)"
+error_symbol = "[🐶](bold red)"
+
