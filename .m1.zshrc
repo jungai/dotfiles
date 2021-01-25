@@ -108,6 +108,7 @@ alias tm="tmux"
 alias yc="yarn compile"
 alias gcm='git commit -m'
 alias tmk='tmux kill-server'
+alias code='code-insiders'
 
 # asdf 
 . $HOME/.asdf/asdf.sh
