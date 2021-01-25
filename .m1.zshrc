@@ -113,5 +113,8 @@ alias code='code-insiders'
 # asdf 
 . $HOME/.asdf/asdf.sh
 
+# asdf should exec first
+export PATH="$PATH:`yarn global bin`"
+
 # starship
 eval "$(starship init zsh)"
