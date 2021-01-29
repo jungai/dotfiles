@@ -120,4 +120,4 @@ export PATH="$PATH:`yarn global bin`"
 eval "$(starship init zsh)"
 
 # mysql client
-# export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
