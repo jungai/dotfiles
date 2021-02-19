@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "CodeSandbox",
+    "editor.fontSize": 14,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "explorer.compactFolders": false,
+    "editor.fontFamily": "Comic Mono",
+    "workbench.list.automaticKeyboardNavigation": false,
+    "workbench.tree.expandMode": "singleClick",
+}
