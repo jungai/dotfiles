@@ -123,7 +123,7 @@ eval "$(starship init zsh)"
 # mysql client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
 
-# enable Macbook Pro's Touch ID for sudo
+# enable Macbook Touch ID for sudo
 sudotouchid () {
  if ! /usr/bin/grep -Fq "pam_tid.so" /etc/pam.d/sudo
  then
