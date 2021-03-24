@@ -110,6 +110,7 @@ alias gcm='git commit -m'
 alias tmk='tmux kill-server'
 alias codei='code-insiders'
 alias code='code'
+alias gj='git jump'
 
 # asdf 
 . $HOME/.asdf/asdf.sh
