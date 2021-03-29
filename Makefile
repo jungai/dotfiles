@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean sync
 
 clean:
 	rm -f ~/.vimrc
@@ -12,6 +12,6 @@ sync:
 	ln -s $(shell pwd)/zsh/starship.tm ~/.config/starship.toml
 	ln -s $(shell pwd)/tmux/.tmux.conf ~/.tmux.conf
 
-ins:
+all:
 	make clean
 	make sync
