@@ -5,10 +5,10 @@ clean:
 	rm -f ~/.zshrc
 
 sync:
-	ln -s $(pwd)/vim/.vimrc ~/.vimrc
-	ln -s $(pwd)/zsh/.m1.zshrc ~/.zshrc
-	ln -s $(pwd)/zsh/starship.tm ~/.config/starship.toml
-	ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
+	ln -s $(PWD)/vim/.vimrc ~/.vimrc
+	ln -s $(PWD)/zsh/.m1.zshrc ~/.zshrc
+	ln -s $(PWD)/zsh/starship.tm ~/.config/starship.toml
+	ln -s $(PWD)/tmux/.tmux.conf ~/.tmux.conf
 
 ins:
 	make clean
