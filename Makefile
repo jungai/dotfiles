@@ -1,3 +1,5 @@
+.PHONY: all
+
 clean:
 	rm -f ~/.vimrc
 	rm -f ~/.tmux.conf
@@ -13,5 +15,3 @@ sync:
 ins:
 	make clean
 	make sync
-
-.PHONY: all
