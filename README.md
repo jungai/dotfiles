@@ -2,3 +2,4 @@
 - [Prompt](https://github.com/starship/starship)
 - [Tmux Theme](https://github.com/dracula/tmux)
 - [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
+- [Vim Theme(my previous setting)](https://github.com/morhetz/gruvbox)
