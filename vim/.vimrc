@@ -10,3 +10,6 @@ set ruler
 colorscheme peachpuff
 highlight Comment ctermfg=green
 
+set compatible
+set nocompatible
+
