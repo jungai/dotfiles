@@ -41,3 +41,6 @@ alias codei='code-insiders'
 alias gj='git jump'
 alias sut="sudotouchid"
 alias pc="pwd | pbcopy"
+
+# env
+export COM="m1"
