@@ -1,4 +1,4 @@
-.PHONY: all clean sync
+.PHONY: mac-dot clean sync
 
 clean:
 	rm -f ~/.vimrc
@@ -9,9 +9,9 @@ clean:
 sync:
 	ln -s $(shell pwd)/vim/.vimrc ~/.vimrc
 	ln -s $(shell pwd)/zsh/.m1.zshrc ~/.zshrc
-	ln -s $(shell pwd)/zsh/starship.tm ~/.config/starship.toml
+	ln -s $(shell pwd)/zsh/starship.toml ~/.config/starship.toml
 	ln -s $(shell pwd)/tmux/.tmux.conf ~/.tmux.conf
 
-all:
+mac-dot:
 	make clean
 	make sync
