@@ -28,6 +28,3 @@ alias yc="yarn compile"
 alias gcm='git commit -m'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-
-# env
-export COM="pop"
