@@ -1,4 +1,4 @@
-.PHONY: mac-dot clean sync
+.PHONY: dot clean sync
 
 clean:
 	rm -f ~/.vimrc
