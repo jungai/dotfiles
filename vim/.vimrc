@@ -17,11 +17,11 @@ call plug#begin('~/.vim/plugged')
 " format
 Plug 'editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " colorscheme
 Plug 'arcticicestudio/nord-vim'
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " syntax & intelli
 Plug 'HerringtonDarkholme/yats.vim'
@@ -32,7 +32,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Initialize plugin system
 call plug#end()
 
-" leadet key
+" leader key
 let mapleader =" "
 
 " colorscheme
@@ -63,7 +63,7 @@ nmap <silent> gr <Plug>(coc-references)
 " -------- end coc --------
 
 
-" -------- NerdTree --------
+" -------- nerdtree --------
 let NERDTreeShowHidden=1
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -71,3 +71,4 @@ nnoremap <leader>\ :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " Start NERDTree and leave the cursor in it.
 autocmd VimEnter * NERDTree
+" -------- end nerdtree --------
