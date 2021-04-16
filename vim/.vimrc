@@ -57,7 +57,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 " -------- end coc --------
@@ -65,10 +65,6 @@ nmap <silent> gr <Plug>(coc-references)
 
 " -------- nerdtree --------
 let NERDTreeShowHidden=1
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+
 nnoremap <leader>\ :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-" Start NERDTree and leave the cursor in it.
-autocmd VimEnter * NERDTree
 " -------- end nerdtree --------
