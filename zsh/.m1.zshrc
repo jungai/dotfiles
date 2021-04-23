@@ -30,6 +30,7 @@ sudotouchid () {
 }
 
 # alias
+alias vi="vim"
 alias c="clear"
 alias d="yarn dev"
 alias s="yarn start"
@@ -41,3 +42,4 @@ alias codei='code-insiders'
 alias gj='git jump'
 alias sut="sudotouchid"
 alias pc="pwd | pbcopy"
+alias p="pnpm"
