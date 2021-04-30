@@ -43,4 +43,4 @@ alias gj='git jump'
 alias sut="sudotouchid"
 alias pc="pwd | pbcopy"
 alias p="pnpm"
-alias ls="exa -l --icons -F"
+alias ls="exa -l --icons -h"
