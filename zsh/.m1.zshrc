@@ -46,5 +46,5 @@ alias p="pnpm"
 alias /="fzf"
 
 if hash exa 2>/dev/null; then
-  alias ls="exa -l --icons -h"
+  alias ls="exa -l -a --icons -h"
 fi
