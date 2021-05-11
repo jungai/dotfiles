@@ -1,6 +1,6 @@
 #!/usr/bin/env zx
 
-const arch = `${await $`arch`}`
+const arch = await os.arch()
 const currentPath = await $`pwd`
 const homeDir = await os.homedir()
 
