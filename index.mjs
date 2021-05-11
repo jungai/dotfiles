@@ -33,29 +33,32 @@ const configList = [
 ]
 
 async function createDir() {
+	console.log(chalk.yellow('👉🏻 create dir'))
+
 	await $`mkdir -p ${homeDir}/.config`
+
+	console.log(chalk.yellow('🍭 finish'))
 }
 
 async function clean() {
-	console.log(chalk.red('======= clean ========'))
+	console.log(chalk.yellow('👉🏻 clean'))
 
 	await Promise.all(
 		configList.map(config => $`rm -f ${homeDir}${config.target}`)
 	)
 
-	console.log(chalk.red('🍭 finish'))
+	console.log(chalk.yellow('🍭 finish'))
 	
 }
 
 async function sync() {
-	console.log(chalk.red('======= sync ========'))
-
+	console.log(chalk.yellow('👉🏻 sync'))
 
 	await Promise.all(
 		configList.map(config => $`ln -sf ${currentPath}${config.from} ${homeDir}${config.target}`)
 		)
 
-	console.log(chalk.red('🍭 finish'))
+	console.log(chalk.yellow('🍭 finish'))
 
 }
 
