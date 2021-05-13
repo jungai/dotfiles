@@ -1,10 +1,10 @@
 lockfileVersion: 5.3
 
 specifiers:
-  zx: ^1.4.0
+  zx: ^1.5.0
 
 devDependencies:
-  zx: 1.4.0
+  zx: 1.5.0
 
 packages:
 
@@ -72,8 +72,8 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /zx/1.4.0:
-    resolution: {integrity: sha512-D5nVer2mrzUobR+hiNuD+alwwQubfYCjqiZugbCzewoV9V0uVYVb20LemXMKdmcvoTuvoG2VkppmET/eGY7gJw==}
+  /zx/1.5.0:
+    resolution: {integrity: sha512-Nya5XwXtOUob9qrY102d70gpaKp5ZjJpeLL9GQF0hPC904AzNZLni/8Vh+f4w9tDq1HnAlT5uA3qjyS/Vi3E1g==}
     engines: {node: '>= 14.8.0'}
     hasBin: true
     dependencies:
