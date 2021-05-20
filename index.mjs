@@ -9,7 +9,7 @@ function getMyZsh() {
 		case 'arm64':
 			return '/zsh/.m1.zshrc';
 		default:
-			return '/zsh/.pop.zshrc';
+			return '/zsh/ubuntu.zshrc';
 	}
 }
 

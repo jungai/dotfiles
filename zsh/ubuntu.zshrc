@@ -19,12 +19,20 @@ eval $(~/.linuxbrew/bin/brew shellenv)
 eval "$(starship init zsh)"
 
 # alias
+alias vi="vim"
 alias c="clear"
 alias d="yarn dev"
 alias s="yarn start"
 alias tm="tmux"
-alias tmk='tmux kill-server'
 alias yc="yarn compile"
+alias gcm='git commit -m'
+alias tmk='tmux kill-server'
+alias pc="pwd | pbcopy"
+alias p="pnpm"
 alias gcm='git commit -m'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+
+if hash exa 2>/dev/null; then
+  alias ls="exa -l -a --icons -h"
+fi
