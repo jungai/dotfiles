@@ -9,7 +9,7 @@ stashed = "📦"
 untracked = "U"
 
 [character]
-# success_symbol = "[🐖](bold green)"
-success_symbol = "[❯](green)[❯](red)[❯](white)"
+success_symbol = "[🐖](bold green)"
+# success_symbol = "[❯](green)[❯](red)[❯](white)"
 error_symbol = "[🐶](bold red)"
 
