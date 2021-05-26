@@ -36,7 +36,7 @@ call plug#end()
 let mapleader =" "
 
 " colorscheme
-colorscheme nord
+colorscheme onedark
 
 " -------- coc --------
 " Use K to show documentation in preview window.
