@@ -29,7 +29,6 @@ alias gcm='git commit -m'
 alias tmk='tmux kill-server'
 alias pc="pwd | pbcopy"
 alias p="pnpm"
-alias gcm='git commit -m'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 
