@@ -30,12 +30,17 @@ const configList = [
 		from: getMyZsh(),
 		target: '/.zshrc',
 	},
+	{
+		from: '/fish/config.fish',
+		target: '/.config/fish/config.fish',
+	},
 ]
 
 async function createDir() {
 	console.log(chalk.yellow('👉🏻 create dir'))
 
 	await $`mkdir -p ${homeDir}/.config`
+	await $`mkdir -p ${homeDir}/.config/fish`
 
 	console.log(chalk.yellow('🍭 finish'))
 }
