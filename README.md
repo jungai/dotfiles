@@ -1,12 +1,6 @@
 ## Update dotfiles
 
-1. via [zx](https://github.com/google/zx)
-
-	```bash
-	zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/index.mjs
-	```
-
-2. clone this repo then
+1. clone this repo then
 
 	```bash
 	make dot
