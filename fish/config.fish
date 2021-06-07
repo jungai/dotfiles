@@ -20,8 +20,11 @@ alias yc="yarn compile"
 alias tmk='tmux kill-server'
 alias pc="pwd | pbcopy"
 alias p="pnpm"
+alias ps="pnpm start"
+alias pd="pnpm dev"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
+alias va='vault'
 
 if test (which exa)
 	alias ls="exa -l -a --icons -h"
