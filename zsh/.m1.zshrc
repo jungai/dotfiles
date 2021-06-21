@@ -1,8 +1,9 @@
+export EDITOR=vi
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/jungai/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="flazz"
 
 # Plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions z vi-mode)
@@ -16,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:`yarn global bin`"
 
 # starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # mysql client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
