@@ -45,7 +45,4 @@ alias sut="sudotouchid"
 alias pc="pwd | pbcopy"
 alias p="pnpm"
 alias /="fzf"
-
-if hash exa 2>/dev/null; then
-  alias ls="exa -l -a --icons -h"
-fi
+alias ni="nvim"
