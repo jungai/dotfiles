@@ -79,4 +79,4 @@ autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 runtime ./plug.vim
 
 " color scheme
-colorscheme codedark
+colorscheme onedark
