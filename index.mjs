@@ -31,16 +31,20 @@ const configList = [
 		target: '/.zshrc',
 	},
 	{
-		from: '/fish/config.fish',
-		target: '/.config/fish/config.fish',
+		from: '/zsh/fishy-jungai.zsh-theme',
+		target: '/.oh-my-zsh/themes/fishy-jungai.zsh-theme',
 	},
+	// {
+	// 	from: '/fish/config.fish',
+	// 	target: '/.config/fish/config.fish',
+	// },
 ]
 
 async function createDir() {
 	console.log(chalk.yellow('👉🏻 create dir'))
 
 	await $`mkdir -p ${homeDir}/.config`
-	await $`mkdir -p ${homeDir}/.config/fish`
+	// await $`mkdir -p ${homeDir}/.config/fish`
 
 	console.log(chalk.yellow('🍭 finish'))
 }
