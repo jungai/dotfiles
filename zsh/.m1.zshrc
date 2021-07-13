@@ -6,7 +6,7 @@ export ZSH="/Users/jungai/.oh-my-zsh"
 ZSH_THEME="fishy-jungai"
 
 # Plugins
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions z vi-mode)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions z)
 
 source $ZSH/oh-my-zsh.sh
 
