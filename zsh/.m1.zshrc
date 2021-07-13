@@ -3,7 +3,7 @@ export EDITOR=vi
 export ZSH="/Users/jungai/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="flazz"
+ZSH_THEME="fishy-jungai"
 
 # Plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions z vi-mode)
@@ -48,5 +48,5 @@ alias /="fzf"
 alias nn="nvim"
 
 if hash exa 2>/dev/null; then
-  alias ls="exa -l --icons -h"
+  alias ls="exa -l -h"
 fi
