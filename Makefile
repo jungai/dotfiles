@@ -1,4 +1,4 @@
-.PHONY: dot
+.PHONY: dot build test install-linux
 # .PHONY: dot clean sync
 
 # clean:
@@ -16,6 +16,15 @@
 # dot:
 # 	make clean
 # 	make sync
+
+build-install-linux:
+	docker build -t build-install-linux -f Dockerfile.linux .
+
+test-install-linux:
+	docker run -it build-install-linux /bin/sh
+
+install-linux:
+	./install_linux.mjs
 
 dot:
 	./index.mjs
