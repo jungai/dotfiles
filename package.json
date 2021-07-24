@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/jungai/dotfiles#readme",
   "devDependencies": {
-    "zx": "^1.14.1"
+    "zx": "^1.15.2"
   }
 }

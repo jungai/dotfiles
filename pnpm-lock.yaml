@@ -1,22 +1,22 @@
 lockfileVersion: 5.3
 
 specifiers:
-  zx: ^1.14.1
+  zx: ^1.15.2
 
 devDependencies:
-  zx: 1.14.1
+  zx: 1.15.2
 
 packages:
 
-  /@types/node-fetch/2.5.10:
-    resolution: {integrity: sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==}
+  /@types/node-fetch/2.5.12:
+    resolution: {integrity: sha512-MKgC4dlq4kKNa/mYrwpKfzQMB5X3ee5U6fSprkKpToBqBmX4nFZL9cW5jl6sWn+xpRJ7ypWh2yyqqr8UUCstSw==}
     dependencies:
-      '@types/node': 15.12.1
+      '@types/node': 16.4.1
       form-data: 3.0.1
     dev: true
 
-  /@types/node/15.12.1:
-    resolution: {integrity: sha512-zyxJM8I1c9q5sRMtVF+zdd13Jt6RU4r4qfhTd7lQubyThvLfx6yYekWSQjGCGV2Tkecgxnlpl/DNlb6Hg+dmEw==}
+  /@types/node/16.4.1:
+    resolution: {integrity: sha512-UW7cbLqf/Wu5XH2RKKY1cHwUNLicIDRLMraYKz+HHAerJ0ZffUEk+fMnd8qU2JaS6cAy0r8tsaf7yqHASf/Y0Q==}
     dev: true
 
   /ansi-styles/4.3.0:
@@ -96,10 +96,6 @@ packages:
     engines: {node: 4.x || >=6.0.0}
     dev: true
 
-  /shq/1.0.2:
-    resolution: {integrity: sha512-8AvNyHL75DHlkbLmzF7nzTzT2F0qEfSewwxHjH79Ww8S+hGpIZVlf8b0TcdOwv4HqIkOVBInu9n+wqhUSl9Wag==}
-    dev: true
-
   /supports-color/7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
@@ -115,15 +111,14 @@ packages:
       isexe: 2.0.0
     dev: true
 
-  /zx/1.14.1:
-    resolution: {integrity: sha512-M8U7SM8nVnko4vaeb4jp2+gwIyaJpnLNqkOurViML2WOsIn9M+bVHmuJxlVPHKHB6WkoZ3P/0FESLKwvJF4dtw==}
-    engines: {node: '>= 14.8.0'}
+  /zx/1.15.2:
+    resolution: {integrity: sha512-UvltPAK8alQ7YXxOZDWCR3m4LppUmOpB3ZpJvc4NL0YEZDikLhC9jd1pnB4Fze/4OcmF3Xff6kK+6DKeqH1efA==}
+    engines: {node: '>= 15.0.0'}
     hasBin: true
     dependencies:
-      '@types/node': 15.12.1
-      '@types/node-fetch': 2.5.10
+      '@types/node': 16.4.1
+      '@types/node-fetch': 2.5.12
       chalk: 4.1.1
       node-fetch: 2.6.1
-      shq: 1.0.2
       which: 2.0.2
     dev: true
