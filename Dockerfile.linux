@@ -1,0 +1,11 @@
+FROM ubuntu:20.10
+
+RUN apt-get update && \
+	apt-get install -y curl git sudo && \
+	su -c 'curl -sL https://deb.nodesource.com/setup_16.x | bash -' && \
+	su -c 'apt install -y nodejs' && \
+	npm i -g zx
+
+COPY . /home
+
+WORKDIR /home
