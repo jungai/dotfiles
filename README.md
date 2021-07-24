@@ -12,6 +12,12 @@
 	./index.mjs
 	```
 
+## Install Script For Linux
+
+```bash
+zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
+```
+
 ## Tools
 
 - [Font](https://github.com/dtinth/comic-mono-font)
