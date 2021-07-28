@@ -3,7 +3,7 @@ export EDITOR=vi
 export ZSH="/Users/jungai/.oh-my-zsh"
 
 # Theme
-ZSH_THEME="fishy-jungai"
+# ZSH_THEME="fishy-jungai"
 
 # Plugins
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions z)
@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:`yarn global bin`"
 
 # starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # mysql client
 export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
