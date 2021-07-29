@@ -2,15 +2,15 @@
 
 1. clone this repo then
 
-	```bash
-	make dot
-	```
+   ```bash
+   make dot
+   ```
 
-	or
+   or
 
-	```bash
-	./index.mjs
-	```
+   ```bash
+   ./index.mjs
+   ```
 
 ## Install Script For Linux
 
@@ -30,3 +30,7 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 ## Refs
 
 - [nvim setting](https://www.youtube.com/watch?v=FW2X1CXrU1w&t=499s)
+
+## Terminal
+
+![terminal](./terminal.png?raw=true "terminal")
