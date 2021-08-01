@@ -13,6 +13,7 @@ opt.hlsearch = true
 opt.ruler = true
 opt.expandtab = true
 opt.ai = true
+opt.relativenumber = true
 vim.o.completeopt = "menuone,noselect"
 
 -- end vim setting
