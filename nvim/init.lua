@@ -16,8 +16,6 @@ opt.ai = true
 opt.relativenumber = true
 vim.o.completeopt = "menuone,noselect"
 
--- end vim setting
-
 -- pacakage manager
 cmd 'packadd paq-nvim'  
 
@@ -44,7 +42,6 @@ require('lualine').setup({
     theme = 'onedark'
   }
 })
-
 
 -- compe
 require'compe'.setup {
@@ -84,7 +81,6 @@ require'compe'.setup {
 -- lsp config
 require'lspconfig'.tsserver.setup{}
 vim.api.nvim_set_keymap('n', 'gd', [[<cmd>lua vim.lsp.buf.definition()<CR>]], { noremap = true, silent = true })
-
 
 -- LSP Saga config & keys https://github.com/glepnir/lspsaga.nvim
 local saga = require "lspsaga"
