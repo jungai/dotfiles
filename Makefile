@@ -1,4 +1,4 @@
-.PHONY: dot build test install-linux
+.PHONY: dot build-install-linux test-install-linux install-linux
 # .PHONY: dot clean sync
 
 # clean:
