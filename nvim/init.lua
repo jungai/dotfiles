@@ -12,14 +12,21 @@ opt.number = true
 opt.hlsearch = true
 opt.ruler = true
 opt.expandtab = true
+opt.smartindent = true
 opt.ai = true
+opt.termguicolors = true
+opt.encoding = "utf-8"
 opt.relativenumber = true
+opt.smartcase = true
 vim.o.completeopt = "menuone,noselect"
 
 -- pacakage manager
 cmd 'packadd paq-nvim'  
 
 require "paq" {
+  'editorconfig/editorconfig-vim';
+	'sainnhe/gruvbox-material';
+	'chriskempson/base16-vim';
   'savq/paq-nvim';
 	'neovim/nvim-lspconfig';
 	'glepnir/lspsaga.nvim';
@@ -34,14 +41,13 @@ require "paq" {
 }
 
 -- theme
-require('onedark').setup()
+-- require('onedark').setup()
+cmd 'colorscheme gruvbox-material'
+cmd 'set background=dark'
 
 -- lualine
-require('lualine').setup({
-  options = {
-    theme = 'onedark'
-  }
-})
+require('lualine').setup()
+--
 
 -- compe
 require'compe'.setup {
@@ -80,7 +86,77 @@ require'compe'.setup {
 
 -- lsp config
 require'lspconfig'.tsserver.setup{}
+require'lspconfig'.vuels.setup{}
 vim.api.nvim_set_keymap('n', 'gd', [[<cmd>lua vim.lsp.buf.definition()<CR>]], { noremap = true, silent = true })
+
+-- lint
+
+local on_attach = function(client, bufnr)
+  if client.resolved_capabilities.document_formatting then
+    vim.api.nvim_command [[augroup Format]]
+    vim.api.nvim_command [[autocmd! * <buffer>]]
+    vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
+    vim.api.nvim_command [[augroup END]]
+  end
+end
+
+require'lspconfig'.diagnosticls.setup {
+  on_attach = on_attach,
+  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
+  init_options = {
+    linters = {
+      eslint = {
+        command = 'eslint_d',
+        rootPatterns = { '.git' },
+        debounce = 100,
+        args = { '--stdin', '--stdin-filename', '%filepath', '--format', 'json' },
+        sourceName = 'eslint_d',
+        parseJson = {
+          errorsRoot = '[0].messages',
+          line = 'line',
+          column = 'column',
+          endLine = 'endLine',
+          endColumn = 'endColumn',
+          message = '[eslint] ${message} [${ruleId}]',
+          security = 'severity'
+        },
+        securities = {
+          [2] = 'error',
+          [1] = 'warning'
+        }
+      },
+    },
+    filetypes = {
+      javascript = 'eslint',
+      javascriptreact = 'eslint',
+      typescript = 'eslint',
+      typescriptreact = 'eslint',
+    },
+    formatters = {
+      eslint_d = {
+        command = 'eslint_d',
+        args = { '--stdin', '--stdin-filename', '%filename', '--fix-to-stdout' },
+        rootPatterns = { '.git' },
+      },
+      prettier = {
+        command = 'prettier',
+        args = { '--stdin-filepath', '%filename' }
+      }
+    },
+    formatFiletypes = {
+      css = 'prettier',
+      javascript = 'eslint_d',
+      javascriptreact = 'eslint_d',
+      json = 'prettier',
+      scss = 'prettier',
+      less = 'prettier',
+      typescript = 'eslint_d',
+      typescriptreact = 'eslint_d',
+      json = 'prettier',
+      markdown = 'prettier',
+    }
+  }
+}
 
 -- LSP Saga config & keys https://github.com/glepnir/lspsaga.nvim
 local saga = require "lspsaga"
