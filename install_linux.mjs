@@ -28,8 +28,20 @@ async function beforeAll() {
     
 }
 
+async function setupScriptToZsh(name = "Setup Some Script") {}
+
 // TODO: Asdf
-async function setupAsdf(name = 'Asdf') {}
+async function setupAsdf(name = 'Asdf') {
+    echoStart(name)
+
+	await $`git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1`
+
+	// prepare for node
+	await $`sudo apt install -y dirmngr gpg`
+
+
+	echoEnd(name)
+}
 
 // TODO: Docker (wsl do not install docker)
 async function setupDocker(name = 'Docker') {}
@@ -60,8 +72,11 @@ async function setupZsh(name = 'Zsh') {
     echoStart('Zsh AutoSuggestion')
     await $`git clone https://github.com/zsh-users/zsh-autosuggestions ${zshCustom}/plugins/zsh-autosuggestions`
 
-    echoNote('set default shell')
+		
+    echoStart('Go into Zsh')
+		// await $`zsh`
     // TODO: script break when input value 
+    // echoNote('set default shell')
     // await $`chsh -s $(which zsh)`
 
     echoEnd(name)
@@ -73,7 +88,9 @@ try {
     await setupZsh()
     await setupLinuxBrew()
     await setupAsdf()
-    await setupDocker()
+		await setupScriptToZsh()
+		// TODO: check os before call
+    // await setupDocker()
 
 } catch (error) {
     console.log(`Exit code: ${error.exitCode}`)
