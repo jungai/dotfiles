@@ -13,6 +13,7 @@
    ```
 
 ## Install Script For Linux
+> required `zx`
 
 ```bash
 zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
