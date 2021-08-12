@@ -73,7 +73,7 @@ async function setupZsh(name = 'Zsh') {
     await $`git clone https://github.com/zsh-users/zsh-autosuggestions ${zshCustom}/plugins/zsh-autosuggestions`
 
 		
-    echoStart('Go into Zsh')
+    // echoStart('Go into Zsh')
 		// await $`zsh`
     // TODO: script break when input value 
     // echoNote('set default shell')
