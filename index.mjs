@@ -34,10 +34,6 @@ const configList = [
 		from: '/zsh/fishy-jungai.zsh-theme',
 		target: '/.oh-my-zsh/themes/fishy-jungai.zsh-theme',
 	},
-	// {
-	// 	from: '/fish/config.fish',
-	// 	target: '/.config/fish/config.fish',
-	// },
 ]
 
 async function createDir() {
