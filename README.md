@@ -21,12 +21,13 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 
 ## Tools
 
-- [Font](https://github.com/dtinth/comic-mono-font)
+- [iosevka](https://www.nerdfonts.com/font-downloads)
 - [Prompt](https://github.com/starship/starship)
 - [Tmux Theme](https://github.com/dracula/tmux)
 - [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
 - [Vim Theme(my previous setting)](https://github.com/morhetz/gruvbox)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
+- [lunarvim](https://www.lunarvim.org/#opinionated)
 
 ## Refs
 
