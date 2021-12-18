@@ -1,3 +1,6 @@
+
+https://user-images.githubusercontent.com/32437056/146642382-bb9d107b-1629-4eb7-9cda-607bc820ccc1.mov
+
 ## Update dotfiles
 
 1. clone this repo then
