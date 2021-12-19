@@ -14,10 +14,6 @@ eval (/opt/homebrew/bin/brew shellenv)
 set -x GOPATH $HOME/Desktop/playground/go
 set -x PATH $PATH $GOPATH/bin
 
-# mysql
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-
-
 # alias
 alias p="pnpm"
 alias tm="tmux"
