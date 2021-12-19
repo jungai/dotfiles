@@ -9,24 +9,31 @@ source ~/.asdf/asdf.fish
 # Homebrew package manager
 eval (/opt/homebrew/bin/brew shellenv)
 
+# golang
+# export GOPATH=$HOME/Desktop/playground/go
+set -x GOPATH $HOME/Desktop/playground/go
+set -x PATH $PATH $GOPATH/bin
+
 # mysql
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
 
 # alias
 alias p="pnpm"
 alias tm="tmux"
 alias tmk='tmux kill-server'
 alias lv='/Users/jungai/.local/bin/lvim'
+alias lg='lazygit'
+alias pc='pwd | pbcopy'
+alias h='https'
 
 if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
 end
 
-echo ""
-viu -m -w 30 ~/Desktop/winter.png
-echo ""
-
 fish_add_path /opt/homebrew/opt/mysql-client/bin
+fish_add_path $GOPATH/bin:$PATH
+fish_add_path (yarn global bin)
 
 set -g theme_display_git_default_branch yes
 set -g theme_color_scheme nord
