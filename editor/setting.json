@@ -1,11 +1,58 @@
 {
-    "workbench.colorTheme": "CodeSandbox",
-    "editor.fontSize": 14,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-    "explorer.compactFolders": false,
-    "editor.fontFamily": "Comic Mono",
-    "workbench.list.automaticKeyboardNavigation": false,
-    "workbench.tree.expandMode": "singleClick",
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.userWords": ["fastify"],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.useCtrlKeys": false,
+  "editor.fontFamily": "Iosevka Nerd Font",
+  // "editor.fontFamily": "Cascadia Code",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.codeLensFontFamily": "j",
+  "editor.fontSize": 13,
+  // twin
+  "scss.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "editor.autoClosingQuotes": "always",
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)", // tw`...`
+    "tw=\"([^\"]*)", // <div tw="..." />
+    "tw={\"([^\"}]*)", // <div tw={"..."} />
+    "tw\\.\\w+`([^`]*)", // tw.xxx`...`
+    "tw\\(.*?\\)`([^`]*)" // tw(Component)`...`
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "[elm]": {
+    "editor.defaultFormatter": "elmTooling.elm-ls-vscode"
+  },
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 1,
+  "editor.renderWhitespace": "all",
+  "code-eol.newlineCharacter": "¬",
+  "code-eol.returnCharacter": "¤",
+  "code-eol.crlfCharacter": "¤¬"
 }
