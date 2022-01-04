@@ -1,5 +1,8 @@
-
 https://user-images.githubusercontent.com/32437056/146642382-bb9d107b-1629-4eb7-9cda-607bc820ccc1.mov
+
+## Terminal
+
+![terminal](./terminal.png?raw=true "terminal")
 
 ## Update dotfiles
 
@@ -16,6 +19,7 @@ https://user-images.githubusercontent.com/32437056/146642382-bb9d107b-1629-4eb7-
    ```
 
 ## Install Script For Linux
+
 > required `zx`
 
 ```bash
@@ -35,7 +39,3 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 ## Refs
 
 - [nvim setting](https://www.youtube.com/watch?v=FW2X1CXrU1w&t=499s)
-
-## Terminal
-
-![terminal](./terminal.png?raw=true "terminal")
