@@ -2,7 +2,7 @@ https://user-images.githubusercontent.com/32437056/146642382-bb9d107b-1629-4eb7-
 
 ## Terminal
 
-![terminal](./terminal.png?raw=true "terminal")
+![terminal](./myterminal.png?raw=true "my terminal")
 
 ## Update dotfiles
 
