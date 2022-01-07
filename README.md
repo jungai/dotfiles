@@ -35,7 +35,7 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 - [Vim Theme(my previous setting)](https://github.com/morhetz/gruvbox)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
 - [lunarvim](https://www.lunarvim.org/#opinionated)
-- [alacritty](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036) -> mac m1 should build from source
+- [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
 
 ## Refs
 
