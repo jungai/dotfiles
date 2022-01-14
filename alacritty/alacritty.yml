@@ -31,7 +31,7 @@ window:
   #dimensions:
   #  columns: 0
   #  lines: 0
-
+  opacity: 1.0
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
@@ -361,26 +361,26 @@ font:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+# background_opacity: 0.95
 
-#selection:
+selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: true
 
-#cursor:
+cursor:
   # Cursor style
-  #style:
+  # style:
     # Cursor shape
     #
     # Values for `shape`:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    #shape: Block
+    shape: block
 
     # Cursor blinking state
     #
@@ -389,7 +389,7 @@ font:
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    #blinking: Off
+    blinking: true
 
   # Vi mode cursor style
   #
@@ -512,7 +512,6 @@ font:
 #   - Numeric identifier such as `5`
 #
 # - `action` (see key bindings)
-#
 # And optionally:
 #
 # - `mods` (see key bindings)
@@ -723,7 +722,8 @@ font:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
+  - { key: N, mods: Command, action: SpawnNewInstance }
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
