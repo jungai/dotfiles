@@ -31,7 +31,7 @@ window:
   #dimensions:
   #  columns: 0
   #  lines: 0
-  opacity: 1.0
+  opacity: 0.9 
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
