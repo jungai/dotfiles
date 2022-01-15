@@ -1,8 +1,4 @@
-https://user-images.githubusercontent.com/32437056/146642382-bb9d107b-1629-4eb7-9cda-607bc820ccc1.mov
-
-## Terminal
-
-![terminal](./myterminal.png?raw=true "my terminal")
+<img width="1440" alt="Screen Shot 2565-01-15 at 16 52 38" src="https://user-images.githubusercontent.com/32437056/149617614-e0439607-181f-48ab-9d7c-dd852b169f38.png">
 
 ## Update dotfiles
 
@@ -36,6 +32,8 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
 - [lunarvim](https://www.lunarvim.org/#opinionated)
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
+- [yabai](https://github.com/koekeishiya/yabai)
+- [skhd](https://github.com/koekeishiya/skhd)
 
 ## Refs
 
