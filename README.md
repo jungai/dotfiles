@@ -34,6 +34,7 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
 - [yabai](https://github.com/koekeishiya/yabai)
 - [skhd](https://github.com/koekeishiya/skhd)
+- [simple-bar](https://www.simple-bar.com)
 
 ## Refs
 
