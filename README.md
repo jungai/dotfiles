@@ -16,10 +16,10 @@
 
 ## Install Script For Linux
 
-> required `zx`
+> run with 'npx', 'pnpm dlx'
 
 ```bash
-zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
+pnpm dlx zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 ```
 
 ## Tools
