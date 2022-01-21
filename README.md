@@ -28,6 +28,7 @@ zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 - [Prompt](https://github.com/starship/starship)
 - [Tmux Theme](https://github.com/dracula/tmux)
 - [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
+- [simple-vim(fork)](https://github.com/jungai/vscode-simple-vim)
 - [Vim Theme(my previous setting)](https://github.com/morhetz/gruvbox)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
 - [lunarvim](https://www.lunarvim.org/#opinionated)
