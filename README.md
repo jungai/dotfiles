@@ -29,7 +29,7 @@ pnpm dlx zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 - [Tmux Theme](https://github.com/dracula/tmux)
 - [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
 - [simple-vim(fork)](https://github.com/jungai/vscode-simple-vim)
-- [Vim Theme(my previous setting)](https://github.com/morhetz/gruvbox)
+- [{n}vim Theme](https://github.com/Mofiqul/vscode.nvim)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
 - [lunarvim](https://www.lunarvim.org/#opinionated)
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
