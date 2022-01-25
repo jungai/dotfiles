@@ -13,6 +13,10 @@ shift + alt - j : yabai -m window --warp south
 shift + alt - k : yabai -m window --warp north
 shift + alt - l : yabai -m window --warp east
 
+# Create space
+lctrl + alt - n : yabai -m space --create
+lctrl + alt - w : yabai -m space --destroy
+
 # Move focus container to workspace
 shift + alt - m : yabai -m window --space last; yabai -m space --focus last
 shift + alt - p : yabai -m window --space prev; yabai -m space --focus prev
