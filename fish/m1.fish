@@ -22,6 +22,7 @@ alias lv='/Users/jungai/.local/bin/lvim'
 alias lg='lazygit'
 alias pc='pwd | pbcopy'
 alias h='https'
+alias rnd='find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;'
 
 if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
