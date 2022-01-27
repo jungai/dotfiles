@@ -28,6 +28,24 @@ if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
 end
 
+# https://github.com/takashabe/fish-peco
+function peco_select_z
+  set -l query (commandline)
+  if test -n $query
+    set peco_flags --query "$query"
+  end
+
+  z -l | sort -rn | cut -c 12- | peco $peco_flags | read line
+  if test $line
+    cd $line
+    commandline -f repaint
+  end
+end
+
+function fish_user_key_bindings
+  bind \cj peco_select_z        # Ctrl-j
+end
+
 fish_add_path /opt/homebrew/opt/mysql-client/bin
 fish_add_path $GOPATH/bin:$PATH
 fish_add_path (yarn global bin)
