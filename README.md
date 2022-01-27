@@ -14,7 +14,7 @@
 - [yabai](https://github.com/koekeishiya/yabai)
 - [skhd](https://github.com/koekeishiya/skhd)
 - [simple-bar](https://www.simple-bar.com)
-- [peco](https://github.com/peco/peco) - with (z)[https://github.com/rupa/z]
+- [peco](https://github.com/peco/peco)
 
 ## Update dotfiles
 
