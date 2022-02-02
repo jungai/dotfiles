@@ -18,7 +18,7 @@ set -x PATH $PATH $GOPATH/bin
 alias p="pnpm"
 alias tm="tmux"
 alias tmk='tmux kill-server'
-alias lv='/Users/jungai/.local/bin/lvim'
+alias lv='$HOME/.local/bin/lvim'
 alias lg='lazygit'
 alias pc='pwd | pbcopy'
 alias h='https'
