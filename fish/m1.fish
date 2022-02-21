@@ -16,6 +16,7 @@ set -x PATH $PATH $GOPATH/bin
 
 # alias
 alias p="pnpm"
+alias pu="pnpm upgrade -i --latest"
 alias tm="tmux"
 alias tmk='tmux kill-server'
 alias lv='$HOME/.local/bin/lvim'
