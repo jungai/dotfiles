@@ -15,6 +15,7 @@
 - [skhd](https://github.com/koekeishiya/skhd)
 - [simple-bar](https://www.simple-bar.com)
 - [peco](https://github.com/peco/peco)
+- [atuin](https://github.com/ellie/atuin)
 
 ## Update dotfiles
 
