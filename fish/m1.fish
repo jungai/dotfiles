@@ -31,8 +31,11 @@ if test (which exa)
 end
 
 fish_add_path /opt/homebrew/opt/mysql-client/bin
+fish_add_path /opt/homebrew/opt/kafka/bin
 fish_add_path $GOPATH/bin:$PATH
 fish_add_path (yarn global bin)
 
 set -g theme_display_git_default_branch yes
 set -g theme_color_scheme nord
+
+atuin init fish | source
