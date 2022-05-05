@@ -31,7 +31,6 @@ if test (which exa)
 end
 
 fish_add_path /opt/homebrew/opt/mysql-client/bin
-fish_add_path /opt/homebrew/opt/kafka/bin
 fish_add_path $GOPATH/bin:$PATH
 fish_add_path (yarn global bin)
 
