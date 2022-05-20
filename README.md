@@ -16,6 +16,7 @@
 - [simple-bar](https://www.simple-bar.com)
 - [peco](https://github.com/peco/peco)
 - [atuin](https://github.com/ellie/atuin)
+- [run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12)
 
 ## Update dotfiles
 
