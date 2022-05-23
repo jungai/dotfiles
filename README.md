@@ -19,6 +19,7 @@
 - [run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12)
 - [exa](https://github.com/ogham/exa)
 - [fd](https://github.com/sharkdp/fd)
+- [altTab](https://alt-tab-macos.netlify.app/)
 
 ## Update dotfiles
 
