@@ -25,6 +25,11 @@ alias pc='pwd | pbcopy'
 alias h='https'
 alias rnd='find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;'
 alias q='cd (z -le | sort -rn | cut -c 12- | peco)'
+alias gst='git status'
+alias gc='git commit'
+alias gp='git push'
+alias gf='git fetch'
+alias gl='git pull'
 
 if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
