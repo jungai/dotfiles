@@ -20,6 +20,8 @@
 - [exa](https://github.com/ogham/exa)
 - [fd](https://github.com/sharkdp/fd)
 - [altTab](https://alt-tab-macos.netlify.app/)
+- [fzf](https://github.com/junegunn/fzf#using-homebrew)
+- [forgit](https://github.com/wfxr/forgit)
 
 ## Update dotfiles
 
