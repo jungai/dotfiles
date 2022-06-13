@@ -30,6 +30,7 @@ alias gc='git commit'
 alias gp='git push'
 alias gf='git fetch'
 alias gl='git pull'
+alias ddd='docker-compose down && docker-compose up -d'
 
 if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
