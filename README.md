@@ -23,6 +23,10 @@
 - [fzf](https://github.com/junegunn/fzf#using-homebrew)
 - [forgit](https://github.com/wfxr/forgit)
 - [alacritty-themes](https://github.com/rajasegar/alacritty-themes) -> `npx alacritty-themes`
+- [taze](https://github.com/antfu/taze) - that keeps your deps fresh
+- [ni](https://github.com/antfu/ni)
+- [syncpack](https://github.com/JamieMason/syncpack)
+
 
 ## Update dotfiles
 
