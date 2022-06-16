@@ -50,3 +50,4 @@ fish_add_path (yarn global bin)
 # set -g theme_color_scheme nord
 
 atuin init fish | source
+starship init fish | source
