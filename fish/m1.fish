@@ -24,6 +24,7 @@ alias lg='lazygit'
 alias pc='pwd | pbcopy'
 alias h='https'
 alias rnd='find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;'
+alias rdi='find . -name 'dist' -type d -prune -print -exec rm -rf '{}' \;'
 alias q='cd (z -le | sort -rn | cut -c 12- | peco)'
 alias gst='git status'
 alias gc='git commit'
@@ -33,6 +34,9 @@ alias gl='git pull'
 alias ddd='docker-compose down && docker-compose up -d'
 alias ddw='docker-compose down'
 alias ddu='docker-compose up -d'
+alias gone='git for-each-ref --format \'%(refname:short) %(upstream:track)\' | \
+  awk \'$2 == "[gone]" {print $1}\' | \
+  xargs -r git branch -D'
 
 if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
@@ -50,4 +54,4 @@ fish_add_path (yarn global bin)
 # set -g theme_color_scheme nord
 
 atuin init fish | source
-starship init fish | source
+# starship init fish | source
