@@ -112,7 +112,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Hack Nerd Font 
+    family: Menlo
     style: Regular
 
     # The `style` can be specified to pick a specific face.
@@ -127,7 +127,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    family: Hack Nerd Font
+    family: Menlo 
     style: Bold
 
   # Italic font face
@@ -139,7 +139,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    family: Hack Nerd Font
+    family: Menlo
     style: Italic
 
   # Bold italic font face
