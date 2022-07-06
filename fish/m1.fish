@@ -32,6 +32,9 @@ alias ddu='docker-compose up -d'
 alias gone='git for-each-ref --format \'%(refname:short) %(upstream:track)\' | \
   awk \'$2 == "[gone]" {print $1}\' | \
   xargs -r git branch -D'
+alias ss='pnpm start'
+alias dd='pnpm dev'
+alias bb='pnpm build'
 
 if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
