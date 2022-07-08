@@ -40,6 +40,10 @@ if test (which exa)
 	alias ls="exa -l -a -h --icons -F --group-directories-first"
 end
 
+if test (which bat)
+	alias cat="bat"
+end
+
 if test (which gh)
 	alias ghb="gh browse" 
 end

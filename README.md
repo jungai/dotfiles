@@ -26,7 +26,7 @@
 - [taze](https://github.com/antfu/taze) - that keeps your deps fresh
 - [ni](https://github.com/antfu/ni)
 - [syncpack](https://github.com/JamieMason/syncpack)
-
+- [bat](https://github.com/sharkdp/bat)
 
 ## Update dotfiles
 
@@ -49,7 +49,6 @@
 ```bash
 pnpm dlx zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
 ```
-
 
 ## Refs
 
