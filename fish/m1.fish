@@ -50,3 +50,8 @@ fish_add_path (yarn global bin)
 
 atuin init fish | source
 # starship init fish | source
+
+# Bun
+set -Ux BUN_INSTALL "/Users/jungai/.bun"
+set -px --path PATH "/Users/jungai/.bun/bin"
+
