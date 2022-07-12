@@ -27,6 +27,7 @@
 - [ni](https://github.com/antfu/ni)
 - [syncpack](https://github.com/JamieMason/syncpack)
 - [bat](https://github.com/sharkdp/bat)
+- [keycastr](https://github.com/keycastr/keycastr)
 
 ## Update dotfiles
 
