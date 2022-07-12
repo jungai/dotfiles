@@ -37,7 +37,7 @@ alias dd='pnpm dev'
 alias bb='pnpm build'
 
 if test (which exa)
-	alias ls="exa -l -a -h --icons -F --group-directories-first"
+	alias ls="exa -l -a -h -F --group-directories-first"
 end
 
 if test (which bat)
