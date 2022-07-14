@@ -9,7 +9,7 @@
 - [simple-vim(fork)](https://github.com/jungai/vscode-simple-vim)
 - [{n}vim Theme](https://github.com/Mofiqul/vscode.nvim)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
-- [lunarvim](https://www.lunarvim.org/#opinionated),[astronvim](https://github.com/AstroNvim/AstroNvim)
+- [astronvim](https://github.com/AstroNvim/AstroNvim)
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
 - [yabai](https://github.com/koekeishiya/yabai)
 - [skhd](https://github.com/koekeishiya/skhd)
