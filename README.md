@@ -13,7 +13,7 @@
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
 - [yabai](https://github.com/koekeishiya/yabai)
 - [skhd](https://github.com/koekeishiya/skhd)
-- [simple-bar](https://www.simple-bar.com)
+- [simple-bar](https://github.com/Jean-Tinland/simple-bar)
 - [peco](https://github.com/peco/peco)
 - [atuin](https://github.com/ellie/atuin)
 - [run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12)
