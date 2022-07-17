@@ -21,7 +21,6 @@
 - [fd](https://github.com/sharkdp/fd)
 - [altTab](https://alt-tab-macos.netlify.app/)
 - [fzf](https://github.com/junegunn/fzf#using-homebrew)
-- [forgit](https://github.com/wfxr/forgit)
 - [alacritty-themes](https://github.com/rajasegar/alacritty-themes) -> `npx alacritty-themes`
 - [taze](https://github.com/antfu/taze) - that keeps your deps fresh
 - [ni](https://github.com/antfu/ni)
