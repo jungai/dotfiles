@@ -57,7 +57,8 @@ fish_add_path (yarn global bin)
 # set -g theme_color_scheme nord
 
 atuin init fish | source
-starship init fish | source
+# starship init fish | source
+oh-my-posh init fish --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/bubbles.omp.json' | source
 
 # Bun
 set -Ux BUN_INSTALL "/Users/jungai/.bun"
