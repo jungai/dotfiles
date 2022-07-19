@@ -112,7 +112,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Menlo
+    family: UbuntuMono Nerd Font
     style: Regular
 
     # The `style` can be specified to pick a specific face.
@@ -127,7 +127,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    family: Menlo 
+    family: UbuntuMono Nerd Font 
     style: Bold
 
   # Italic font face
@@ -138,8 +138,8 @@ font:
     # value specified for the normal font.
     #family: monospace
 
-    # The `style` can be specified to pick a specific face.
-    family: Menlo
+    # The `styleMenlo` can be specified to pick a specific face.
+    family: UbuntuMono Nerd Font
     style: Italic
 
   # Bold italic font face
