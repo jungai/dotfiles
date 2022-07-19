@@ -46,6 +46,7 @@ end
 
 if test (which gh)
 	alias ghb="gh browse" 
+	alias opr="gh pr create --web"
 end
 
 fish_add_path /opt/homebrew/opt/mysql-client/bin
