@@ -2,7 +2,7 @@
 
 ## Tools
 
-- [iosevka](https://www.nerdfonts.com/font-downloads)
+- [MonoLisa](https://www.monolisa.dev/)
 - [Prompt](https://github.com/starship/starship)
 - [Tmux Theme](https://github.com/dracula/tmux)
 - [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
