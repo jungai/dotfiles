@@ -9,6 +9,7 @@ npx zx index.mjs
 
 ## Tools
 
+- [Daily.dev](https://daily.dev/)
 - [MonoLisa](https://www.monolisa.dev/)
 - [Prompt](https://github.com/starship/starship)
 - [Tmux Theme](https://github.com/dracula/tmux)
