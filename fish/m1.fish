@@ -49,6 +49,10 @@ if test (which gh)
 	alias opr="gh pr create --web"
 end
 
+if test (which nvim)
+	alias vi="nvim" 
+end
+
 fish_add_path /opt/homebrew/opt/mysql-client/bin
 fish_add_path $GOPATH/bin:$PATH
 fish_add_path (yarn global bin)
@@ -63,4 +67,3 @@ starship init fish | source
 # Bun
 set -Ux BUN_INSTALL "/Users/jungai/.bun"
 set -px --path PATH "/Users/jungai/.bun/bin"
-

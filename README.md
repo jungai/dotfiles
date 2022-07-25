@@ -1,7 +1,15 @@
 <img width="1440" alt="Screen Shot 2565-01-31 at 16 21 10" src="https://user-images.githubusercontent.com/32437056/151768482-b53ca6bc-25b7-47f9-ba89-ba5dacde82df.png">
 
+## Update 
+
+```bash
+npx zx index.mjs
+# ./index.mjs
+```
+
 ## Tools
 
+- [Daily.dev](https://daily.dev/)
 - [MonoLisa](https://www.monolisa.dev/)
 - [Prompt](https://github.com/starship/starship)
 - [Tmux Theme](https://github.com/dracula/tmux)
@@ -27,29 +35,3 @@
 - [syncpack](https://github.com/JamieMason/syncpack)
 - [bat](https://github.com/sharkdp/bat)
 - [keycastr](https://github.com/keycastr/keycastr)
-
-## Update dotfiles
-
-1. clone this repo then
-
-   ```bash
-   make dot
-   ```
-
-   or
-
-   ```bash
-   ./index.mjs
-   ```
-
-## Install Script For Linux
-
-> run with 'npx', 'pnpm dlx'
-
-```bash
-pnpm dlx zx https://cdn.jsdelivr.net/gh/jungai/dotfiles@latest/install_linux.mjs
-```
-
-## Refs
-
-- [nvim setting](https://www.youtube.com/watch?v=FW2X1CXrU1w&t=499s)
