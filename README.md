@@ -35,3 +35,4 @@ npx zx index.mjs
 - [syncpack](https://github.com/JamieMason/syncpack)
 - [bat](https://github.com/sharkdp/bat)
 - [keycastr](https://github.com/keycastr/keycastr)
+- [raycast](https://www.raycast.com/)
