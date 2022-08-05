@@ -20,6 +20,7 @@ npx zx index.mjs
 - [astronvim](https://github.com/AstroNvim/AstroNvim)
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
 - [yabai](https://github.com/koekeishiya/yabai)
+- [tiles](https://freemacsoft.net/tiles/)
 - [skhd](https://github.com/koekeishiya/skhd)
 - [simple-bar](https://github.com/Jean-Tinland/simple-bar)
 - [peco](https://github.com/peco/peco)
