@@ -37,3 +37,4 @@ npx zx index.mjs
 - [bat](https://github.com/sharkdp/bat)
 - [keycastr](https://github.com/keycastr/keycastr)
 - [raycast](https://www.raycast.com/)
+- [karabiner](https://karabiner-elements.pqrs.org/)
