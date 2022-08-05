@@ -38,3 +38,4 @@ npx zx index.mjs
 - [keycastr](https://github.com/keycastr/keycastr)
 - [raycast](https://www.raycast.com/)
 - [karabiner](https://karabiner-elements.pqrs.org/)
+- [fig](https://fig.io/)
