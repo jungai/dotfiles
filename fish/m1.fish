@@ -66,7 +66,6 @@ fish_add_path (yarn global bin)
 
 atuin init fish | source
 starship init fish | source
-# oh-my-posh init fish --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/M365Princess.omp.json' | source
 
 # Bun
 set -Ux BUN_INSTALL "/Users/jungai/.bun"
