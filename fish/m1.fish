@@ -40,6 +40,11 @@ alias sd='pnpm start:dev'
 alias dd='pnpm dev'
 alias bb='pnpm build'
 
+if test (which lazydocker)
+	alias ld="lazydocker"
+end
+
+
 if test (which exa)
 	alias ls="exa -l -a -h -F --group-directories-first"
 end
