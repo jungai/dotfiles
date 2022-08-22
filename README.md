@@ -16,6 +16,7 @@ npx zx index.mjs
 - [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
 - [simple-vim(fork)](https://github.com/jungai/vscode-simple-vim)
 - [{n}vim Theme](https://github.com/Mofiqul/vscode.nvim)
+- [lazygit](https://github.com/jesseduffield/lazygit), [lazydocker](https://github.com/jesseduffield/lazydocker)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
 - [astronvim](https://github.com/AstroNvim/AstroNvim)
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
