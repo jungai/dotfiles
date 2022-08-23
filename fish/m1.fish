@@ -62,6 +62,10 @@ if test (which nvim)
 	alias vi="nvim" 
 end
 
+if test (which redis-commander)
+	alias rc="redis-commander" 
+end
+
 fish_add_path /opt/homebrew/opt/mysql-client/bin
 fish_add_path $GOPATH/bin:$PATH
 fish_add_path (yarn global bin)
