@@ -82,3 +82,6 @@ starship init fish | source
 # Bun
 set -Ux BUN_INSTALL "/Users/jungai/.bun"
 set -px --path PATH "/Users/jungai/.bun/bin"
+
+# Java
+. ~/.asdf/plugins/java/set-java-home.fish
