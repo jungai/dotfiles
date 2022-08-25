@@ -14,6 +14,9 @@ eval (/opt/homebrew/bin/brew shellenv)
 set -x GOPATH $HOME/Desktop/playground/go
 set -x PATH $PATH $GOPATH/bin
 
+# flutter
+set -x FLUTTER_ROOT (asdf where flutter)
+
 # alias
 alias p='pnpm'
 alias px='pnpx'
