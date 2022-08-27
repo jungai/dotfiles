@@ -15,7 +15,9 @@ set -x GOPATH $HOME/Desktop/playground/go
 set -x PATH $PATH $GOPATH/bin
 
 # flutter
-set -x FLUTTER_ROOT (asdf where flutter)
+if test (which flutter)
+  set -x FLUTTER_ROOT (asdf where flutter)
+end
 
 # alias
 alias p='pnpm'
