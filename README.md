@@ -40,3 +40,4 @@ npx zx index.mjs
 - [raycast](https://www.raycast.com/)
 - [karabiner](https://karabiner-elements.pqrs.org/)
 - [fig](https://fig.io/)
+- [oh-my-tmux](https://github.com/gpakosz/.tmux)
