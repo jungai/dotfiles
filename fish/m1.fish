@@ -64,7 +64,7 @@ if test (which gh)
 end
 
 if test (which nvim)
-	alias vi="nvim" 
+	alias vim="nvim" 
 end
 
 if test (which redis-commander)
