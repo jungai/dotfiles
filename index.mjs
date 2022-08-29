@@ -21,6 +21,10 @@ const configList = [
 		from: "/alacritty/alacritty.yml",
 		target: "/.alacritty.yml",
 	},
+	{
+		from: "/kitty/kitty.conf",
+		target: "/.config/kitty/kitty.conf",
+	},
 ];
 
 async function createDir() {
