@@ -112,7 +112,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: MonoLisa
+    family: Iosevka Nerd Font Mono
     style: Regular
 
     # The `style` can be specified to pick a specific face.
@@ -127,7 +127,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    family: MonoLisa 
+    family: Iosevka Nerd Font Mono
     style: Bold
 
   # Italic font face
@@ -139,7 +139,7 @@ font:
     #family: monospace
 
     # The `styleMenlo` can be specified to pick a specific face.
-    family: MonoLisa
+    family: Iosevka Nerd Font Mono
     style: Italic
 
   # Bold italic font face
