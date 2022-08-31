@@ -79,7 +79,7 @@ fish_add_path (yarn global bin)
 # set -g theme_color_scheme nord
 
 atuin init fish | source
-starship init fish | source
+# starship init fish | source
 
 # Bun
 set -Ux BUN_INSTALL "/Users/jungai/.bun"
