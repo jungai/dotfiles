@@ -72,6 +72,10 @@ if test (which redis-commander)
 	alias rc="redis-commander" 
 end
 
+if test (which gitui)
+	alias gg="gitui" 
+end
+
 fish_add_path /opt/homebrew/opt/mysql-client/bin
 fish_add_path $GOPATH/bin:$PATH
 fish_add_path (yarn global bin)
