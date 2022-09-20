@@ -25,6 +25,10 @@ const configList = [
 		from: "/kitty/kitty.conf",
 		target: "/.config/kitty/kitty.conf",
 	},
+	{
+		from: "/gitui/key_bindings.ron",
+		target: "/.config/gitui/key_bindings.ron",
+	},
 ];
 
 async function createDir() {
