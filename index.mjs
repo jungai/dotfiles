@@ -29,6 +29,10 @@ const configList = [
 		from: "/gitui/key_bindings.ron",
 		target: "/.config/gitui/key_bindings.ron",
 	},
+	{
+		from: "/.gitconfig",
+		target: "/.gitconfig",
+	},
 ];
 
 async function createDir() {
