@@ -7,7 +7,7 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
+# import:
 #  - /path/to/alacritty.yml
 
 # Any items in the `env` entry below will be added as
@@ -61,7 +61,7 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
   # decorations: full
-  decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -112,7 +112,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Iosevka Nerd Font
+    family: JetBrains Mono 
     style: Regular
 
     # The `style` can be specified to pick a specific face.
@@ -127,7 +127,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    family: Iosevka Nerd Font
+    family: JetBrains Mono 
     style: Bold
 
   # Italic font face
@@ -139,7 +139,7 @@ font:
     #family: monospace
 
     # The `styleMenlo` can be specified to pick a specific face.
-    family: Iosevka Nerd Font
+    family: JetBrains Mono 
     style: Italic
 
   # Bold italic font face
@@ -154,7 +154,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 16
+  size: 14
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
