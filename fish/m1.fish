@@ -98,3 +98,5 @@ set -Ux FZF_DEFAULT_OPTS "\
 
 # Java
 . ~/.asdf/plugins/java/set-java-home.fish
+
+status --is-interactive; and rbenv init - fish | source
