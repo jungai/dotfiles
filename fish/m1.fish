@@ -100,4 +100,6 @@ set -Ux FZF_DEFAULT_OPTS "\
 . ~/.asdf/plugins/java/set-java-home.fish
 
 # rbenv
-status --is-interactive; and rbenv init - fish | source
+if test (which rbenv)
+    status --is-interactive; and rbenv init - fish | source
+end
