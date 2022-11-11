@@ -10,12 +10,10 @@ npx zx index.mjs
 ## Tools
 
 - [Daily.dev](https://daily.dev/)
+- [Arc Browser](https://arc.net/)
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/),[MonoLisa](https://www.monolisa.dev/)
 - [Prompt](https://github.com/starship/starship)
-- [Tmux Theme](https://github.com/dracula/tmux)
-- [Vscode Theme](https://marketplace.visualstudio.com/items?itemName=ngryman.codesandbox-theme)
 - [simple-vim(fork)](https://github.com/jungai/vscode-simple-vim)
-- [{n}vim Theme](https://github.com/Mofiqul/vscode.nvim)
 - [lazygit](https://github.com/jesseduffield/lazygit), [lazydocker](https://github.com/jesseduffield/lazydocker)
 - [Focus Highlight](https://github.com/dtinth/FocusHighlight.spoon)
 - [astronvim](https://github.com/AstroNvim/AstroNvim)
@@ -31,7 +29,6 @@ npx zx index.mjs
 - [fd](https://github.com/sharkdp/fd)
 - [altTab](https://alt-tab-macos.netlify.app/)
 - [fzf](https://github.com/junegunn/fzf#using-homebrew)
-- [alacritty-themes](https://github.com/rajasegar/alacritty-themes) -> `npx alacritty-themes`
 - [taze](https://github.com/antfu/taze) - that keeps your deps fresh
 - [ni](https://github.com/antfu/ni)
 - [syncpack](https://github.com/JamieMason/syncpack)
