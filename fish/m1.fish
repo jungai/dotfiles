@@ -52,7 +52,7 @@ end
 
 
 if test (which exa)
-	alias ls="exa -l -a -h -F --group-directories-first"
+	alias ls="exa -l -a -h -F --group-directories-first --icons"
 end
 
 if test (which bat)
