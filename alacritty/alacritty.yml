@@ -112,7 +112,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrains Mono 
+    family: MesloLGM Nerd Font
     style: Regular
 
     # The `style` can be specified to pick a specific face.
@@ -127,7 +127,7 @@ font:
     #family: monospace
 
     # The `style` can be specified to pick a specific face.
-    family: JetBrains Mono 
+    family: MesloLGM Nerd Font
     style: Bold
 
   # Italic font face
@@ -139,7 +139,7 @@ font:
     #family: monospace
 
     # The `styleMenlo` can be specified to pick a specific face.
-    family: JetBrains Mono 
+    family: MesloLGM Nerd Font
     style: Italic
 
   # Bold italic font face
