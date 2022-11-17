@@ -33,6 +33,10 @@ const configList = [
 		from: "/.gitconfig",
 		target: "/.gitconfig",
 	},
+	{
+		from: "/nvim",
+		target: "/.config/nvim",
+	},
 ];
 
 async function createDir() {
