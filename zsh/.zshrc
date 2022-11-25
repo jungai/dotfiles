@@ -108,3 +108,16 @@ alias bb='pnpm build'
 if hash exa 2>/dev/null; then
 	alias ls="exa -l -a -h -F --group-directories-first --icons"
 fi
+
+if hash nvim 2>/dev/null; then
+	alias vim="nvim" 
+fi
+
+if hash gh 2>/dev/null; then
+	alias ghb="gh browse" 
+	alias opr="gh pr create --web"
+fi
+
+if hash bat 2>/dev/null; then
+	alias cat="bat"
+fi
