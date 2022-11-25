@@ -106,5 +106,5 @@ alias dd='pnpm dev'
 alias bb='pnpm build'
 
 if hash exa 2>/dev/null; then
-  alias ls="exa -l -h"
+	alias ls="exa -l -a -h -F --group-directories-first --icons"
 fi
