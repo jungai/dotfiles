@@ -3,6 +3,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
+. $HOME/.asdf/asdf.sh
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -102,3 +104,7 @@ alias ss='pnpm start'
 alias sd='pnpm start:dev'
 alias dd='pnpm dev'
 alias bb='pnpm build'
+
+if hash exa 2>/dev/null; then
+  alias ls="exa -l -h"
+fi
