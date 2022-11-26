@@ -37,6 +37,10 @@ const configList = [
 		from: "/nvim",
 		target: "/.config/nvim",
 	},
+	{
+		from: "/zsh/.zshrc",
+		target: "/.zshrc",
+	},
 ];
 
 async function createDir() {
