@@ -55,9 +55,11 @@ async function createDir() {
 async function clean() {
 	console.log(chalk.yellow("👉🏻 clean"));
 
-	await Promise.all(
-		configList.map((config) => $`rm -f ${homeDir}${config.target}`)
-	);
+	await Promise.all([
+		...configList.map((config) => $`rm -f ${homeDir}${config.target}`),
+    $`rm -rf ~/.config/nvim`,
+    $`rm -rf  ~/.local/share/nvim`
+  ]);
 
 	console.log(chalk.yellow("🍭 finish"));
 }
