@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-autopairs")
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 	use("akinsho/flutter-tools.nvim")
+	use("gpanders/editorconfig.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
