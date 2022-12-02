@@ -59,7 +59,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,4 +120,9 @@ fi
 
 if hash bat 2>/dev/null; then
 	alias cat="bat"
+fi
+
+if hash flutter 2>/dev/null; then
+  # export FLUTTER_ROOT="$(asdf where flutter)"
+  export PATH="$(asdf where flutter)/bin":"$PATH"
 fi
