@@ -20,6 +20,7 @@ keymap.set("n", "<leader>to", ":tabnew<CR>")
 keymap.set("n", "<leader>tw", ":tabclose<CR>")
 keymap.set("n", "<leader>[", ":tabn<CR>")
 keymap.set("n", "<leader>]", ":tabp<CR>")
+keymap.set("n", "<TAB>", ":BufferLineCycleNext<CR>")
 
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
