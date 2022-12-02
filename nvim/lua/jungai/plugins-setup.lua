@@ -62,8 +62,13 @@ return packer.startup(function(use)
 	-- auto closing
 	use("windwp/nvim-autopairs")
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
-	use("akinsho/flutter-tools.nvim")
+	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 	use("gpanders/editorconfig.nvim")
+	use("folke/todo-comments.nvim")
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
