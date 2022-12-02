@@ -113,16 +113,14 @@ lspconfig["sumneko_lua"].setup({
 })
 
 flutter.setup({
-	debugger = {
-		enabled = true,
-		run_via_dap = true,
-	},
+	-- flutter_path = "/Users/jungai/.asdf/installs/flutter/3.3.2-stable",
+	-- debugger = {
+	-- 	enabled = true,
+	-- 	run_via_dap = true,
+	-- },
 	outline = { auto_open = false },
-	decorations = {
-		statusline = { device = true, app_version = true },
-	},
 	widget_guides = { enabled = true, debug = true },
-	dev_log = { enabled = false, open_cmd = "tabedit" },
+	dev_log = { enabled = true, open_cmd = "30vnew", auto_open = true },
 	lsp = {
 		color = {
 			enabled = true,
@@ -135,5 +133,8 @@ flutter.setup({
 		},
 		on_attach = on_attach,
 		capabilities = capabilities,
+	},
+	settings = {
+		enableSnippets = true,
 	},
 })
