@@ -105,24 +105,29 @@ alias sd='pnpm start:dev'
 alias dd='pnpm dev'
 alias bb='pnpm build'
 
-if hash exa 2>/dev/null; then
+# return exit code 0 if command exists
+has() {
+	hash "$1" &>/dev/null
+}
+
+if has exa; then
 	alias ls="exa -l -a -h -F --group-directories-first --icons"
 fi
 
-if hash nvim 2>/dev/null; then
-	alias vim="nvim" 
+if has nvim; then
+	alias vim="nvim"
 fi
 
-if hash gh 2>/dev/null; then
-	alias ghb="gh browse" 
+if has gh; then
+	alias ghb="gh browse"
 	alias opr="gh pr create --web"
 fi
 
-if hash bat 2>/dev/null; then
+if has bat; then
 	alias cat="bat"
 fi
 
-if hash flutter 2>/dev/null; then
-  # export FLUTTER_ROOT="$(asdf where flutter)"
-  export PATH="$(asdf where flutter)/bin":"$PATH"
+if has flutter; then
+	# export FLUTTER_ROOT="$(asdf where flutter)"
+	export PATH="$(asdf where flutter)/bin":"$PATH"
 fi
