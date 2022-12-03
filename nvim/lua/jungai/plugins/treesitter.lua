@@ -33,6 +33,7 @@ treesitter.setup({
 		"vue",
 		"fish",
 		"go",
+		"http",
 	},
 	-- auto install above language parsers
 	auto_install = true,

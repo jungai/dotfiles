@@ -76,6 +76,12 @@ return packer.startup(function(use)
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
 	})
+	use({
+		"rest-nvim/rest.nvim",
+		branch = "main",
+		requires = { "nvim-lua/plenary.nvim" },
+	})
+	use({ "mg979/vim-visual-multi", branch = "master" })
 
 	if packer_bootstrap then
 		require("packer").sync()
