@@ -16,3 +16,6 @@ opt.backspace = "indent,eol,start"
 opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
+opt.encoding = "utf-8"
+opt.fileencoding = "utf-8"
+opt.undofile = true

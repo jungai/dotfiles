@@ -36,3 +36,7 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 keymap.set("n", "<leader>fe", "<cmd>Telescope file_browser<cr>")
 keymap.set("n", "<leader>fu", "<cmd>Telescope flutter commands<cr>")
+
+-- rest
+keymap.set("n", "<leader>rr", "<Plug>RestNvim")
+keymap.set("n", "<leader>rp", "<Plug>RestNvimPreview")
