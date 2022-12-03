@@ -33,13 +33,17 @@ const configList = [
 		from: "/.gitconfig",
 		target: "/.gitconfig",
 	},
-	{
-		from: "/nvim",
-		target: "/.config/nvim",
-	},
+	// {
+	// 	from: "/nvim",
+	// 	target: "/.config/nvim",
+	// },
 	{
 		from: "/zsh/.zshrc",
 		target: "/.zshrc",
+	},
+	{
+		from: "/lazygit/config.yml",
+		target: "/Library/Application Support/lazygit/config.yml",
 	},
 ];
 
@@ -57,9 +61,9 @@ async function clean() {
 
 	await Promise.all([
 		...configList.map((config) => $`rm -f ${homeDir}${config.target}`),
-    $`rm -rf ~/.config/nvim`,
-    $`rm -rf  ~/.local/share/nvim`
-  ]);
+		// $`rm -rf ~/.config/nvim`,
+		// $`rm -rf  ~/.local/share/nvim`
+	]);
 
 	console.log(chalk.yellow("🍭 finish"));
 }
