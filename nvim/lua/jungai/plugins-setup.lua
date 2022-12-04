@@ -82,8 +82,15 @@ return packer.startup(function(use)
 		requires = { "nvim-lua/plenary.nvim" },
 	})
 	use({ "mg979/vim-visual-multi", branch = "master" })
-	use("rafamadriz/friendly-snippets")
 	use("tpope/vim-fugitive")
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
