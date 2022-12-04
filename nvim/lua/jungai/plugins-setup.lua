@@ -83,6 +83,7 @@ return packer.startup(function(use)
 	})
 	use({ "mg979/vim-visual-multi", branch = "master" })
 	use("rafamadriz/friendly-snippets")
+	use("tpope/vim-fugitive")
 
 	if packer_bootstrap then
 		require("packer").sync()
