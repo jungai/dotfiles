@@ -112,6 +112,11 @@ lspconfig["sumneko_lua"].setup({
 	},
 })
 
+lspconfig["jsonls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 vim.diagnostic.config({
 	virtual_text = {
 		prefix = "●",
