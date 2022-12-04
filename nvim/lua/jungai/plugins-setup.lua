@@ -82,6 +82,7 @@ return packer.startup(function(use)
 		requires = { "nvim-lua/plenary.nvim" },
 	})
 	use({ "mg979/vim-visual-multi", branch = "master" })
+	use("rafamadriz/friendly-snippets")
 
 	if packer_bootstrap then
 		require("packer").sync()
