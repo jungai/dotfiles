@@ -71,7 +71,7 @@ return packer.startup(function(use)
 	})
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 	use("karb94/neoscroll.nvim")
-	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 	use({
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
@@ -92,6 +92,7 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 	use("christoomey/vim-tmux-navigator")
+	use("lukas-reineke/indent-blankline.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
