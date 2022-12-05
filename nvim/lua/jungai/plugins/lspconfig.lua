@@ -127,6 +127,11 @@ lspconfig["dockerls"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["svelte"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 vim.diagnostic.config({
 	virtual_text = {
 		prefix = "●",
