@@ -41,3 +41,6 @@ keymap.set("n", "<leader>fu", "<cmd>Telescope flutter commands<cr>")
 -- rest
 keymap.set("n", "<leader>rr", "<Plug>RestNvim")
 keymap.set("n", "<leader>rp", "<Plug>RestNvimPreview")
+
+-- trouble
+keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<CR>")
