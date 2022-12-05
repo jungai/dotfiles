@@ -93,6 +93,7 @@ return packer.startup(function(use)
 	})
 	use("christoomey/vim-tmux-navigator")
 	use("lukas-reineke/indent-blankline.nvim")
+	use("lewis6991/gitsigns.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
