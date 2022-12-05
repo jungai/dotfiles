@@ -117,6 +117,16 @@ lspconfig["jsonls"].setup({
 	on_attach = on_attach,
 })
 
+lspconfig["prismals"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
+lspconfig["dockerls"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+})
+
 vim.diagnostic.config({
 	virtual_text = {
 		prefix = "●",
