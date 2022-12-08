@@ -43,4 +43,4 @@ keymap.set("n", "<leader>rr", "<Plug>RestNvim")
 keymap.set("n", "<leader>rp", "<Plug>RestNvimPreview")
 
 -- trouble
-keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<CR>")
+keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<CR>", { silent = true, noremap = true })
