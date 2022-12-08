@@ -96,6 +96,7 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 	use("declancm/cinnamon.nvim")
 	use("p00f/nvim-ts-rainbow")
+	use("glepnir/dashboard-nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
