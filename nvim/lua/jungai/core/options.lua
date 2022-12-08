@@ -19,3 +19,4 @@ opt.splitbelow = true
 opt.encoding = "utf-8"
 opt.fileencoding = "utf-8"
 opt.undofile = true
+vim.noswapfile = true
