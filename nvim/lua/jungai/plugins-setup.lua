@@ -95,6 +95,7 @@ return packer.startup(function(use)
 	use("lukas-reineke/indent-blankline.nvim")
 	use("lewis6991/gitsigns.nvim")
 	use("declancm/cinnamon.nvim")
+	use("p00f/nvim-ts-rainbow")
 
 	if packer_bootstrap then
 		require("packer").sync()
