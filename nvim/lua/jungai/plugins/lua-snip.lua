@@ -1,7 +1,7 @@
-local ok, snip = pcall(require, "luasnip.loaders.from_vscode")
+local ok, luasnip = pcall(require, "luasnip")
 
 if not ok then
 	return
 end
 
-snip.lazy_load()
+luasnip.filetype_extend("dart", { "flutter" })
