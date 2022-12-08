@@ -70,7 +70,7 @@ return packer.startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
-	use("karb94/neoscroll.nvim")
+	-- use("karb94/neoscroll.nvim")
 	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 	use({
 		"folke/trouble.nvim",
@@ -94,6 +94,7 @@ return packer.startup(function(use)
 	use("christoomey/vim-tmux-navigator")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("lewis6991/gitsigns.nvim")
+	use("declancm/cinnamon.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
