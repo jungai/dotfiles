@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>nh", ":noh<CR>")
+keymap.set("n", "<leader>n", ":noh<CR>")
 -- not save to buffer
 keymap.set("n", "x", '"_x')
 
