@@ -30,7 +30,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-tree/nvim-web-devicons")
 	use("nvim-lua/plenary.nvim")
-	use("bluz71/vim-nightfly-colors")
+	-- use("bluz71/vim-nightfly-colors")
 	use("szw/vim-maximizer")
 	use("tpope/vim-surround")
 	use("numToStr/Comment.nvim")
@@ -97,7 +97,10 @@ return packer.startup(function(use)
 	use("declancm/cinnamon.nvim")
 	use("p00f/nvim-ts-rainbow")
 	use("glepnir/dashboard-nvim")
-
+	use({
+		"svrana/neosolarized.nvim",
+		requires = { "tjdevries/colorbuddy.nvim" },
+	})
 	if packer_bootstrap then
 		require("packer").sync()
 	end
