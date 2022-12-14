@@ -3,7 +3,27 @@ if not ok then
 	return
 end
 
-local file_types = {}
+local file_types = {
+	filetypes = {
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"vue",
+		"css",
+		"scss",
+		"less",
+		"html",
+		"json",
+		"jsonc",
+		"yaml",
+		"markdown",
+		"markdown.mdx",
+		"graphql",
+		"handlebars",
+		"svelte",
+	},
+}
 
 -- for conciseness
 local formatting = null_ls.builtins.formatting -- to setup formatters
@@ -18,10 +38,8 @@ null_ls.setup({
 	sources = {
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-		-- formatting.prettier, -- js/ts formatter
-		formatting.prettierd.with({
-			filetypes = file_types,
-		}), -- js/ts formatter
+		-- formatting.prettier.with(file_types), -- js/ts formatter
+		formatting.prettierd.with(file_types),
 		formatting.stylua, -- lua formatter
 		formatting.dart_format,
 		diagnostics.eslint_d.with({ -- js/ts linter
