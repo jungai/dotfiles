@@ -45,6 +45,10 @@ const configList = [
 		from: "/lazygit/config.yml",
 		target: "/Library/Application Support/lazygit/config.yml",
 	},
+	{
+		from: "/zsh/.p10k.zsh",
+		target: "/.p10k.zsh",
+	},
 ];
 
 async function createDir() {
