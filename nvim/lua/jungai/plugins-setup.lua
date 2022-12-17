@@ -30,7 +30,7 @@ return packer.startup(function(use)
 	use("wbthomason/packer.nvim")
 	use("nvim-tree/nvim-web-devicons")
 	use("nvim-lua/plenary.nvim")
-	-- use("bluz71/vim-nightfly-colors")
+	use("bluz71/vim-nightfly-colors")
 	use("szw/vim-maximizer")
 	use("tpope/vim-surround")
 	use("numToStr/Comment.nvim")
@@ -65,11 +65,11 @@ return packer.startup(function(use)
 	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 	use("gpanders/editorconfig.nvim")
 	use("folke/todo-comments.nvim")
-	use({
-		"nvim-lualine/lualine.nvim",
-		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
-	use({ "nvim-telescope/telescope-file-browser.nvim" })
+	-- use({
+	-- 	"nvim-lualine/lualine.nvim",
+	-- 	requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	-- })
+	-- use({ "nvim-telescope/telescope-file-browser.nvim" })
 	-- use("karb94/neoscroll.nvim")
 	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
 	use({
@@ -92,15 +92,24 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 	use("christoomey/vim-tmux-navigator")
-	use("lukas-reineke/indent-blankline.nvim")
+	-- use("lukas-reineke/indent-blankline.nvim")
 	use("lewis6991/gitsigns.nvim")
-	use("declancm/cinnamon.nvim")
-	use("p00f/nvim-ts-rainbow")
+	-- use("declancm/cinnamon.nvim")
+	-- use("p00f/nvim-ts-rainbow")
 	use("glepnir/dashboard-nvim")
-	use({
-		"svrana/neosolarized.nvim",
-		requires = { "tjdevries/colorbuddy.nvim" },
-	})
+	-- use({
+	-- 	"svrana/neosolarized.nvim",
+	-- 	requires = { "tjdevries/colorbuddy.nvim" },
+	-- })
+	-- use({
+	-- 	"rose-pine/neovim",
+	-- 	as = "rose-pine",
+	-- 	config = function()
+	-- 		vim.cmd("colorscheme rose-pine")
+	-- 	end,
+	-- })
+	-- use("andweeb/presence.nvim")
+	use("xiyaowong/nvim-transparent")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
