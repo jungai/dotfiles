@@ -1,21 +1,52 @@
-local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
-vim.api.nvim_create_autocmd("ColorScheme", {
-	pattern = "nightfly",
-	callback = function()
-		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextError", { link = "NightflyRed" })
-		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextWarn", { link = "NightflyYellow" })
-		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextInfo", { link = "NightflyBlue" })
-		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextHint", { link = "NightflyWhite" })
-	end,
-	group = custom_highlight,
-})
---
-local ok, _ = pcall(vim.cmd, "colorscheme nightfly")
+-- vscode
+vim.o.background = "dark"
+
+local ok, vscode = pcall(require, "vscode.colors")
 
 if not ok then
-	print("color scheme not found")
 	return
 end
+
+vscode.setup({
+	-- Enable transparent background
+	transparent = true,
+
+	-- Enable italic comment
+	italic_comments = true,
+
+	-- Disable nvim-tree background color
+	disable_nvimtree_bg = true,
+
+	-- Override colors (see ./lua/vscode/colors.lua)
+	color_overrides = {
+		vscLineNumber = "#FFFFFF",
+	},
+
+	-- Override highlight groups (see ./lua/vscode/theme.lua)
+	group_overrides = {
+		-- this supports the same val table as vim.api.nvim_set_hl
+		-- use colors from this colorscheme by requiring vscode.colors!
+		Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
+})
+
+-- local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+-- 	pattern = "nightfly",
+-- 	callback = function()
+-- 		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextError", { link = "NightflyRed" })
+-- 		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextWarn", { link = "NightflyYellow" })
+-- 		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextInfo", { link = "NightflyBlue" })
+-- 		vim.api.nvim_set_hl(0, "DiagnosticVirtualTextHint", { link = "NightflyWhite" })
+-- 	end,
+-- 	group = custom_highlight,
+-- })
+-- --
+-- local ok, _ = pcall(vim.cmd, "colorscheme nightfly")
+--
+-- if not ok then
+-- 	print("color scheme not found")
+-- 	return
+-- end
 --
 -- local ok, neo = pcall(require, "neosolarized")
 --

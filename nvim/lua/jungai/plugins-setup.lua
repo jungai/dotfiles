@@ -110,6 +110,7 @@ return packer.startup(function(use)
 	-- })
 	-- use("andweeb/presence.nvim")
 	use("xiyaowong/nvim-transparent")
+	use("Mofiqul/vscode.nvim")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
