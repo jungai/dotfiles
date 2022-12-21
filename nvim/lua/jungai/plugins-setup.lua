@@ -105,7 +105,7 @@ return packer.startup(function(use)
 	-- 	end,
 	-- })
 	-- use("andweeb/presence.nvim")
-	use("xiyaowong/nvim-transparent")
+	-- use("xiyaowong/nvim-transparent")
 	-- use("Mofiqul/vscode.nvim")
 	use("folke/tokyonight.nvim")
 	use({
