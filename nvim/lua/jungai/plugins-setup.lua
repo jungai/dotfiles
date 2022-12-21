@@ -65,10 +65,6 @@ return packer.startup(function(use)
 	use({ "akinsho/flutter-tools.nvim", requires = "nvim-lua/plenary.nvim" })
 	use("gpanders/editorconfig.nvim")
 	use("folke/todo-comments.nvim")
-	-- use({
-	-- 	"nvim-lualine/lualine.nvim",
-	-- 	requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	-- })
 	-- use({ "nvim-telescope/telescope-file-browser.nvim" })
 	-- use("karb94/neoscroll.nvim")
 	-- use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
@@ -110,7 +106,12 @@ return packer.startup(function(use)
 	-- })
 	-- use("andweeb/presence.nvim")
 	use("xiyaowong/nvim-transparent")
-	use("Mofiqul/vscode.nvim")
+	-- use("Mofiqul/vscode.nvim")
+	use("folke/tokyonight.nvim")
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
 	if packer_bootstrap then
 		require("packer").sync()
 	end
