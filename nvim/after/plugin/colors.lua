@@ -1,9 +1,10 @@
 -- vscode
 vim.o.background = "dark"
 
-local ok, vscode = pcall(require, "vscode.colors")
+local ok1, vscode = pcall(require, "vscode")
+local ok2, color = pcall(require, "vscode.colors")
 
-if not ok then
+if not ok1 or not ok2 then
 	return
 end
 
@@ -26,7 +27,8 @@ vscode.setup({
 	group_overrides = {
 		-- this supports the same val table as vim.api.nvim_set_hl
 		-- use colors from this colorscheme by requiring vscode.colors!
-		Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
+		Cursor = { fg = color.vscDarkBlue, bg = color.vscLightGreen, bold = true },
+	},
 })
 
 -- local custom_highlight = vim.api.nvim_create_augroup("CustomHighlight", {})
