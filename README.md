@@ -9,6 +9,7 @@ npx zx index.mjs
 
 ## Tools
 
+- [asdf](https://asdf-vm.com/)
 - [Daily.dev](https://daily.dev/)
 - [Arc Browser](https://arc.net/)
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/),[MonoLisa](https://www.monolisa.dev/)
@@ -39,12 +40,14 @@ npx zx index.mjs
 > install with `brew`
 
 - [neovim](https://neovim.io/)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [exa](https://github.com/ogham/exa)
 - [fd](https://github.com/sharkdp/fd)
-- [lazygit](https://github.com/jesseduffield/lazygit),
+- [lazygit](https://github.com/jesseduffield/lazygit)
 - [lazydocker](https://github.com/jesseduffield/lazydocker)
 - [atuin](https://github.com/ellie/atuin)
 - [fzf](https://github.com/junegunn/fzf#using-homebrew)
 - [bat](https://github.com/sharkdp/bat)
 - [delta](https://github.com/dandavison/delta)
 - [httpie](https://httpie.io/)
+- [peco](https://github.com/peco/peco)
