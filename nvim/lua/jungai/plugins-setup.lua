@@ -107,11 +107,13 @@ return packer.startup(function(use)
 	-- use("andweeb/presence.nvim")
 	-- use("xiyaowong/nvim-transparent")
 	-- use("Mofiqul/vscode.nvim")
-	use("folke/tokyonight.nvim")
+	-- use("folke/tokyonight.nvim")
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
+	-- use("navarasu/onedark.nvim")
+	use("luisiacc/gruvbox-baby")
 	if packer_bootstrap then
 		require("packer").sync()
 	end
