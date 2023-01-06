@@ -137,11 +137,12 @@ fi
 if has flutter; then
 	# export FLUTTER_ROOT="$(asdf where flutter)"
 	export PATH="$(asdf where flutter)/bin":"$PATH"
+	# export FLUTTER_ROOT="$(asdf where flutter)"
 fi
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+eval "$(atuin init zsh)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-eval "$(atuin init zsh)"
