@@ -47,3 +47,4 @@ npx zx index.mjs
 - [fzf](https://github.com/junegunn/fzf#using-homebrew)
 - [bat](https://github.com/sharkdp/bat)
 - [delta](https://github.com/dandavison/delta)
+- [httpie](https://httpie.io/)
