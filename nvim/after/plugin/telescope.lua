@@ -11,6 +11,11 @@ end
 telescope.setup({
 	-- configure custom mappings
 	defaults = {
+		borderchars = {
+			prompt = { "─", " ", " ", " ", "─", "─", " ", " " },
+			results = { " " },
+			preview = { " " },
+		},
 		mappings = {
 			i = {
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result
