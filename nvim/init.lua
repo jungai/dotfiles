@@ -1,8 +1,0 @@
-require("jungai/plugins-setup")
-require("jungai/core/options")
-require("jungai/core/keymaps")
-require("jungai/plugins/nvim-cmp")
-require("jungai/plugins/mason")
-require("jungai/plugins/lspconfig")
-require("jungai/plugins/lspsaga")
-require("jungai/plugins/null-ls")
