@@ -12,6 +12,7 @@ ZSH_THEME="robbyrussell" # set by `omz`
 
 . $HOME/.asdf/asdf.sh
 
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -111,6 +112,7 @@ alias ss='pnpm start'
 alias sd='pnpm start:dev'
 alias dd='pnpm dev'
 alias bb='pnpm build'
+alias s='atuin search -i'
 
 # return exit code 0 if command exists
 has() {
@@ -142,7 +144,8 @@ fi
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-eval "$(atuin init zsh)"
-
+#
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(atuin init zsh)"
