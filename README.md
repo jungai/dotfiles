@@ -57,3 +57,4 @@ npx zx index.mjs
 - [delta](https://github.com/dandavison/delta)
 - [httpie](https://httpie.io/)
 - [peco](https://github.com/peco/peco)
+- [github cli](https://cli.github.com/)
