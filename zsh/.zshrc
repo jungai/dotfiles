@@ -113,6 +113,7 @@ alias sd='pnpm start:dev'
 alias dd='pnpm dev'
 alias bb='pnpm build'
 alias s='atuin search -i'
+alias a='asdf'
 
 # return exit code 0 if command exists
 has() {
