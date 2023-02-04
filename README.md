@@ -59,3 +59,4 @@ npx zx index.mjs
 - [peco](https://github.com/peco/peco)
 - [github cli](https://cli.github.com/)
 - [tmux](https://github.com/tmux/tmux)
+- [tre](https://github.com/dduan/tre)

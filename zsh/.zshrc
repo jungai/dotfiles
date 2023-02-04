@@ -115,6 +115,7 @@ alias bb='pnpm build'
 alias s='atuin search -i'
 alias a='asdf'
 alias ldk='lazydocker'
+alias tr='tre'
 
 # return exit code 0 if command exists
 has() {
