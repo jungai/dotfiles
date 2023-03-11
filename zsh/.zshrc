@@ -116,6 +116,7 @@ alias s='atuin search -i'
 alias a='asdf'
 alias ldk='lazydocker'
 alias tr='tre'
+alias kc='kubectl'
 
 # return exit code 0 if command exists
 has() {
@@ -152,3 +153,6 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(atuin init zsh)"
+
+# kubectl
+source <(kubectl completion zsh)
