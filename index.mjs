@@ -25,10 +25,10 @@ const configList = [
 		from: "/kitty/kitty.conf",
 		target: "/.config/kitty/kitty.conf",
 	},
-	// {
-	// 	from: "/gitui/key_bindings.ron",
-	// 	target: "/.config/gitui/key_bindings.ron",
-	// },
+	{
+		from: "/gitui/key_bindings.ron",
+		target: "/.config/gitui/key_bindings.ron",
+	},
 	{
 		from: "/.gitconfig",
 		target: "/.gitconfig",
@@ -49,12 +49,17 @@ const configList = [
 		from: "/zsh/.p10k.zsh",
 		target: "/.p10k.zsh",
 	},
+	{
+		from: "/wezterm/wezterm.lua",
+		target: "/.config/wezterm/wezterm.lua",
+	},
 ];
 
 async function createDir() {
 	console.log(chalk.yellow("👉🏻 create dir"));
 
 	await $`mkdir -p ${homeDir}/.config`;
+	await $`mkdir -p ${homeDir}/.config/wezterm`;
 	// await $`mkdir -p ${homeDir}/.config/fish`
 
 	console.log(chalk.yellow("🍭 finish"));
@@ -65,8 +70,8 @@ async function clean() {
 
 	await Promise.all([
 		...configList.map((config) => $`rm -f ${homeDir}${config.target}`),
-		$`rm -rf ~/.config/nvim`,
-		$`rm -rf  ~/.local/share/nvim`,
+		// $`rm -rf ~/.config/nvim`,
+		// $`rm -rf  ~/.local/share/nvim`,
 	]);
 
 	console.log(chalk.yellow("🍭 finish"));
