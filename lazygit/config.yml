@@ -17,3 +17,9 @@ customCommands:
     context: "files"
     loadingText: "opening commitizen commit tool"
     subprocess: true
+  - key: "B"
+    command: "better-commits"
+    description: "commit with better-commits"
+    context: "files"
+    loadingText: "running better-commits"
+    subprocess: true
