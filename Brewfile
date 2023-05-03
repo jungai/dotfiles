@@ -14,6 +14,7 @@ brew "httpie"
 brew "tre-command"
 brew "gh"
 brew "fig"
+brew "rtx"
 
 cask "keycastr"
 cask "raycast"
