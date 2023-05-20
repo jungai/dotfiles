@@ -45,6 +45,10 @@ alias ss='pnpm start'
 alias sd='pnpm start:dev'
 alias dd='pnpm dev'
 alias bb='pnpm build'
+alias tr='tre'
+alias kc='kubectl'
+alias zl="zellij"
+alias tma='tmux a -t'
 
 if test (which lazydocker)
 	alias ld="lazydocker"
@@ -103,3 +107,5 @@ set -Ux FZF_DEFAULT_OPTS "\
 if test (which rbenv)
     status --is-interactive; and rbenv init - fish | source
 end
+
+oh-my-posh init fish --config (brew --prefix oh-my-posh)/themes/atomic.omp.json | source
