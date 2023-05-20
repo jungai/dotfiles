@@ -201,5 +201,7 @@ if [[ -z "${chpwd_functions[(r)_rtx_hook]+1}" ]]; then
   chpwd_functions=( _rtx_hook ${chpwd_functions[@]} )
 fi 
 
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/atomic.omp.json)"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
