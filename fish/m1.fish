@@ -109,3 +109,5 @@ if test (which rbenv)
 end
 
 oh-my-posh init fish --config (brew --prefix oh-my-posh)/themes/atomic.omp.json | source
+
+fish_vi_key_bindings
