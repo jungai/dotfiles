@@ -18,3 +18,5 @@ brew "rtx"
 
 cask "keycastr"
 cask "raycast"
+
+tap "homebrew/cask-fonts"
