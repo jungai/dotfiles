@@ -15,6 +15,7 @@ brew "tre-command"
 brew "gh"
 brew "fig"
 brew "rtx"
+brew "zellij"
 
 cask "keycastr"
 cask "raycast"

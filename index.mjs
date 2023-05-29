@@ -49,6 +49,10 @@ const configList = [
 		from: "/wezterm/wezterm.lua",
 		target: "/.config/wezterm/wezterm.lua",
 	},
+	{
+		from: "/zellij/config.kdl",
+		target: "/.config/zellij/config.kdl",
+	},
 ];
 
 async function createDir() {
@@ -56,6 +60,7 @@ async function createDir() {
 
 	await $`mkdir -p ${homeDir}/.config`;
 	await $`mkdir -p ${homeDir}/.config/wezterm`;
+	await $`mkdir -p ${homeDir}/.config/zellij`;
 	// await $`mkdir -p ${homeDir}/.config/fish`
 
 	console.log(chalk.yellow("🍭 finish"));

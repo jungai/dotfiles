@@ -64,3 +64,4 @@ brew bundle
 - [github cli](https://cli.github.com/)
 - [tmux](https://github.com/tmux/tmux)
 - [tre](https://github.com/dduan/tre)
+- [zellij](https://github.com/zellij-org/zellij)
