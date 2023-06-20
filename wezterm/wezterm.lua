@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 return {
-	font = wezterm.font("Menlo"),
+	font = wezterm.font("Hack Nerd Font"),
 	font_size = 16,
 	color_scheme = "Rosé Pine (base16)",
 	window_background_opacity = 0.95,
