@@ -35,8 +35,6 @@ brew bundle
 - [simple-bar](https://github.com/Jean-Tinland/simple-bar)
 - [run cat](https://apps.apple.com/us/app/runcat/id1429033973?mt=12)
 - [altTab](https://alt-tab-macos.netlify.app/)
-- [taze](https://github.com/antfu/taze) - that keeps your deps fresh
-- [ni](https://github.com/antfu/ni)
 - [syncpack](https://github.com/JamieMason/syncpack)
 - [keycastr](https://github.com/keycastr/keycastr)
 - [raycast](https://www.raycast.com/)
@@ -44,6 +42,8 @@ brew bundle
 - [fig](https://fig.io/)
 - [oh my tmux](https://github.com/gpakosz/.tmux)
 - [oh my fish](https://github.com/oh-my-fish/oh-my-fish)
+- [wezterm](https://wezfurlong.org/wezterm/index.html)
+- [amethyst](https://ianyh.com/amethyst/)
 
 ## Packages
 
