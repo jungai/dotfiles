@@ -112,6 +112,8 @@ if [[ -z "${chpwd_functions[(r)_rtx_hook]+1}" ]]; then
   chpwd_functions=( _rtx_hook ${chpwd_functions[@]} )
 fi 
 
+eval "$(atuin init zsh)"
+
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
