@@ -1,7 +1,13 @@
 local wezterm = require("wezterm")
 
 return {
-	font = wezterm.font_with_fallback({ "Fira Code", "Operator Mono", "Hack Nerd Font", "JetBrains Mono" }),
+	font = wezterm.font_with_fallback({
+		"Mononoki Nerd Font",
+		"Fira Code",
+		"Operator Mono",
+		"Hack Nerd Font",
+		"JetBrains Mono",
+	}),
 	font_size = 16,
 	color_scheme = "Rosé Pine (base16)",
 	window_background_opacity = 0.95,
