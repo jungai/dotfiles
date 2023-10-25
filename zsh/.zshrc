@@ -73,7 +73,13 @@ if has flutter; then
 	# export FLUTTER_ROOT="$(asdf where flutter)"
 fi
 
+gone_function() {
+  git for-each-ref --format='%(refname:short) %(upstream:track)' |
+    awk '$2 == "[gone]" {print $1}' |
+    xargs -r git branch -D
+}
 
+alias gone=gone_function
 # # Fig post block. Keep at the bottom of this file.
 export PATH=$HOME/.local/bin:$PATH
 
