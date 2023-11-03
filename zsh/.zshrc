@@ -44,6 +44,7 @@ alias tr='tre'
 alias kc='kubectl'
 alias zl="zellij"
 alias tma='tmux a -t'
+alias sn="snyk"
 
 # return exit code 0 if command exists
 has() {
