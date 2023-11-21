@@ -22,6 +22,7 @@ brew "unar"
 brew "jq"
 brew "poppler"
 brew "yazi"
+brew "gnu-sed"
 
 cask "keycastr"
 cask "raycast"
