@@ -43,8 +43,9 @@ alias ldk='lazydocker'
 alias tr='tre'
 alias kc='kubectl'
 alias zl="zellij"
-alias tma='tmux a -t'
 alias sn="snyk"
+# TODO:use bash script instead
+alias tma=$HOME/dotfiles/scripts/tmux.mjs
 
 # return exit code 0 if command exists
 has() {
