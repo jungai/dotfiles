@@ -53,6 +53,10 @@ const configList = [
 		from: "/zellij/config.kdl",
 		target: "/.config/zellij/config.kdl",
 	},
+	{
+		from: "/sketchybar",
+		target: "/.config",
+	},
 ];
 
 async function createDir() {
@@ -61,7 +65,7 @@ async function createDir() {
 	await $`mkdir -p ${homeDir}/.config`;
 	await $`mkdir -p ${homeDir}/.config/wezterm`;
 	await $`mkdir -p ${homeDir}/.config/zellij`;
-	// await $`mkdir -p ${homeDir}/.config/fish`
+	await $`mkdir -p ${homeDir}/.config/fish`;
 
 	console.log(chalk.yellow("🍭 finish"));
 }
