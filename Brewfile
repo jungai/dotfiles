@@ -1,3 +1,9 @@
+cask "keycastr"
+cask "raycast"
+
+tap "homebrew/cask-fonts"
+tap "FelixKratz/formulae"
+
 brew "fzf"
 brew "ripgrep"
 brew "nvim"
@@ -23,8 +29,4 @@ brew "jq"
 brew "poppler"
 brew "yazi"
 brew "gnu-sed"
-
-cask "keycastr"
-cask "raycast"
-
-tap "homebrew/cask-fonts"
+brew "sketchybar"
