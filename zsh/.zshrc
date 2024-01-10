@@ -139,3 +139,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # go
 export GOBIN=$(go env GOPATH)/bin
+[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
