@@ -12,10 +12,9 @@ return {
 	}),
 	font_size = 15,
 	line_height = 1.2,
-	color_scheme = "Solar Flare (base16)",
+	color_scheme = "Rosé Pine (base16)",
 	window_background_opacity = 0.95,
 	window_decorations = "RESIZE",
-
 	window_padding = {
 		left = 0,
 		right = 0,
