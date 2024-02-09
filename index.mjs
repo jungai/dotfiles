@@ -57,6 +57,10 @@ const configList = [
 		from: "/sketchybar",
 		target: "/.config",
 	},
+	{
+		from: "/borders",
+		target: "/.config",
+	},
 ];
 
 async function createDir() {
