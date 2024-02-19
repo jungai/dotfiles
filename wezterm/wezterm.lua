@@ -11,9 +11,9 @@ return {
 		-- "JetBrains Mono",
 	}),
 	font_size = 15,
-	line_height = 1.2,
+	line_height = 1.618,
 	color_scheme = "Rosé Pine (base16)",
-	window_background_opacity = 0.95,
+	window_background_opacity = 0.90,
 	window_decorations = "RESIZE",
 	window_padding = {
 		left = 0,
