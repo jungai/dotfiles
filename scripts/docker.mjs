@@ -6,5 +6,5 @@ try {
 
 	await $`docker stop ${processId} && docker rm ${processId}`;
 
-	console.log(console.log(chalk.green("Success 🎉")));
+	console.log(chalk.green("Success 🎉"));
 } catch (_e) {}
