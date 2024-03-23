@@ -16,7 +16,7 @@ return {
 	}),
 	font_size = 18,
 	line_height = 1.618,
-	color_scheme = "Rosé Pine (base16)",
+	color_scheme = "Catppuccin Mocha",
 	window_background_opacity = 0.90,
 	window_decorations = "RESIZE",
 	window_padding = {
