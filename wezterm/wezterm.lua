@@ -10,13 +10,14 @@ return {
 		-- "Monaspace Neon",
 		{
 			family = "Dank Mono",
-			-- italic = true,
+			italic = false,
 		},
 		-- "JetBrains Mono",
 	}),
+	front_end = "OpenGL",
 	font_size = 18,
 	line_height = 1.618,
-	color_scheme = "Catppuccin Mocha",
+	color_scheme = "Catppuccin Macchiato",
 	window_background_opacity = 0.90,
 	window_decorations = "RESIZE",
 	window_padding = {
