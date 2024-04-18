@@ -21,7 +21,6 @@ brew bundle
 
 - [Dank Mono](https://philpl.gumroad.com/l/dank-mono) with Nerd Font patched
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-- [MonoLisa](https://www.monolisa.dev/)
 
 ## Terminal
 
