@@ -5,7 +5,6 @@ plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
-plug "zap-zsh/exa"
 plug "zap-zsh/vim"
 plug "chivalryq/git-alias"
 plug "Aloxaf/fzf-tab"
@@ -52,8 +51,8 @@ has() {
 	hash "$1" &>/dev/null
 }
 
-if has exa; then
-	alias ls="exa -l -a -h -F --group-directories-first --icons"
+if has eza; then
+	alias ls="eza -l -a -h -F --group-directories-first --icons"
 fi
 
 if has nvim; then
@@ -136,7 +135,7 @@ export FZF_DEFAULT_OPTS=" \
 export BAT_THEME="Catppuccin Macchiato"
 
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
-export FZF_ALT_C_OPTS="--preview 'exa --tree --color=always {} | head -200'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 # Advanced customization of fzf options via _fzf_comprun function
 # - The first argument to the function is the name of the command.
@@ -146,7 +145,7 @@ _fzf_comprun() {
   shift
 
   case "$command" in
-    cd)           fzf --preview 'exa --tree --color=always {} | head -200' "$@" ;;
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
     export|unset) fzf --preview "eval 'echo \$'{}"         "$@" ;;
     ssh)          fzf --preview 'dig {}'                   "$@" ;;
     *)            fzf --preview "bat -n --color=always --line-range :500 {}" "$@" ;;
