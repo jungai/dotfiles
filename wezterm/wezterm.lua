@@ -19,7 +19,6 @@ return {
 	line_height = 1.618,
 	color_scheme = "Catppuccin Macchiato",
 	window_background_opacity = 0.90,
-	window_decorations = "TITLE",
 	window_padding = {
 		left = 0,
 		right = 0,
