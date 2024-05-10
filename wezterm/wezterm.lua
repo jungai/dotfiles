@@ -18,7 +18,7 @@ return {
 	font_size = 18,
 	line_height = 1.618,
 	color_scheme = "Catppuccin Macchiato",
-	window_background_opacity = 0.90,
+	window_background_opacity = 1,
 	window_padding = {
 		left = 0,
 		right = 0,
