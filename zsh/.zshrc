@@ -156,3 +156,4 @@ _fzf_comprun() {
 # thefuck alias
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
+. "$HOME/.cargo/env"
