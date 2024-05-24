@@ -15,8 +15,10 @@ return {
 		},
 	}),
 	front_end = "OpenGL",
+	-- font_size = 18,
 	font_size = 18,
-	line_height = 1.618,
+	-- line_height = 1.618,
+	line_height = 1.3,
 	color_scheme = "Catppuccin Macchiato",
 	window_background_opacity = 1,
 	window_padding = {
