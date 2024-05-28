@@ -19,6 +19,7 @@ brew bundle
 
 ## Fonts
 
+- [MonoLisa](https://www.monolisa.dev/)
 - [Dank Mono](https://philpl.gumroad.com/l/dank-mono) with Nerd Font patched
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 

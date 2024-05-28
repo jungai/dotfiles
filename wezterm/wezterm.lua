@@ -4,7 +4,6 @@ return {
 	font = wezterm.font_with_fallback({
 		-- "Mononoki Nerd Font",
 		-- "Fira Code",
-		--
 		-- "Operator Mono",
 		-- "hack Nerd Font",
 		-- "Zed Mono Extended",
@@ -14,10 +13,7 @@ return {
 		-- 	family = "DankMono Nerd Font",
 		-- 	italic = false,
 		-- },
-		{
-			family = "MonoLisa",
-			italic = false,
-		},
+		"MonoLisa",
 	}),
 	front_end = "OpenGL",
 	-- font_size = 18,
