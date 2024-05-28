@@ -4,21 +4,26 @@ return {
 	font = wezterm.font_with_fallback({
 		-- "Mononoki Nerd Font",
 		-- "Fira Code",
+		--
 		-- "Operator Mono",
 		-- "hack Nerd Font",
 		-- "Zed Mono Extended",
 		-- "Monaspace Neon",
 		-- "JetBrains Mono",
+		-- {
+		-- 	family = "DankMono Nerd Font",
+		-- 	italic = false,
+		-- },
 		{
-			family = "DankMono Nerd Font",
+			family = "MonoLisa",
 			italic = false,
 		},
 	}),
 	front_end = "OpenGL",
 	-- font_size = 18,
-	font_size = 18,
+	font_size = 16,
 	-- line_height = 1.618,
-	line_height = 1.3,
+	line_height = 1.2,
 	color_scheme = "Catppuccin Macchiato",
 	window_background_opacity = 1,
 	window_padding = {
