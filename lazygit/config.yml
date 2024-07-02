@@ -1,9 +1,28 @@
 gui:
   theme:
+    activeBorderColor:
+      - '#89b4fa'
+      - bold
+    inactiveBorderColor:
+      - '#a6adc8'
+    optionsTextColor:
+      - '#89b4fa'
     selectedLineBgColor:
-      - underline # set to `default` to have no background colour
-    selectedRangeBgColor:
-      - underline
+      - '#313244'
+    cherryPickedCommitBgColor:
+      - '#45475a'
+    cherryPickedCommitFgColor:
+      - '#89b4fa'
+    unstagedChangesColor:
+      - '#f38ba8'
+    defaultFgColor:
+      - '#cdd6f4'
+    searchingActiveBorderColor:
+      - '#f9e2af'
+  authorColors:
+    '*': '#b4befe'
+  showFileIcons: true
+  nerdFontsVersion: "3"
   commitLength:
     show: true
 git:
