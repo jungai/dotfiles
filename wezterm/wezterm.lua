@@ -17,7 +17,7 @@ return {
 	}),
 	front_end = "OpenGL",
 	-- font_size = 18,
-	font_size = 16,
+	font_size = 14,
 	-- line_height = 1.618,
 	line_height = 1.2,
 	color_scheme = "Catppuccin Macchiato",
