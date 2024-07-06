@@ -16,21 +16,22 @@ return {
 		{
 			family = "MonoLisa",
 			harfbuzz_features = {
-				"zero",
-				"ss01",
-				"ss02",
-				"ss04",
-				"ss07",
-				"ss08",
-				"ss1O",
-				"ss11",
-				"ss12",
-				"ss13",
-				"ss14",
-				"ss15",
-				"ss16",
-				"ss17",
-				"ss18",
+				"No calt", -- {|
+				"zero", -- 0
+				"ss01", -- *
+				"ss02", -- f
+				"ss04", -- g
+				"ss07", -- { }
+				"ss08", -- ( )
+				"ss10", -- >=
+				"ss11", -- 0xf
+				"ss12", -- \\
+				"ss13", -- $
+				"ss14", -- &
+				"ss15", -- i
+				"ss16", -- r
+				"ss17", -- .=
+				"ss18", -- @
 			},
 			-- 	-- italic = true,
 		},
