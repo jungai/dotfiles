@@ -1,5 +1,6 @@
 cask "keycastr"
 cask "raycast"
+cask "nikitabobko/tap/aerospace"
 
 tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"

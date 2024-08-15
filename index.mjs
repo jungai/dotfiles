@@ -61,6 +61,10 @@ const configList = [
 		from: "/borders",
 		target: "/.config",
 	},
+	{
+		from: "/aerospace/.aerospace.toml",
+		target: "/.aerospace.toml",
+	},
 ];
 
 async function createDir() {

@@ -31,6 +31,7 @@ brew bundle
 
 ## Window Tiling Manager
 
+- [aerospace](https://github.com/nikitabobko/AeroSpace)
 - [amethyst](https://ianyh.com/amethyst/)
 - [yabai](https://github.com/koekeishiya/yabai)
 - [skhd](https://github.com/koekeishiya/skhd)
