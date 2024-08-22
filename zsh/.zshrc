@@ -42,6 +42,7 @@ alias tr='tre'
 alias kc='kubectl'
 alias zl="zellij"
 alias sn="snyk"
+alias ppp="python3"
 # TODO:use bash script instead
 alias tma=$HOME/dotfiles/scripts/tmux.mjs
 alias dds=$HOME/dotfiles/scripts/docker.mjs
