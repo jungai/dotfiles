@@ -5,6 +5,8 @@ cask "nikitabobko/tap/aerospace"
 tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
 
+brew "colima"
+brew "podman"
 brew "fzf"
 brew "ripgrep"
 brew "nvim"
