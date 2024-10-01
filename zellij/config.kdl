@@ -193,7 +193,7 @@ plugins {
 //    - true
 //    - false (Default)
 //
-// simplified_ui true
+simplified_ui true
 
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
@@ -205,8 +205,8 @@ plugins {
 //   - true (default)
 //   - false
 //
-pane_frames false
-
+pane_frames true
+default_layout "compact"
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
 //   - true (default)
@@ -238,7 +238,7 @@ pane_frames false
 // Default: default
 //
 // theme "default"
-theme "catppuccin-mocha"
+theme "catppuccin-macchiato"
 // The name of the default layout to load on startup
 // Default: "default"
 //
@@ -256,7 +256,7 @@ theme "catppuccin-mocha"
 //   - true (default)
 //   - false
 //
-// mouse_mode false
+mouse_mode true
 
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
@@ -274,7 +274,7 @@ theme "catppuccin-mocha"
 //
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
-// copy_command "pbcopy"                     // osx
+copy_command "pbcopy"                     // osx
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
