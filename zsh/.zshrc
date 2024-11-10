@@ -12,6 +12,9 @@ plug "zsh-users/zsh-history-substring-search"
 plug "chrishrb/zsh-kubectl"
 plug "wintermi/zsh-gcloud"
 
+# theme
+plug "$HOME/dotfiles/zsh/lukerandall_theme.zsh"
+#
 # zoxide
 _ZO_FZF_OPTS='--select-1'
 eval "$(zoxide init zsh)"
@@ -57,6 +60,7 @@ if has eza; then
 fi
 
 if has nvim; then
+	alias v="nvim"
 	alias vim="nvim"
 fi
 
