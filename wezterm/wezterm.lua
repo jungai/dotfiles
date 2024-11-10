@@ -2,7 +2,8 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- config
-config.color_scheme = "Catppuccin Macchiato"
+-- config.color_scheme = "Catppuccin Macchiato"
+config.color_scheme = "Tokyo Night Storm"
 config.font = wezterm.font_with_fallback({
 	-- "Mononoki Nerd Font",
 	-- "Fira Code",
