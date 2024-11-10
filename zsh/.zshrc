@@ -3,7 +3,7 @@
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
-plug "zap-zsh/zap-prompt"
+# plug "zap-zsh/zap-prompt"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/vim"
 plug "chivalryq/git-alias"
@@ -11,10 +11,9 @@ plug "Aloxaf/fzf-tab"
 plug "zsh-users/zsh-history-substring-search"
 plug "chrishrb/zsh-kubectl"
 plug "wintermi/zsh-gcloud"
-
 # theme
 plug "$HOME/dotfiles/zsh/lukerandall_theme.zsh"
-#
+
 # zoxide
 _ZO_FZF_OPTS='--select-1'
 eval "$(zoxide init zsh)"
