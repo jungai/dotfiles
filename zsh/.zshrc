@@ -12,7 +12,7 @@ plug "zsh-users/zsh-history-substring-search"
 plug "chrishrb/zsh-kubectl"
 plug "wintermi/zsh-gcloud"
 # theme
-plug "$HOME/dotfiles/zsh/lukerandall_theme.zsh"
+plug "$HOME/dotfiles/zsh/custom_theme.zsh"
 
 # zoxide
 _ZO_FZF_OPTS='--select-1'
