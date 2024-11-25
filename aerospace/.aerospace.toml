@@ -51,12 +51,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 5
-inner.vertical = 5
-# outer.left = 5
-# outer.bottom = 5
-# outer.top = 5
-# outer.right = 5
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 5
+outer.bottom = 5
+outer.top = 32
+outer.right = 5
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -173,6 +173,10 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'ru.keepcoder.Telegram'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
 run = 'layout floating'
 
 
