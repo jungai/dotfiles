@@ -55,7 +55,7 @@ inner.horizontal = 10
 inner.vertical = 10
 outer.left = 5
 outer.bottom = 5
-outer.top = 25
+outer.top = 5
 outer.right = 5
 
 # 'main' binding mode declaration
@@ -155,17 +155,17 @@ alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
-[[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = 'move-node-to-workspace T'
+# [[on-window-detected]]
+# if.app-id = 'com.github.wez.wezterm'
+# run = 'move-node-to-workspace T'
+#
+# [[on-window-detected]]
+# if.app-id = 'company.thebrowser.Browser'
+# run = 'move-node-to-workspace B'
 
-[[on-window-detected]]
-if.app-id = 'company.thebrowser.Browser'
-run = 'move-node-to-workspace B'
-
-[[on-window-detected]]
-if.app-id = 'com.figma.Desktop'
-run = 'move-node-to-workspace 2'
+# [[on-window-detected]]
+# if.app-id = 'com.figma.Desktop'
+# run = 'move-node-to-workspace 2'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
