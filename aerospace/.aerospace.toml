@@ -179,6 +179,9 @@ run = 'layout floating'
 if.app-id = 'com.microsoft.teams2'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = 'layout floating'
 
 # For work
 [workspace-to-monitor-force-assignment]
