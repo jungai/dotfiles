@@ -23,7 +23,7 @@ config.font = wezterm.font_with_fallback({
 			"zero", -- 0
 			"ss01", -- *
 			"ss02", -- f
-			"ss04", -- g
+			-- "ss04", -- g
 			"ss07", -- { }
 			"ss08", -- ( )
 			"ss10", -- >=
@@ -36,7 +36,7 @@ config.font = wezterm.font_with_fallback({
 			"ss17", -- .=
 			"ss18", -- @
 		},
-		-- 	-- italic = true,
+		-- italic = true,
 	},
 })
 config.front_end = "OpenGL"
