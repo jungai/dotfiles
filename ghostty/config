@@ -1,0 +1,28 @@
+# Font
+font-family = MonoLisa
+
+# Font size
+font-size = 15
+
+# Theme
+theme = catppuccin-macchiato
+window-theme = ghostty
+
+# Cursor style
+cursor-style-blink = true
+
+# Clipboard settings
+clipboard-read = allow
+clipboard-write = allow
+
+# macos options
+macos-option-as-alt = true
+macos-titlebar-proxy-icon = hidden
+
+# Always show ghostty as the title
+title = ghostty 
+
+# Keybinds
+keybind = ctrl+d=unbind
+keybind = ctrl+q=close_surface
+

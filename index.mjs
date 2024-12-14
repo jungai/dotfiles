@@ -65,6 +65,10 @@ const configList = [
 		from: "/aerospace/.aerospace.toml",
 		target: "/.aerospace.toml",
 	},
+	{
+		from: "/ghostty",
+		target: "/.config",
+	},
 ];
 
 async function createDir() {
