@@ -3,6 +3,11 @@ font-family = MonoLisa
 
 # Font size
 font-size = 15
+font-family = MonoLisa
+font-style = Regular
+font-style-italic = Regular Italic
+font-style-bold = Bold
+font-style-bold-italic = Bold Italic
 
 # Theme
 theme = catppuccin-macchiato
@@ -20,7 +25,7 @@ macos-option-as-alt = true
 macos-titlebar-proxy-icon = hidden
 
 # Always show ghostty as the title
-title = ghostty 
+title = "👻ghostty" 
 
 # Keybinds
 keybind = ctrl+d=unbind
