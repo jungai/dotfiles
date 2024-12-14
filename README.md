@@ -25,6 +25,7 @@ brew bundle
 
 ## Terminal
 
+- [ghostty](https://github.com/ghostty-org)
 - [wezterm](https://wezfurlong.org/wezterm/index.html)
 - [kitty](https://sw.kovidgoyal.net/kitty/)
 - [alacritty](https://github.com/alacritty/alacritty) -> mac m1 should build from source [here](https://github.com/alacritty/alacritty/issues/5632#issuecomment-988049036)
