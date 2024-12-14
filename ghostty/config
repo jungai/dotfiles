@@ -1,6 +1,3 @@
-# Font
-font-family = MonoLisa
-
 # Font size
 font-size = 15
 font-family = MonoLisa
@@ -30,4 +27,3 @@ title = "👻ghostty"
 # Keybinds
 keybind = ctrl+d=unbind
 keybind = ctrl+q=close_surface
-
