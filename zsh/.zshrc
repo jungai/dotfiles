@@ -10,7 +10,7 @@ plug "chivalryq/git-alias"
 plug "Aloxaf/fzf-tab"
 plug "zsh-users/zsh-history-substring-search"
 plug "chrishrb/zsh-kubectl"
-plug "wintermi/zsh-gcloud"
+# plug "wintermi/zsh-gcloud"
 # theme
 plug "$HOME/dotfiles/zsh/custom_theme.zsh"
 
@@ -101,7 +101,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # go
-export GOBIN=$(go env GOPATH)/bin
+# export GOBIN=$(go env GOPATH)/bin
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
 
 # Fig post block. Keep at the bottom of this file.
@@ -164,3 +164,6 @@ eval $(thefuck --alias fk)
 
 # RYE
 source "$HOME/.rye/env"
+
+# Startship
+eval "$(starship init zsh)"
