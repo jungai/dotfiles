@@ -165,5 +165,9 @@ eval $(thefuck --alias fk)
 # RYE
 source "$HOME/.rye/env"
 
+# autocomplete
+source "$HOME/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
+bindkey              '^I' menu-select
+
 # Startship
 eval "$(starship init zsh)"
