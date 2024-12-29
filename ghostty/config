@@ -40,9 +40,12 @@ font-feature = ss17
 # @
 font-feature = ss18
 
+# cursor
+cursor-style = block
+cursor-style-blink = true
+
 # Theme
 theme = catppuccin-macchiato
-window-theme = ghostty
 
 # Cursor style
 cursor-style-blink = true
@@ -57,6 +60,9 @@ macos-titlebar-proxy-icon = hidden
 
 # Always show ghostty as the title
 title = "👻ghostty" 
+
+# window
+window-padding-balance = true
 
 # Keybinds
 keybind = ctrl+d=unbind
