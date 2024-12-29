@@ -46,7 +46,7 @@ alias zl="zellij"
 alias sn="snyk"
 alias ppp="python3"
 # TODO:use bash script instead
-alias tma=$HOME/dotfiles/scripts/tmux.mjs
+alias tma=$HOME/dotfiles/scripts/tmux.sh
 alias dds=$HOME/dotfiles/scripts/docker.mjs
 
 # return exit code 0 if command exists
@@ -171,3 +171,10 @@ bindkey              '^I' menu-select
 
 # Startship
 eval "$(starship init zsh)"
+# pnpm
+export PNPM_HOME="/Users/jungai/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
