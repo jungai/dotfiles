@@ -8,7 +8,9 @@ font-style-bold-italic = Bold Italic
 
 # font feature
 # {|
-font-feature = "No calt"
+font-feature = -calt
+# !=
+font-feature = -liga
  # 0
 font-feature = zero
 # *
