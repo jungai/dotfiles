@@ -45,9 +45,8 @@ alias kc='kubectl'
 alias zl="zellij"
 alias sn="snyk"
 alias ppp="python3"
-# TODO:use bash script instead
 alias tma=$HOME/dotfiles/scripts/tmux.sh
-alias dds=$HOME/dotfiles/scripts/docker.mjs
+alias dds=$HOME/dotfiles/scripts/docker.sh
 
 # return exit code 0 if command exists
 has() {
