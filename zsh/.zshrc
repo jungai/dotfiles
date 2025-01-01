@@ -18,6 +18,8 @@ plug "$HOME/dotfiles/zsh/custom_theme.zsh"
 _ZO_FZF_OPTS='--select-1'
 eval "$(zoxide init zsh)"
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # alias
 alias q=zi
 alias p='pnpm'
