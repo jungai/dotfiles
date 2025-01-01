@@ -1,20 +1,19 @@
 # Installed
 
 ```bash
-git clone --recursive git@github.com:jungai/dotfiles.git
-```
-
-## Update
-
-```bash
-npx zx index.mjs
-# ./index.mjs
+git clone git@github.com:jungai/dotfiles.git
 ```
 
 ## Install `brew` deps
 
 ```bash
 brew bundle
+```
+
+## Update
+
+```bash
+./install.sh
 ```
 
 ## Fonts
