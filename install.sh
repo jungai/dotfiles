@@ -59,6 +59,10 @@ done
 # home
 configs_in_home=(
 	".gitconfig"
+	"zsh/.zshrc"
+	"alacritty/alacritty.yml"
+	"/aerospace/.aerospace.toml"
+	"/tmux/.tmux.conf"
 )
 
 echo ""
