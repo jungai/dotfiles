@@ -63,6 +63,7 @@ configs_in_home=(
 	"alacritty/alacritty.yml"
 	"/aerospace/.aerospace.toml"
 	"/tmux/.tmux.conf"
+	"vim/.vimrc"
 )
 
 echo ""
