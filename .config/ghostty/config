@@ -1,5 +1,5 @@
 # Font size
-font-size = 15
+font-size = 17
 font-family = MonoLisa
 font-style = Regular
 font-style-italic = Regular Italic
@@ -41,6 +41,9 @@ font-feature = ss16
 font-feature = ss17
 # @
 font-feature = ss18
+
+# background
+background-opacity = 0.95
 
 # cursor
 cursor-style = block
