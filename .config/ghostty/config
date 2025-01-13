@@ -43,7 +43,7 @@ font-feature = ss17
 font-feature = ss18
 
 # background
-background-opacity = 0.95
+# background-opacity = 0.95
 
 # cursor
 cursor-style = block
