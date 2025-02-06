@@ -124,6 +124,8 @@ vim.opt.breakindent = true
 -- Save undo history
 vim.opt.undofile = true
 
+vim.opt.expandtab = true
+
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -987,6 +989,12 @@ require('lazy').setup({
 
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',
+    dependencies = {
+      {
+        'JoosepAlviste/nvim-ts-context-commentstring',
+        opts = { enable_autocmd = false },
+      },
+    },
     config = function()
       -- Better Around/Inside textobjects
       --
@@ -1003,6 +1011,14 @@ require('lazy').setup({
       -- - sr)'  - [S]urround [R]eplace [)] [']
       require('mini.surround').setup()
 
+      -- for comment
+      require('mini.comment').setup {
+        options = {
+          custom_commentstring = function()
+            return require('ts_context_commentstring').calculate_commentstring() or vim.bo.commentstring
+          end,
+        },
+      }
       -- Simple and easy statusline.
       --  You could remove this setup call if you don't like it,
       --  and try some other statusline plugin
