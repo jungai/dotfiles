@@ -158,6 +158,11 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+-- folds
+vim.opt.foldlevel = 99
+vim.opt.foldmethod = 'indent'
+vim.opt.foldenable = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -759,6 +764,7 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
+        markdown = { 'prettier', 'markdownlint-cli2', 'markdown-toc', stop_after_first = true },
         javascript = { 'prettier', stop_after_first = true },
         javascriptreact = { 'prettier', stop_after_first = true },
         typescript = { 'prettier', stop_after_first = true },
