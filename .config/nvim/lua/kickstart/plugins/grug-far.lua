@@ -7,7 +7,7 @@ return {
     },
     keys = {
       {
-        '<leader>sr',
+        '<leader>sf',
         '<cmd>GrugFar<CR>',
         desc = '[S]earch and [R]eplace',
         remap = true,
