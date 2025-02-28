@@ -55,7 +55,7 @@ return {
           -- avoid superfluous noise, notably within the handy LSP pop-ups that
           -- describe the hovered symbol using Markdown.
           if vim.opt_local.modifiable:get() then
-            lint.try_lint()
+            lint.try_lint(nil, { ignore_errors = true })
           end
         end,
       })
