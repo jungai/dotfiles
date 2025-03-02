@@ -8,6 +8,9 @@ return {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
     picker = { enabled = true },
+    image = { enabled = true },
+    scroll = { enabled = true },
+    animate = { enabled = true },
   },
   keys = {
     {
