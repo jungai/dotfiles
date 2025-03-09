@@ -157,12 +157,6 @@ _fzf_comprun() {
   esac
 }
 
-# ---- TheFuck -----
-# thefuck alias
-eval $(thefuck --alias)
-eval $(thefuck --alias fk)
-. "$HOME/.cargo/env"
-
 # RYE
 source "$HOME/.rye/env"
 
@@ -179,3 +173,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+. "$HOME/.atuin/bin/env"
+
+# atuin
+
+eval "$(atuin init zsh)"
+
+bindkey '^r' atuin-search
