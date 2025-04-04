@@ -1,6 +1,7 @@
 # Font size
 font-size = 15
 font-family = MonoLisa
+# font-family = Dank Mono
 font-style = Regular
 font-style-italic = Regular Italic
 font-style-bold = Bold
