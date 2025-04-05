@@ -385,9 +385,9 @@ require('lazy').setup({
       {
         '<leader>fg',
         function()
-          require('fzf-lua').grep()
+          require('fzf-lua').live_grep()
         end,
-        desc = '[F]ind [G]rep',
+        desc = '[F]ind Live [G]rep',
       },
       {
         '<leader>fv',
