@@ -383,6 +383,20 @@ require('lazy').setup({
         desc = '[F]ind [F]iles',
       },
       {
+        '<leader>fc',
+        function()
+          require('fzf-lua').files { cwd = vim.fn.stdpath 'config' }
+        end,
+        desc = '[F]ind Neovim [C]onfig',
+      },
+      {
+        '<leader>fr',
+        function()
+          require('fzf-lua').files { cwd = vim.fs.root(0, '.git') }
+        end,
+        desc = '[F]ind [F]iles',
+      },
+      {
         '<leader>fg',
         function()
           require('fzf-lua').live_grep()
@@ -403,13 +417,6 @@ require('lazy').setup({
           require('fzf-lua').buffers()
         end,
         desc = '[F]ind [B]uffer',
-      },
-      {
-        '<leader>fc',
-        function()
-          require('fzf-lua').files { cwd = vim.fn.stdpath 'config' }
-        end,
-        desc = '[F]ind Neovim [C]onfig',
       },
       {
         '<leader>fd',
