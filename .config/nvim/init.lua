@@ -175,6 +175,7 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+vim.keymap.set('n', 'D', vim.diagnostic.open_float, { desc = 'Open [D]iagnostic Float' })
 
 -- move line
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move Line Down' })
@@ -378,12 +379,12 @@ require('lazy').setup({
       {
         '<leader>ff',
         function()
-          require('fzf-lua').files()
+          require('fzf-lua').files { cmd = 'fd --type f --exclude node_modules' }
         end,
         desc = '[F]ind [F]iles',
       },
       {
-        '<leader>fc',
+        '<leader>fnc',
         function()
           require('fzf-lua').files { cwd = vim.fn.stdpath 'config' }
         end,
@@ -700,8 +701,56 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
-        shellcheck = {},
+        codespell = {},
         vtsls = {},
+        eslint = {
+          filetypes = {
+            'javascript',
+            'javascriptreact',
+            'javascript.jsx',
+            'typescript',
+            'typescriptreact',
+            'typescript.tsx',
+            'vue',
+            'html',
+            'markdown',
+            'json',
+            'jsonc',
+            'yaml',
+            'toml',
+            'xml',
+            'gql',
+            'graphql',
+            'astro',
+            'svelte',
+            'css',
+            'less',
+            'scss',
+            'pcss',
+            'postcss',
+          },
+          settings = {
+            -- Silent the stylistic rules in you IDE, but still auto fix them
+            rulesCustomizations = {
+              { rule = 'style/*', severity = 'off', fixable = true },
+              { rule = 'format/*', severity = 'off', fixable = true },
+              { rule = '*-indent', severity = 'off', fixable = true },
+              { rule = '*-spacing', severity = 'off', fixable = true },
+              { rule = '*-spaces', severity = 'off', fixable = true },
+              { rule = '*-order', severity = 'off', fixable = true },
+              { rule = '*-dangle', severity = 'off', fixable = true },
+              { rule = '*-newline', severity = 'off', fixable = true },
+              { rule = '*quotes', severity = 'off', fixable = true },
+              { rule = '*semi', severity = 'off', fixable = true },
+            },
+          },
+          on_attach = function(client, bufnr)
+            vim.api.nvim_create_autocmd('BufWritePre', {
+              buffer = bufnr,
+              command = 'EslintFixAll',
+            })
+          end,
+        },
         tailwindcss = {
           settings = {
             tailwindCSS = {
@@ -767,7 +816,6 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'prettierd',
         'prettier',
         'vtsls',
         'cssls',
@@ -777,10 +825,10 @@ require('lazy').setup({
         'jsonls',
         'tailwindcss',
         'eslint',
-        'shellcheck',
         'bashls',
         'rust_analyzer',
         'astro',
+        'codespell',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -799,52 +847,6 @@ require('lazy').setup({
         },
       }
     end,
-  },
-
-  { -- Autoformat
-    'stevearc/conform.nvim',
-    event = { 'BufWritePre' },
-    cmd = { 'ConformInfo' },
-    keys = {
-      {
-        '<leader>f',
-        function()
-          require('conform').format { async = true, lsp_format = 'fallback' }
-        end,
-        mode = '',
-        desc = '[F]ormat buffer',
-      },
-    },
-    opts = {
-      notify_on_error = false,
-      format_on_save = function(bufnr)
-        -- Disable "format_on_save lsp_fallback" for languages that don't
-        -- have a well standardized coding style. You can add additional
-        -- languages here or re-enable it for the disabled ones.
-        local disable_filetypes = { c = true, cpp = true }
-        if disable_filetypes[vim.bo[bufnr].filetype] then
-          return nil
-        else
-          return {
-            timeout_ms = 500,
-            lsp_format = 'fallback',
-          }
-        end
-      end,
-      formatters_by_ft = {
-        lua = { 'stylua' },
-        -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
-        --
-        rust = { 'rustfmt' },
-        -- You can use 'stop_after_first' to run the first available formatter from the list
-        javascript = { 'prettierd', 'prettier', stop_after_first = true },
-        javascriptreact = { 'prettierd', 'prettier', stop_after_first = true },
-        typescript = { 'prettierd', 'prettier', stop_after_first = true },
-        typescriptreact = { 'prettierd', 'prettier', stop_after_first = true },
-        json = { 'prettierd', 'prettier', stop_after_first = true },
-      },
-    },
   },
 
   { -- Autocompletion
