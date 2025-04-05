@@ -51,7 +51,8 @@ cursor-style = block
 cursor-style-blink = true
 
 # Theme
-theme = catppuccin-macchiato
+# theme = catppuccin-macchiato
+theme = tokyonight_moon
 
 # Cursor style
 cursor-style-blink = true
