@@ -6,11 +6,11 @@ return {
     config = function()
       local lint = require 'lint'
       lint.linters_by_ft = {
-        markdown = { 'markdownlint' },
-        typescript = { 'eslint' },
-        javascript = { 'eslint' },
-        javascriptreact = { 'eslint' },
-        typescriptreact = { 'eslint' },
+        markdown = { 'codespell', 'markdownlint' },
+        typescript = { 'codespell', 'eslint' },
+        javascript = { 'codespell', 'eslint' },
+        javascriptreact = { 'codespell', 'eslint' },
+        typescriptreact = { 'codespell', 'eslint' },
       }
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
       -- instead set linters_by_ft like this:
@@ -55,6 +55,7 @@ return {
           -- describe the hovered symbol using Markdown.
           if vim.opt_local.modifiable:get() then
             lint.try_lint()
+            lint.try_lint 'cspell'
           end
         end,
       })
