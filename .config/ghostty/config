@@ -1,8 +1,9 @@
 # Font size
 font-size = 15
 # font-family = MonoLisa
-font-family = Berkeley Mono
-# font-family = Dank Mono
+# font-family = Berkeley Mono
+font-family = Dank Mono
+# font-family = PlemolJP Console NF
 font-style = Regular
 font-style-italic = Regular Italic
 font-style-bold = Bold
@@ -74,3 +75,8 @@ window-padding-balance = true
 # Keybinds
 keybind = ctrl+d=unbind
 keybind = ctrl+q=close_surface
+keybind = shift+enter=text:\n
+
+# line height
+adjust-cell-height = 62.8%
+adjust-cursor-height = 62.8%
