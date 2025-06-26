@@ -659,9 +659,9 @@ require('lazy').setup({
           },
         } or {},
         -- Use the default configuration
-        virtual_lines = {
-          current_line = true,
-        },
+        -- virtual_lines = {
+        --   current_line = false,
+        -- },
         virtual_text = {
           source = 'if_many',
           spacing = 2,
