@@ -109,6 +109,7 @@ vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
+vim.opt.termguicolors = true
 
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -760,19 +761,7 @@ require('lazy').setup({
         tailwindcss = {
           settings = {
             tailwindCSS = {
-              experimental = {
-                classRegex = {
-                  'tw`([^`]*)',
-                  'tw\\.style\\(([^)]*)\\)',
-                  'tw="([^"]*)',
-                  'tw={"([^"}]*)',
-                  'tw\\.\\w+`([^`]*)',
-                  'tw\\(.*?\\)`([^`]*)',
-                  { 'cva\\(([^)]*)\\)', '["\'`]([^"\'`]*).*?["\'`]' },
-                  { 'cx\\(([^)]*)\\)', "(?:'|\"|`)([^']*)(?:'|\"|`)" },
-                  { 'cn\\(([^)]*)\\)', "(?:'|\"|`)([^']*)(?:'|\"|`)" },
-                },
-              },
+              classFunctions = { 'cva', 'cx', 'cn' },
               classAttributes = {
                 'class',
                 'className',
@@ -1102,6 +1091,18 @@ require('lazy').setup({
         'query',
         'vim',
         'vimdoc',
+        'typescript',
+        'javascript',
+        'tsx',
+        'json',
+        'jsonc',
+        'css',
+        'scss',
+        'graphql',
+        'astro',
+        'svelte',
+        'python',
+        'rust',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
@@ -1113,6 +1114,24 @@ require('lazy').setup({
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = '<C-space>',
+          node_incremental = '<C-space>',
+          scope_incremental = false,
+          node_decremental = '<bs>',
+        },
+      },
+      textobjects = {
+        move = {
+          enable = true,
+          goto_next_start = { [']f'] = '@function.outer', [']c'] = '@class.outer', [']a'] = '@parameter.inner' },
+          goto_next_end = { [']F'] = '@function.outer', [']C'] = '@class.outer', [']A'] = '@parameter.inner' },
+          goto_previous_start = { ['[f'] = '@function.outer', ['[c'] = '@class.outer', ['[a'] = '@parameter.inner' },
+          goto_previous_end = { ['[F'] = '@function.outer', ['[C'] = '@class.outer', ['[A'] = '@parameter.inner' },
+        },
+      },
     },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
