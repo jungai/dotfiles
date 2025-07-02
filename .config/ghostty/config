@@ -1,13 +1,13 @@
 # Font size
 font-size = 15
-# font-family = MonoLisa
+# font-family = "MonoLisa"
 # font-family = Berkeley Mono
-font-family = Dank Mono
+font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
-font-style = Regular
-font-style-italic = Regular Italic
-font-style-bold = Bold
-font-style-bold-italic = Bold Italic
+# font-style = Regular
+font-family-italic = "Dank Mono"
+font-style-bold = "Bold"
+font-style-bold-italic = "Bold Italic"
 
 # # font feature
 # # {|
