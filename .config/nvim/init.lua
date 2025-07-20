@@ -761,7 +761,7 @@ require('lazy').setup({
         tailwindcss = {
           settings = {
             tailwindCSS = {
-              classFunctions = { 'cva', 'cx', 'cn' },
+              classFunctions = { 'cva', 'cx', 'cn', 'tv' },
               classAttributes = {
                 'class',
                 'className',
