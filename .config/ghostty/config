@@ -1,11 +1,11 @@
 # Font size
 font-size = 15
 # font-family = "MonoLisa"
-# font-family = Berkeley Mono
-font-family = "Dank Mono"
+font-family = Berkeley Mono
+# font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
 # font-style = Regular
-font-family-italic = "Dank Mono"
+# font-family-italic = "Dank Mono"
 font-style-bold = "Bold"
 font-style-bold-italic = "Bold Italic"
 
@@ -78,5 +78,5 @@ keybind = ctrl+q=close_surface
 keybind = shift+enter=text:\n
 
 # line height
-adjust-cell-height = 62.8%
-adjust-cursor-height = 62.8%
+# adjust-cell-height = 62.8%
+# adjust-cursor-height = 62.8%
