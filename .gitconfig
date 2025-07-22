@@ -1,20 +1,21 @@
 [init]
-	defaultBranch = master
+    defaultBranch = master
 
 [user]
-	name = jungai 
-	email = juworaphol125@gmail.com 
+    name = jungai
+    email = juworaphol125@gmail.com
 
 [core]
     pager = delta
-		ignorecase = false
+    ignorecase = false
+    editor = nvim
 
 [interactive]
     diffFilter = delta --color-only --features=interactive
 
 [delta]
     features = decorations
-		; side-by-side = true
+    ; side-by-side = true
 
 [delta "interactive"]
     keep-plus-minus-markers = false
