@@ -165,7 +165,7 @@ source "$HOME/.rye/env"
 # bindkey              '^I' menu-select
 
 # Startship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 # pnpm
 export PNPM_HOME="/Users/jungai/Library/pnpm"
 case ":$PATH:" in
