@@ -3,7 +3,9 @@ return {
     'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = {
+      style = 'night',
+    },
     init = function()
       vim.cmd [[colorscheme tokyonight]]
     end,
@@ -22,8 +24,8 @@ return {
   --       comments = { 'italic' }, -- Change the style of comments
   --       conditionals = { 'italic' },
   --       loops = {},
-  --       functions = { 'italic' },
-  --       keywords = { 'italic' },
+  --       functions = {},
+  --       keywords = {},
   --       strings = {},
   --       variables = {},
   --       numbers = {},
