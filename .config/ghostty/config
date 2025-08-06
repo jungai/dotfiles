@@ -1,7 +1,7 @@
 # Font size
 font-size = 15
-# font-family = "MonoLisa"
-font-family = Berkeley Mono
+font-family = "MonoLisa"
+# font-family = Berkeley Mono
 # font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
 # font-style = Regular
@@ -9,41 +9,41 @@ font-family = Berkeley Mono
 font-style-bold = "Bold"
 font-style-bold-italic = "Bold Italic"
 
-# # font feature
-# # {|
-# font-feature = -calt
-# # !=
-# # font-feature = -liga
-#  # 0
-# font-feature = zero
-# # *
-# font-feature = ss01
-# # f
-# font-feature = ss02
-# # g
+# font feature
+# {|
+font-feature = -calt
+# !=
+# font-feature = -liga
+ # 0
+font-feature = zero
+# *
+font-feature = ss01
+# f
+font-feature = ss02
+# g
 # font-feature = ss04
-# # { }
-# font-feature = ss07
-# # ( )
-# font-feature = ss08
-# # >=
-# font-feature = ss10
-# # 0xf
-# font-feature = ss11
-# # \\
-# font-feature = ss12
-# # $
-# font-feature = ss13
-# # &
-# font-feature = ss14
-# # i
-# font-feature = ss15
-# # r
-# font-feature = ss16
-# # .=
-# font-feature = ss17
-# # @
-# font-feature = ss18
+# { }
+font-feature = ss07
+# ( )
+font-feature = ss08
+# >=
+font-feature = ss10
+# 0xf
+font-feature = ss11
+# \\
+font-feature = ss12
+# $
+font-feature = ss13
+# &
+font-feature = ss14
+# i
+font-feature = ss15
+# r
+font-feature = ss16
+# .=
+font-feature = ss17
+# @
+font-feature = ss18
 
 # background
 # background-opacity = 0.95
@@ -53,7 +53,8 @@ cursor-style = block
 cursor-style-blink = true
 
 # Theme
-theme = catppuccin-macchiato
+# theme = catppuccin-macchiato
+theme = tokyonight
 
 # Cursor style
 cursor-style-blink = true
