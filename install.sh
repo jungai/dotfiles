@@ -44,7 +44,8 @@ configs_in_config_dir=(
 	"kitty"
 	"borders"
 	"nvim"
-	"lazygit"
+  "lazygit"
+  "opencode"
 )
 
 echo ""
