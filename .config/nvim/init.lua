@@ -737,24 +737,29 @@ require('lazy').setup({
           },
           settings = {
             -- Silent the stylistic rules in you IDE, but still auto fix them
-            rulesCustomizations = {
-              { rule = 'style/*', severity = 'off', fixable = true },
-              { rule = 'format/*', severity = 'off', fixable = true },
-              { rule = '*-indent', severity = 'off', fixable = true },
-              { rule = '*-spacing', severity = 'off', fixable = true },
-              { rule = '*-spaces', severity = 'off', fixable = true },
-              { rule = '*-order', severity = 'off', fixable = true },
-              { rule = '*-dangle', severity = 'off', fixable = true },
-              { rule = '*-newline', severity = 'off', fixable = true },
-              { rule = '*quotes', severity = 'off', fixable = true },
-              { rule = '*semi', severity = 'off', fixable = true },
-            },
+            -- rulesCustomizations = {
+            --   { rule = 'style/*', severity = 'off', fixable = true },
+            --   { rule = 'format/*', severity = 'off', fixable = true },
+            --   { rule = '*-indent', severity = 'off', fixable = true },
+            --   { rule = '*-spacing', severity = 'off', fixable = true },
+            --   { rule = '*-spaces', severity = 'off', fixable = true },
+            --   { rule = '*-order', severity = 'off', fixable = true },
+            --   { rule = '*-dangle', severity = 'off', fixable = true },
+            --   { rule = '*-newline', severity = 'off', fixable = true },
+            --   { rule = '*quotes', severity = 'off', fixable = true },
+            --   { rule = '*semi', severity = 'off', fixable = true },
+            -- },
           },
           on_attach = function(client, bufnr)
-            vim.api.nvim_create_autocmd('BufWritePre', {
-              buffer = bufnr,
-              command = 'EslintFixAll',
-            })
+            if client.name == 'eslint' then
+              vim.api.nvim_create_autocmd('BufWritePre', {
+                group = vim.api.nvim_create_augroup('EslintFixOnSave', { clear = true }),
+                buffer = bufnr,
+                -- The command "EslintFixAll" is exposed by the eslint-language-server
+                -- It will apply all auto-fixable ESLint rules to the buffer
+                command = 'EslintFixAll',
+              })
+            end
           end,
         },
         cspell = {},
@@ -820,6 +825,7 @@ require('lazy').setup({
         'html',
         'jsonls',
         'tailwindcss',
+        'eslint_d',
         'eslint',
         'bashls',
         'rust_analyzer',
