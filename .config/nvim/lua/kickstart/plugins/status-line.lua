@@ -1,9 +1,13 @@
 return {
-  {
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    opts = {},
-  },
+  'windwp/windline.nvim',
+  config = function()
+    require 'wlsample.airline'
+  end,
+  -- {
+  --   'nvim-lualine/lualine.nvim',
+  --   dependencies = { 'nvim-tree/nvim-web-devicons' },
+  --   opts = {},
+  -- },
   -- {
   --   'windwp/windline.nvim',
   --   config = function()
