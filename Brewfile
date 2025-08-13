@@ -4,6 +4,7 @@ cask "nikitabobko/tap/aerospace"
 
 tap "homebrew/cask-fonts"
 tap "FelixKratz/formulae"
+tap "sst/tap/opencode"
 
 brew "colima"
 brew "podman"
