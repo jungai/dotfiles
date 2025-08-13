@@ -38,6 +38,7 @@ return { -- Autoformat
       typescript = { 'eslint_d', 'prettierd', stop_after_first = true },
       typescriptreact = { 'eslint_d', 'prettierd', stop_after_first = true },
       json = { 'prettierd', stop_after_first = true },
+      css = { 'prettierd', stop_after_first = true },
       ['*'] = { 'codespell' },
       ['_'] = { 'trim_whitespace' },
     },
