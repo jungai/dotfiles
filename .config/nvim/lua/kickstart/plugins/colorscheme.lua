@@ -1,15 +1,25 @@
 return {
   {
-    'folke/tokyonight.nvim',
+    'bluz71/vim-nightfly-colors',
+    name = 'nightfly',
     lazy = false,
     priority = 1000,
-    opts = {
-      style = 'night',
-    },
     init = function()
-      vim.cmd [[colorscheme tokyonight]]
+      vim.g.nightflyVirtualTextColor = true
+      vim.cmd [[colorscheme nightfly]]
     end,
   },
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = {
+  --     style = 'night',
+  --   },
+  --   init = function()
+  --     vim.cmd [[colorscheme tokyonight]]
+  --   end,
+  -- },
   -- {
   --   'catppuccin/nvim',
   --   lazy = true,
