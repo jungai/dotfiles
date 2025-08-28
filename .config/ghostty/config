@@ -1,11 +1,13 @@
 # Font size
 font-size = 15
+
 # font-family = "MonoLisa"
 font-family = Berkeley Mono
+# font-family = Monoki
 # font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
 # font-style = Regular
-# font-family-italic = "Dank Mono"
+font-family-italic = Berkeley Mono
 font-style-bold = "Bold"
 font-style-bold-italic = "Bold Italic"
 
