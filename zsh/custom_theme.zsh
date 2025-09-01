@@ -27,4 +27,23 @@
 #
 # PROMPT=" %{$fg[cyan]%}%c%{$reset_color%}"
 # PROMPT+="\$vcs_info_msg_0_ "
-PROMPT='[%n@%F{red}%m%f] %F{green}%~%f%(#.#. $) '
+
+autoload -U colors && colors
+autoload -Uz vcs_info add-zsh-hook
+
+# Allow variables and functions in the prompt
+setopt PROMPT_SUBST
+
+# Define the format for the git branch section -> " (branch)"
+# The space at the beginning is important for spacing
+zstyle ':vcs_info:git:*' formats ' (%b)'
+
+# This function runs before every prompt is displayed
+precmd_vcs_info() {
+  # Get git information from the current directory
+  vcs_info
+}
+# Add the function to the pre-command hooks
+add-zsh-hook precmd precmd_vcs_info
+
+PROMPT='[%n@%F{red}%m%f] %F{green}%~%f${vcs_info_msg_0_}%(#.#. $) '
