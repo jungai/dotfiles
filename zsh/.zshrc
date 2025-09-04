@@ -107,7 +107,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
-eval "$(~/.local/bin/mise activate zsh)"
+mise_path=$(which mise)
+eval "$($mise_path activate zsh)"
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
@@ -157,9 +158,6 @@ _fzf_comprun() {
   esac
 }
 
-# RYE
-source "$HOME/.rye/env"
-
 # autocomplete
 # source "$HOME/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
 # bindkey              '^I' menu-select
@@ -173,12 +171,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-. "$HOME/.atuin/bin/env"
 
 # atuin
-
 eval "$(atuin init zsh)"
 
 bindkey '^r' atuin-search
-
-[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
