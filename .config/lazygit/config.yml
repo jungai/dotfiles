@@ -37,10 +37,10 @@ customCommands:
     description: "commit with commitizen"
     context: "files"
     loadingText: "opening commitizen commit tool"
-    subprocess: true
+    output: terminal
   - key: "B"
     command: "better-commits"
     description: "commit with better-commits"
     context: "files"
     loadingText: "running better-commits"
-    subprocess: true
+    output: terminal
