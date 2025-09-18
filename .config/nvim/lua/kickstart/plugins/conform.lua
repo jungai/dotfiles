@@ -24,7 +24,8 @@ return { -- Autoformat
         return nil
       else
         return {
-          timeout_ms = 500,
+          async = true,
+          timeout_ms = 1500,
           lsp_format = 'fallback',
         }
       end
@@ -33,12 +34,12 @@ return { -- Autoformat
       lua = { 'stylua' },
       rust = { 'rustfmt' },
       -- You can use 'stop_after_first' to run the first available formatter from the list
-      javascript = { 'eslint_d', 'prettierd', stop_after_first = true },
-      javascriptreact = { 'eslint_d', 'prettierd', stop_after_first = true },
-      typescript = { 'eslint_d', 'prettierd', stop_after_first = true },
-      typescriptreact = { 'eslint_d', 'prettierd', stop_after_first = true },
-      json = { 'prettierd', stop_after_first = true },
-      css = { 'prettierd', stop_after_first = true },
+      javascript = { 'eslint_d', 'prettierd' },
+      javascriptreact = { 'eslint_d', 'prettierd' },
+      typescript = { 'eslint_d', 'prettierd' },
+      typescriptreact = { 'eslint_d', 'prettierd' },
+      json = { 'prettierd' },
+      css = { 'prettierd' },
       ['*'] = { 'codespell' },
       ['_'] = { 'trim_whitespace' },
     },
