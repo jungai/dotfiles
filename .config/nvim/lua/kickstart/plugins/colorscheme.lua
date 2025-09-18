@@ -1,26 +1,41 @@
 return {
-  {
-    'bluz71/vim-nightfly-colors',
-    -- 'bluz71/vim-moonfly-colors',
-    name = 'nightfly',
-    lazy = false,
-    priority = 1000,
-    init = function()
-      vim.g.nightflyVirtualTextColor = true
-      vim.cmd [[colorscheme nightfly]]
-    end,
-  },
   -- {
-  --   'folke/tokyonight.nvim',
+  --   'blazkowolf/gruber-darker.nvim',
   --   lazy = false,
   --   priority = 1000,
   --   opts = {
-  --     style = 'night',
+  --     bold = false,
+  --     italic = {
+  --       strings = false,
+  --     },
   --   },
   --   init = function()
-  --     vim.cmd [[colorscheme tokyonight]]
+  --     vim.cmd [[colorscheme gruber-darker]]
   --   end,
   -- },
+  -- {
+  --   'bluz71/vim-nightfly-colors',
+  --   -- 'bluz71/vim-moonfly-colors',
+  --   name = 'nightfly',
+  --   lazy = false,
+  --   priority = 1000,
+  --   init = function()
+  --     vim.g.nightflyVirtualTextColor = true
+  --     vim.g.nightflyTransparent = true
+  --     vim.cmd [[colorscheme nightfly]]
+  --   end,
+  -- },
+  {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {
+      style = 'storm',
+    },
+    init = function()
+      vim.cmd [[colorscheme tokyonight]]
+    end,
+  },
   -- {
   --   'catppuccin/nvim',
   --   lazy = true,
