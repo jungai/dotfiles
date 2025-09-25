@@ -38,6 +38,7 @@ return { -- Autoformat
       javascriptreact = { 'eslint_d', 'prettierd' },
       typescript = { 'eslint_d', 'prettierd' },
       typescriptreact = { 'eslint_d', 'prettierd' },
+      svelte = { 'eslint_d', 'prettierd' },
       json = { 'prettierd' },
       css = { 'prettierd' },
       ['*'] = { 'codespell' },
