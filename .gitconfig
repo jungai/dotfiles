@@ -1,6 +1,9 @@
 [init]
     defaultBranch = master
 
+[rerere]
+    enabled = true
+
 [user]
     name = jungai
     email = juworaphol125@gmail.com
