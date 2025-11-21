@@ -79,13 +79,21 @@ if has flutter; then
 	# export FLUTTER_ROOT="$(asdf where flutter)"
 fi
 
+# about git
 gone_function() {
   git for-each-ref --format='%(refname:short) %(upstream:track)' |
     awk '$2 == "[gone]" {print $1}' |
     xargs -r git branch -D
 }
 
+checkout_with_fzf() {
+  git checkout $(git branch | fzf)
+}
+
+alias gb="git branch | fzf"
 alias gone=gone_function
+alias gco=checkout_with_fzf
+
 # # Fig post block. Keep at the bottom of this file.
 export PATH=$HOME/.local/bin:$PATH
 
@@ -176,3 +184,5 @@ esac
 eval "$(atuin init zsh)"
 
 bindkey '^r' atuin-search
+# Added by Antigravity
+export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
