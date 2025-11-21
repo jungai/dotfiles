@@ -6,7 +6,6 @@ return {
     preset = 'powerline',
     options = {
       add_messages = {
-        display_count = true,
         messages = true,
       },
       multilines = {
