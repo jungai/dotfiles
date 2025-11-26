@@ -716,7 +716,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         codespell = {},
-        vtsls = {},
+        -- vtsls = {},
         eslint = {
           filetypes = {
             'javascript',
@@ -826,7 +826,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         -- 'prettier',
         'prettierd',
-        'vtsls',
+        -- 'vtsls',
         'cssls',
         'docker_compose_language_service',
         'dockerls',
