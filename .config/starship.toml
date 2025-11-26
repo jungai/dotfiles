@@ -1,6 +1,8 @@
 [character]
-success_symbol = "[❯❯](green)"
-error_symbol = "[❯❯](red)"
+# success_symbol = "[❯❯](green)"
+success_symbol = "[; ](green)"
+# error_symbol = "[❯❯](red)"
+error_symbol = "[; ](red)"
 
 [gcloud]
 disabled = true
