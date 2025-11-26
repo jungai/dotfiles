@@ -97,10 +97,13 @@ alias gco=checkout_with_fzf
 # # Fig post block. Keep at the bottom of this file.
 export PATH=$HOME/.local/bin:$PATH
 
-# Load and initialise completion system
+# Load and initialise completion system with caching
 autoload -Uz compinit
-compinit
-
+if [[ -n ${ZDOTDIR}/.zcompdump(Nmh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
@@ -113,13 +116,26 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # export GOBIN=$(go env GOPATH)/bin
 [ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 mise_path=$(which mise)
 eval "$($mise_path activate zsh)"
 
+# Initialize atuin early (suppress non-critical zle warnings)
+if command -v atuin &>/dev/null; then
+  _atuin_init=$(atuin init zsh --disable-up-arrow 2>&1)
+  eval "$_atuin_init" 2>/dev/null
+  unset _atuin_init
+fi
+
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
+
+# Lazy load starship on first prompt (heaviest init)
+_load_starship_once() {
+  [[ -z "$_STARSHIP_LOADED" ]] || return
+  _STARSHIP_LOADED=1
+  eval "$(starship init zsh)" 2>/dev/null || true
+}
+precmd_functions+=(_load_starship_once)
 
 # -- Use fd instead of fzf --
 
@@ -170,8 +186,6 @@ _fzf_comprun() {
 # source "$HOME/zsh-autocomplete/zsh-autocomplete.plugin.zsh"
 # bindkey              '^I' menu-select
 
-# Startship
-# eval "$(starship init zsh)"
 # pnpm
 export PNPM_HOME="/Users/jungai/Library/pnpm"
 case ":$PATH:" in
@@ -180,9 +194,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# atuin
-eval "$(atuin init zsh)"
-
-bindkey '^r' atuin-search
 # Added by Antigravity
 export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
