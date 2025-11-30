@@ -375,6 +375,9 @@ require('lazy').setup({
     opts = {
       files = {
         file_icons = 'mini',
+        find_opts = [[-type f \! -path '*/.git/*']],
+        rg_opts = [[--color=never --hidden --files -g "!.git"]],
+        fd_opts = [[--color=never --hidden --type f --type l --exclude .git]],
       },
     },
     keymaps = {
@@ -716,7 +719,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         codespell = {},
-        -- vtsls = {},
+        vtsls = {},
         eslint = {
           filetypes = {
             'javascript',
