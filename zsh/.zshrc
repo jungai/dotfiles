@@ -59,6 +59,10 @@ if has eza; then
 	alias ls="eza -l -a -h -F --group-directories-first --icons"
 fi
 
+if has kubectl; then
+	alias kb="kubectl"
+fi
+
 if has nvim; then
 	alias v="nvim"
 	alias vim="nvim"
