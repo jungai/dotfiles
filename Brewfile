@@ -7,6 +7,7 @@ tap "FelixKratz/formulae"
 tap "sst/tap/opencode"
 
 brew "colima"
+brew "docker"
 brew "podman"
 brew "fzf"
 brew "ripgrep"
