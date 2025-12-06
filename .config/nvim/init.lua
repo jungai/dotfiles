@@ -795,6 +795,15 @@ require('lazy').setup({
             },
           },
         },
+        helm_ls = {
+          settings = {
+            ['helm-ls'] = {
+              yamlls = {
+                path = 'yaml-language-server',
+              },
+            },
+          },
+        },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -843,6 +852,7 @@ require('lazy').setup({
         'astro',
         'codespell',
         'cspell',
+        'helm_ls',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
