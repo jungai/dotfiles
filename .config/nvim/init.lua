@@ -798,6 +798,18 @@ require('lazy').setup({
             },
           },
         },
+        mdx_analyzer = {
+          init_options = {
+            typescript = {
+              enabled = true,
+            },
+          },
+          -- settings = {
+          -- typescript = {
+          --   enabled = true,
+          -- },
+          -- },
+        },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -848,6 +860,7 @@ require('lazy').setup({
         'cspell',
         'yamlls',
         'helm_ls',
+        'mdx_analyzer',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
