@@ -46,6 +46,7 @@ configs_in_config_dir=(
 	"nvim"
   "lazygit"
   "opencode"
+  "helix"
 )
 
 echo ""
