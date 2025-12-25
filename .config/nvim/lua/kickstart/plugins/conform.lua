@@ -4,7 +4,7 @@ return { -- Autoformat
   cmd = { 'ConformInfo' },
   keys = {
     {
-      '<leader>f',
+      '<leader>cf',
       function()
         require('conform').format { async = true, lsp_format = 'fallback' }
       end,
@@ -34,13 +34,15 @@ return { -- Autoformat
       lua = { 'stylua' },
       rust = { 'rustfmt' },
       -- You can use 'stop_after_first' to run the first available formatter from the list
-      javascript = { 'eslint_d', 'prettier' },
-      javascriptreact = { 'eslint_d', 'prettier' },
-      typescript = { 'eslint_d', 'prettier' },
-      typescriptreact = { 'eslint_d', 'prettier' },
+      javascript = { 'eslint_d', 'oxfmt', 'prettier' },
+      javascriptreact = { 'eslint_d', 'oxfmt', 'prettier' },
+      typescript = { 'eslint_d', 'oxfmt', 'prettier' },
+      typescriptreact = { 'eslint_d', 'oxfmt', 'prettier', 'eslint_d' },
       svelte = { 'eslint_d', 'prettier' },
-      json = { 'prettier' },
-      css = { 'prettier' },
+      json = { 'oxfmt', 'prettier', stop_after_first = true },
+      markdown = { 'oxfmt', 'prettier', stop_after_first = true },
+      mdx = { 'oxfmt', 'prettier', stop_after_first = true },
+      css = { 'oxfmt', 'prettier', stop_after_first = true },
       ['*'] = { 'codespell' },
       ['_'] = { 'trim_whitespace' },
     },

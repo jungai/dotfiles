@@ -755,7 +755,7 @@ require('lazy').setup({
             -- },
           },
           on_attach = function(client, bufnr)
-            if client.name == 'eslint' then
+            if client.name == 'eslint' or client.name == 'eslint_d' then
               vim.api.nvim_create_autocmd('BufWritePre', {
                 group = vim.api.nvim_create_augroup('EslintFixOnSave', { clear = true }),
                 buffer = bufnr,
@@ -810,6 +810,7 @@ require('lazy').setup({
           -- },
           -- },
         },
+        oxlint = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -861,6 +862,7 @@ require('lazy').setup({
         'yamlls',
         'helm_ls',
         'mdx_analyzer',
+        'oxlint',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
