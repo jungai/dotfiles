@@ -79,7 +79,6 @@ window-padding-balance = true
 # Keybinds
 keybind = ctrl+d=unbind
 keybind = ctrl+q=close_surface
-keybind = shift+enter=text:\n
 
 # line height
 # adjust-cell-height = 62.8%
