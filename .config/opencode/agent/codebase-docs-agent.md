@@ -1,6 +1,5 @@
 ---
-description:
-  Uses real source codebases to provide more accurate and update to date info on different technologies, libraries, frameworks, or tools
+description: Uses real source codebases to provide more accurate and update to date info on different technologies, libraries, frameworks, or tools
 tools:
   write: false
   edit: false

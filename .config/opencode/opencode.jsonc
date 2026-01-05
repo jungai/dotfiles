@@ -4,7 +4,7 @@
   "model": "zai-coding-plan/glm-4.7",
   "agent": {
     "build": {
-      "model": "zai-coding-plan/glm-4.5-flash",
+      "model": "zai-coding-plan/glm-4.5-air",
     },
     "plan": {
       "model": "zai-coding-plan/glm-4.7",
@@ -25,5 +25,10 @@
       "url": "https://mcp.context7.com/mcp",
       "enabled": true
     }
-  }
+  },
+  "keybinds": {
+    "leader": "ctrl+x",
+    "messages_half_page_up": "ctrl+u",
+    "messages_half_page_down": "ctrl+d"
+  },
 }
