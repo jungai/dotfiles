@@ -1,11 +1,14 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "catppuccin-macchiato",
-  "model": "claude-haiku-4-5",
-  "permission": {
-    "bash": "ask"
-  },
+  "model": "zai-coding-plan/glm-4.7",
   "agent": {
+    "build": {
+      "model": "zai-coding-plan/glm-4.5-flash",
+    },
+    "plan": {
+      "model": "zai-coding-plan/glm-4.7",
+    },
     "code-reviewer": {
       "description": "Reviews code for best practices and potential issues",
       "mode": "primary",
