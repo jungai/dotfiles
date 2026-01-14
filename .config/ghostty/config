@@ -1,8 +1,8 @@
 # Font size
 font-size = 15
 
-font-family = MonoLisa
-# font-family = Berkeley Mono
+# font-family = MonoLisa
+font-family = Berkeley Mono
 # font-family = Monoki
 # font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
