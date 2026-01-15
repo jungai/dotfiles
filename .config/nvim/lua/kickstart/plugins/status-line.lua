@@ -1,7 +1,7 @@
 return {
-  {
-    'bluz71/nvim-linefly',
-  },
+  -- {
+  --   'bluz71/nvim-linefly',
+  -- },
   -- {
   --
   --   'windwp/windline.nvim',
@@ -9,11 +9,11 @@ return {
   --     require 'wlsample.airline'
   --   end,
   -- },
-  -- {
-  --   'nvim-lualine/lualine.nvim',
-  --   dependencies = { 'nvim-tree/nvim-web-devicons' },
-  --   opts = {},
-  -- },
+  {
+    'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    opts = {},
+  },
   -- {
   --   'windwp/windline.nvim',
   --   config = function()
