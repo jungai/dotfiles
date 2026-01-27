@@ -167,6 +167,13 @@ vim.opt.foldlevel = 99
 vim.opt.foldmethod = 'indent'
 vim.opt.foldenable = true
 
+vim.filetype.add {
+  pattern = {
+    ['%.env.*'] = 'sh',
+    ['%.env.*.example'] = { 'conf', { priority = 1 } },
+  },
+}
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -391,7 +398,7 @@ require('lazy').setup({
       {
         '<leader>ff',
         function()
-          require('fzf-lua').files { cmd = 'fd --type f --exclude node_modules' }
+          require('fzf-lua').files { cmd = 'fd --type f --exclude node_modules/ --exclude .git/' }
         end,
         desc = '[F]ind [F]iles',
       },
