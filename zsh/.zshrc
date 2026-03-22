@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
@@ -10,6 +17,7 @@ plug "chivalryq/git-alias"
 plug "Aloxaf/fzf-tab"
 plug "zsh-users/zsh-history-substring-search"
 plug "chrishrb/zsh-kubectl"
+plug "romkatv/powerlevel10k"
 # plug "wintermi/zsh-gcloud"
 # theme
 plug "$HOME/dotfiles/zsh/custom_theme.zsh"
@@ -133,14 +141,6 @@ fi
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
-# Lazy load starship on first prompt (heaviest init)
-_load_starship_once() {
-  [[ -z "$_STARSHIP_LOADED" ]] || return
-  _STARSHIP_LOADED=1
-  eval "$(starship init zsh)" 2>/dev/null || true
-}
-precmd_functions+=(_load_starship_once)
-
 # -- Use fd instead of fzf --
 
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
@@ -203,3 +203,6 @@ export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
