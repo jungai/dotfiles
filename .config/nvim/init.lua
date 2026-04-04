@@ -597,7 +597,8 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         codespell = {},
-        vtsls = {},
+        -- vtsls = {},
+        tsgo = {},
         eslint = {
           filetypes = {
             'javascript',
