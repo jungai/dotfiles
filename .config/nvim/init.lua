@@ -405,6 +405,7 @@ require('lazy').setup({
       -- Allows extra capabilities provided by nvim-cmp
       'hrsh7th/cmp-nvim-lsp',
       'b0o/schemastore.nvim',
+      'ibhagwan/fzf-lua',
     },
     config = function()
       -- Brief aside: **What is LSP?**
@@ -731,7 +732,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         -- 'prettier',
         'prettierd',
-        -- 'vtsls',
+        'vtsls',
         'cssls',
         'docker_compose_language_service',
         'dockerls',
@@ -749,6 +750,7 @@ require('lazy').setup({
         'helm_ls',
         'mdx_analyzer',
         'oxlint',
+        'tsgo',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

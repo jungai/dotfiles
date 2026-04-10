@@ -47,6 +47,7 @@ configs_in_config_dir=(
   "lazygit"
   "opencode"
   "helix"
+  "television"
 )
 
 echo ""
