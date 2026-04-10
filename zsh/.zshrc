@@ -206,3 +206,6 @@ export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# bob
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
