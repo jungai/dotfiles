@@ -29,7 +29,8 @@ eval "$(zoxide init zsh)"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 # alias
-alias q=zi
+# alias q=zi
+alias q='tv zoxide'
 alias p='pnpm'
 alias px='pnpx'
 alias pu='pnpm upgrade -i --latest'
@@ -55,7 +56,8 @@ alias kc='kubectl'
 alias zl="zellij"
 alias sn="snyk"
 alias ppp="python3"
-alias tma=$HOME/dotfiles/scripts/tmux.sh
+# alias tma=$HOME/dotfiles/scripts/tmux.sh
+alias tma='tv tmux-sessions'
 alias dds=$HOME/dotfiles/scripts/docker.sh
 
 # return exit code 0 if command exists
