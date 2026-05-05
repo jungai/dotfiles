@@ -68,6 +68,7 @@ configs_in_home=(
 	"/aerospace/.aerospace.toml"
 	"/tmux/.tmux.conf"
 	"vim/.vimrc"
+  ".pi"
 )
 
 echo ""
