@@ -1,0 +1,9 @@
+# .pi/*
+.pi/agent/cache/**
+.pi/agent/sessions/**
+.pi/agent/git/**
+.pi/agent/auth.json
+.pi/agent/mcp-cache.json
+
+!.pi/agent/mcp.json
+!.pi/agent/settings.json

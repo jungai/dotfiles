@@ -1,0 +1,16 @@
+{
+  "lastChangelogVersion": "0.73.0",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.4",
+  "defaultThinkingLevel": "low",
+  "packages": [
+    "npm:pi-subagents",
+    "npm:pi-web-access",
+    "npm:pi-mcp-adapter",
+    "git:github.com/jonjonrankin/pi-caveman",
+    "npm:@plannotator/pi-extension",
+    "npm:@justram/pi-undo-redo",
+    "npm:pi-vim"
+  ],
+  "hideThinkingBlock": false
+}
