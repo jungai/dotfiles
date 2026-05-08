@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.73.0",
+  "lastChangelogVersion": "0.74.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-5.4",
   "defaultThinkingLevel": "low",
@@ -10,7 +10,10 @@
     "git:github.com/jonjonrankin/pi-caveman",
     "npm:@plannotator/pi-extension",
     "npm:@justram/pi-undo-redo",
-    "npm:pi-vim"
+    "npm:pi-vim",
+    "npm:pi-interview",
+    "npm:pi-peon-ping",
+    "npm:glimpseui"
   ],
   "hideThinkingBlock": false
 }
