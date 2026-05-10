@@ -1,5 +1,6 @@
 {
-"app.model.cycleForward": "ctrl+m",
-"tui.select.up": ["up", "ctrl+p"],
-"tui.select.down": ["down", "ctrl+n"]
+  "tui.select.up": ["up", "ctrl+p"],
+  "tui.select.down": ["down", "ctrl+n"],
+  "app.model.cycleForward": "alt+p",
+  "app.model.cycleBackward": "alt+n"
 }
