@@ -4,10 +4,10 @@
   "lsp": {},
   "agent": {
     "build": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
     },
     "plan": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
     },
     "code-reviewer": {
       "description": "Reviews code for best practices and potential issues",
@@ -31,6 +31,11 @@
     "chrome-devtools": {
       "type": "local",
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
+    },
+    "figma": {
+      "type": "remote",
+      "url": "http://127.0.0.1:3845/mcp",
+      "enabled": true
     }
   },
   "plugin": ["@plannotator/opencode@latest"]
