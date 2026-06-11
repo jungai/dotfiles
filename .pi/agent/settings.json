@@ -1,19 +1,16 @@
 {
-  "lastChangelogVersion": "0.74.0",
+  "lastChangelogVersion": "0.79.1",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.4",
-  "defaultThinkingLevel": "low",
+  "defaultModel": "gpt-5.5",
+  "defaultThinkingLevel": "medium",
   "packages": [
-    "npm:pi-subagents",
+    "npm:context-mode",
     "npm:pi-web-access",
+    "npm:pi-subagents",
     "npm:pi-mcp-adapter",
-    "git:github.com/jonjonrankin/pi-caveman",
+    "npm:pi-powerline-footer",
     "npm:@plannotator/pi-extension",
-    "npm:@justram/pi-undo-redo",
-    "npm:pi-vim",
-    "npm:pi-interview",
-    "npm:pi-peon-ping",
-    "npm:glimpseui"
+    "npm:pi-vim"
   ],
   "hideThinkingBlock": false
 }
