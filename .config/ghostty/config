@@ -1,13 +1,12 @@
 # Font size
 font-size = 12
 
-# font-family = MonoLisa
-font-family = Berkeley Mono
+font-family = MonoLisa
+# font-family = Berkeley Mono
 # font-family = Monoki
 # font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
-font-style = Regular
-# font-family-italic = "Dank Mono"
+
 font-style-bold = "Bold"
 font-style-bold-italic = "Bold Italic"
 
@@ -58,6 +57,7 @@ cursor-style-blink = true
 theme = Catppuccin Macchiato
 # theme = tokyonight
 # theme = Dracula
+# theme = Nord
 
 # Cursor style
 cursor-style-blink = true
@@ -84,5 +84,5 @@ keybind = ctrl+q=close_surface
 # adjust-cell-height = 62.8%
 # adjust-cursor-height = 62.8%
 
-adjust-cell-height = 20%
-adjust-cursor-height = 20%
+# adjust-cell-height = 20%
+# adjust-cursor-height = 20%

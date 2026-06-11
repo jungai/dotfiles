@@ -1,9 +1,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
@@ -11,16 +11,17 @@ fi
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 # plug "zap-zsh/zap-prompt"
+plug "devadathanmb/zap-robbyrussell"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "zap-zsh/vim"
 plug "chivalryq/git-alias"
 plug "Aloxaf/fzf-tab"
 plug "zsh-users/zsh-history-substring-search"
 plug "chrishrb/zsh-kubectl"
-plug "romkatv/powerlevel10k"
+# plug "romkatv/powerlevel10k"
 # plug "wintermi/zsh-gcloud"
 # theme
-plug "$HOME/dotfiles/zsh/custom_theme.zsh"
+# plug "$HOME/dotfiles/zsh/custom_theme.zsh"
 
 # zoxide
 _ZO_FZF_OPTS='--select-1'
