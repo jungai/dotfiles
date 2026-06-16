@@ -10,7 +10,8 @@
     "npm:pi-mcp-adapter",
     "npm:pi-powerline-footer",
     "npm:@plannotator/pi-extension",
-    "npm:pi-vim"
+    "npm:pi-vim",
+    "npm:@ff-labs/pi-fff"
   ],
   "hideThinkingBlock": false
 }
