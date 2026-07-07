@@ -13,8 +13,8 @@ return {
       show_scores = true,
     },
     layout = {
-      height = 1,
-      width = 1,
+      height = 0.7,
+      width = 0.7,
       prompt_position = 'top', -- or 'top'
       preview_position = 'right', -- 'left' | 'right' | 'top' | 'bottom'
       preview_size = 0.5,

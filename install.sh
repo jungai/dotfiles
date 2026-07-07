@@ -48,6 +48,7 @@ configs_in_config_dir=(
   "opencode"
   "helix"
   "television"
+  "herdr"
 )
 
 echo ""

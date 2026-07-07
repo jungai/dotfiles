@@ -1,8 +1,8 @@
 # Font size
 font-size = 12
 
-font-family = MonoLisa
-# font-family = Berkeley Mono
+# font-family = MonoLisa
+font-family = Berkeley Mono
 # font-family = Monoki
 # font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
@@ -56,7 +56,7 @@ cursor-style-blink = true
 # Theme
 theme = Catppuccin Macchiato
 # theme = tokyonight
-# theme = Dracula
+# theme = Dracula+
 # theme = Nord
 
 # Cursor style
