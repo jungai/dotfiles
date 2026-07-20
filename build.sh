@@ -70,6 +70,7 @@ configs_in_home=(
 	"/tmux/.tmux.conf"
 	"vim/.vimrc"
   ".pi"
+  "skills/.agents"
 )
 
 echo ""
