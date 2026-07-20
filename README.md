@@ -1,7 +1,7 @@
 # Installed
 
 ```bash
-git clone git@github.com:jungai/dotfiles.git
+git clone --recurse-submodules git@github.com:jungai/dotfiles.git
 ```
 
 ## Install `brew` deps
@@ -13,7 +13,7 @@ brew bundle --file "./packages/bundle"
 ## Update
 
 ```bash
-./install.sh
+./build.sh
 ```
 
 ## Fonts
