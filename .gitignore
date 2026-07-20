@@ -21,3 +21,12 @@
 .config/**/node_modules/**
 .config/**/.cache/**
 .config/**/cache/**
+
+# herdr runtime/state
+.config/herdr/*.log
+.config/herdr/session-history.json
+.config/herdr/session.json
+.config/herdr/sessions/
+.config/herdr/release-notes.json
+.config/herdr/plugins.json
+.config/herdr/plugins/

@@ -60,6 +60,7 @@ alias ppp="python3"
 # alias tma=$HOME/dotfiles/scripts/tmux.sh
 alias tma='tv tmux-sessions'
 alias dds=$HOME/dotfiles/scripts/docker.sh
+alias hs='tv herdr-sessions'
 
 # return exit code 0 if command exists
 has() {

@@ -24,6 +24,9 @@ return {
       path_shorten_strategy = 'middle_number', -- 'middle_number' | 'middle' | 'end' | 'start'
       anchor = 'center',
     },
+    keymaps = {
+      send_to_quickfix = '<leader>q',
+    },
   },
   lazy = false, -- the plugin lazy-initialises itself
   keys = {

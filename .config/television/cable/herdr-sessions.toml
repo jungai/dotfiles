@@ -1,0 +1,33 @@
+[metadata]
+name = "herdr-sessions"
+description = "List and manage Herdr sessions"
+requirements = ["herdr", "jq"]
+
+[source]
+command = "herdr session list --json | jq -r '.sessions[] | [.name, (if .running then \"running\" else \"stopped\" end), (if .default then \"default\" else \"named\" end), .session_dir] | @tsv'"
+display = "{split:\t:0}  ({split:\t:1}, {split:\t:2})"
+output = "{split:\t:0}"
+
+[preview]
+command = "printf 'session: %s\\nstatus:  %s\\ntype:    %s\\ndir:     %s\\n\\n' '{split:\t:0}' '{split:\t:1}' '{split:\t:2}' '{split:\t:3}'; if [ -f '{split:\t:3}/session.json' ]; then jq -C . '{split:\t:3}/session.json'; fi; if [ -f '{split:\t:3}/herdr-server.log' ]; then printf '\\n--- server log ---\\n'; tail -n 40 '{split:\t:3}/herdr-server.log'; fi"
+
+[keybindings]
+ctrl-a = "actions:attach"
+enter = "actions:attach"
+ctrl-s = "actions:stop"
+ctrl-d = "actions:delete"
+
+[actions.attach]
+description = "Attach to the selected Herdr session"
+command = "herdr session attach '{split:\t:0}'"
+mode = "execute"
+
+[actions.stop]
+description = "Stop the selected Herdr session"
+command = "herdr session stop '{split:\t:0}'"
+mode = "fork"
+
+[actions.delete]
+description = "Delete the selected Herdr session"
+command = "herdr session delete '{split:\t:0}'"
+mode = "execute"

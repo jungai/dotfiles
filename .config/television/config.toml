@@ -243,6 +243,7 @@ fallback_channel = "files"
 ]
 "git-log" = ["git log", "git show"]
 "docker-images" = ["docker run"]
+"herdr-sessions" = ["herdr session attach", "herdr session stop", "herdr session delete"]
 "git-repos" = ["nvim", "code", "hx", "git clone"]
 
 
