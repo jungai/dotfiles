@@ -7,7 +7,7 @@ git clone git@github.com:jungai/dotfiles.git
 ## Install `brew` deps
 
 ```bash
-brew bundle
+brew bundle --file "./packages/bundle"
 ```
 
 ## Update

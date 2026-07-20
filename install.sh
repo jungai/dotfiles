@@ -57,7 +57,7 @@ echo "Prepare configs in $config_dir"
 echo "================"
 
 for config_item in "${configs_in_config_dir[@]}"; do
-	local_src="$current_path/.config/$config_item"
+	local_src="$current_path/home/.config/$config_item"
 	create_symlink "$local_src" "$config_dir"
 done
 
@@ -78,7 +78,7 @@ echo "Prepare configs in $HOME"
 echo "================"
 
 for config_item in "${configs_in_home[@]}"; do
-	local_src="$current_path/$config_item"
+	local_src="$current_path/home/$config_item"
 	create_symlink "$local_src" "$HOME"
 done
 

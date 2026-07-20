@@ -1,32 +1,32 @@
 # Pi: keep personal/runtime state and secrets out of dotfiles
-.pi/agent/cache/**
-.pi/agent/sessions/**
-.pi/agent/git/**
-.pi/agent/npm/
-.pi/agent/run-history.jsonl
-.pi/agent/trust.json
-.pi/agent/auth.json
-.pi/agent/mcp.json
-.pi/agent/mcp-cache.json
-.pi/agent/mcp-cache/**
-.pi/context-mode/**
+home/.pi/agent/cache/**
+home/.pi/agent/sessions/**
+home/.pi/agent/git/**
+home/.pi/agent/npm/
+home/.pi/agent/run-history.jsonl
+home/.pi/agent/trust.json
+home/.pi/agent/auth.json
+home/.pi/agent/mcp.json
+home/.pi/agent/mcp-cache.json
+home/.pi/agent/mcp-cache/**
+home/.pi/context-mode/**
 
 # Allow portable Pi preferences only
-!.pi/agent/keybindings.json
-!.pi/agent/settings.json
-!.pi/agent/themes/
-!.pi/agent/themes/*.json
+!home/.pi/agent/keybindings.json
+!home/.pi/agent/settings.json
+!home/.pi/agent/themes/
+!home/.pi/agent/themes/*.json
 
 # Local package installs/caches under synced config dirs
-.config/**/node_modules/**
-.config/**/.cache/**
-.config/**/cache/**
+home/.config/**/node_modules/**
+home/.config/**/.cache/**
+home/.config/**/cache/**
 
 # herdr runtime/state
-.config/herdr/*.log
-.config/herdr/session-history.json
-.config/herdr/session.json
-.config/herdr/sessions/
-.config/herdr/release-notes.json
-.config/herdr/plugins.json
-.config/herdr/plugins/
+home/.config/herdr/*.log
+home/.config/herdr/session-history.json
+home/.config/herdr/session.json
+home/.config/herdr/sessions/
+home/.config/herdr/release-notes.json
+home/.config/herdr/plugins.json
+home/.config/herdr/plugins/
