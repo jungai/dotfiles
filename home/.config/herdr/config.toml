@@ -1,7 +1,6 @@
 onboarding = false
 [keys]
 prefix = "ctrl+b"
-source_workspace = "current"
 focus_pane_left  = "prefix+h"
 focus_pane_down  = "prefix+j"
 focus_pane_up    = "prefix+k"
@@ -11,5 +10,9 @@ split_vertical    = "prefix+-"
 new_tab   = "prefix+c"
 workspace_picker = "prefix+w"
 goto             = "prefix+g"
-# navigate_workspace_up = "k"
-# navigate_workspace_down = "j"
+
+[[keys.command]]
+key = "prefix+shift+n"
+type = "plugin_action"
+command = "herdr-zoxide.browse"
+description = "Browse zoxide directories"

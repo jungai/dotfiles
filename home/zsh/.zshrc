@@ -61,6 +61,7 @@ alias ppp="python3"
 alias tma='tv tmux-sessions'
 alias dds=$HOME/dotfiles/scripts/docker.sh
 alias hs='tv herdr-sessions'
+alias hsra='for s in $(herdr session list --json | jq -r '\'' .sessions[] | select(.default == false) | .name'\''); do herdr session stop "$s" --json 2>/dev/null || true; herdr session delete "$s" --json; done'
 
 # return exit code 0 if command exists
 has() {

@@ -9,7 +9,7 @@ return {
   opts = {
     prompt = '> ',
     debug = {
-      enabled = true,
+      enabled = false,
       show_scores = true,
     },
     layout = {
