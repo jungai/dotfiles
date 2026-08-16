@@ -2,5 +2,7 @@
   "tui.select.up": ["up", "ctrl+p"],
   "tui.select.down": ["down", "ctrl+n"],
   "app.model.cycleForward": "alt+p",
-  "app.model.cycleBackward": "alt+n"
+  "app.model.cycleBackward": "alt+n",
+  "tui.altScreen.halfPageUp": "ctrl+u",
+  "tui.altScreen.halfPageDown": "ctrl+d"
 }
