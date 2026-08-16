@@ -1,7 +1,7 @@
 {
-  "lastChangelogVersion": "0.82.1",
+  "lastChangelogVersion": "0.84.2",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-sol",
+  "defaultModel": "gpt-5.6-luna",
   "defaultThinkingLevel": "low",
   "packages": [
     "npm:context-mode",
@@ -10,7 +10,8 @@
     "npm:pi-mcp-adapter",
     "npm:@plannotator/pi-extension",
     "npm:pi-vim",
-    "npm:@ff-labs/pi-fff"
+    "npm:@ff-labs/pi-fff",
+    "npm:@juicesharp/rpiv-ask-user-question"
   ],
   "hideThinkingBlock": false,
   "theme": "dark"

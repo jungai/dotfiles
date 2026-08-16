@@ -214,3 +214,5 @@ export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
 
 # bob
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+# opencode
+export PATH=/Users/woraphol/.opencode/bin:$PATH

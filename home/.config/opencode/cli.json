@@ -1,0 +1,19 @@
+{
+  "theme": {
+    "name": "catppuccin-macchiato"
+  },
+  "keybinds": {
+    "leader": "ctrl+x",
+    "session.half.page.up": "ctrl+u",
+    "session.half.page.down": "ctrl+d"
+  },
+  "diffs": {
+    "wrap": "word"
+  },
+  "session": {
+    "sidebar": "auto",
+    "scrollbar": false,
+    "thinking": "hide"
+  },
+  "animations": true
+}

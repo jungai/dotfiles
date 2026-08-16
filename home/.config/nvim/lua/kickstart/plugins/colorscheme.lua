@@ -57,7 +57,7 @@ return {
       styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
         comments = { 'italic' }, -- Change the style of comments
         conditionals = { 'italic' },
-        -- keywords = { 'italic' },
+        keywords = { 'italic' },
         loops = {},
         functions = {},
         strings = {},
