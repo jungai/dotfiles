@@ -71,6 +71,7 @@ configs_in_home=(
 	"vim/.vimrc"
   ".pi"
   "skills/.agents"
+  ".plannotator"
 )
 
 echo ""
