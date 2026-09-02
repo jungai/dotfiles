@@ -1,19 +1,18 @@
 {
-  "lastChangelogVersion": "0.84.2",
-  "defaultProvider": "openrouter",
-  "defaultModel": "stealth/ox-alpha",
+  "lastChangelogVersion": "0.84.4",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.6-luna",
   "defaultThinkingLevel": "high",
   "packages": [
     "npm:context-mode",
     "npm:pi-web-access",
     "npm:pi-subagents",
     "npm:pi-mcp-adapter",
-    "npm:@plannotator/pi-extension",
-    "npm:pi-vim",
     "npm:@ff-labs/pi-fff",
-    "npm:@juicesharp/rpiv-ask-user-question"
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@plannotator/pi-extension"
   ],
   "hideThinkingBlock": false,
-  "theme": "dark",
+  "theme": "catppuccin-macchiato",
   "tuiMode": "fullscreen"
 }
