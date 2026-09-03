@@ -1,0 +1,5 @@
+tui.select.up: Ctrl+P
+tui.select.down: Ctrl+N
+app.model.cycleForward: Ctrl+Alt+P
+tui.altScreen.halfPageUp: Ctrl+U
+tui.altScreen.halfPageDown: Ctrl+D

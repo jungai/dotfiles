@@ -1,0 +1,15 @@
+providers:
+  webSearchOrder:
+    []
+modelRoles:
+  default: openai-codex/gpt-5.6-luna:high
+symbolPreset: nerd
+theme:
+  dark: dark-catppuccin
+  light: light
+setupVersion: 2
+display:
+  hideToolActivity: false
+defaultThinkingLevel: low
+composer:
+  shape: pi

@@ -72,6 +72,7 @@ configs_in_home=(
   ".pi"
   "skills/.agents"
   ".plannotator"
+  ".omp"
 )
 
 echo ""
