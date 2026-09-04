@@ -49,6 +49,7 @@ configs_in_config_dir=(
   "helix"
   "television"
   "herdr"
+  "hunk"
 )
 
 echo ""
