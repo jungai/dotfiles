@@ -1,6 +1,6 @@
 {
   "theme": {
-    "name": "catppuccin-macchiato"
+    "name": "nord"
   },
   "keybinds": {
     "leader": "ctrl+x",
@@ -15,5 +15,8 @@
     "scrollbar": false,
     "thinking": "hide"
   },
-  "animations": true
+  "animations": true,
+  "tabs": {
+    "layout": "vertical"
+  }
 }

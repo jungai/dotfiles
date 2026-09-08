@@ -136,13 +136,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 mise_path=$(which mise)
 eval "$($mise_path activate zsh)"
 
-# Initialize atuin early (suppress non-critical zle warnings)
-if command -v atuin &>/dev/null; then
-  _atuin_init=$(atuin init zsh --disable-up-arrow 2>&1)
-  eval "$_atuin_init" 2>/dev/null
-  unset _atuin_init
-fi
-
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
@@ -203,9 +196,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# Added by Antigravity
-export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
@@ -214,5 +204,8 @@ export PATH="/Users/worapholw/.antigravity/antigravity/bin:$PATH"
 
 # bob
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
-# opencode
-export PATH=/Users/woraphol/.opencode/bin:$PATH
+
+# Initialize atuin early (suppress non-critical zle warnings)
+if command -v atuin &>/dev/null; then
+  eval "$(atuin init zsh)"
+fi

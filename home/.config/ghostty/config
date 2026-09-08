@@ -1,8 +1,8 @@
 # Font size
 font-size = 13
 
-font-family = MonoLisa
-# font-family = Berkeley Mono
+# font-family = MonoLisa
+font-family = Berkeley Mono
 # font-family = Monoki
 # font-family = "Dank Mono"
 # font-family = PlemolJP Console NF
@@ -54,10 +54,10 @@ cursor-style = block
 cursor-style-blink = true
 
 # Theme
-theme = Catppuccin Macchiato
+# theme = Catppuccin Macchiato
 # theme = tokyonight
 # theme = Dracula+
-# theme = Nord
+theme = Nord
 
 # Cursor style
 cursor-style-blink = true
@@ -77,8 +77,6 @@ macos-titlebar-proxy-icon = hidden
 window-padding-balance = true
 
 # Keybinds
-keybind = ctrl+u=scroll_page_fractional:-0.5
-keybind = ctrl+d=scroll_page_fractional:0.5
 keybind = ctrl+q=close_surface
 
 # line height
