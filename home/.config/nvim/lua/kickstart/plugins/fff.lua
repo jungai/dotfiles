@@ -7,14 +7,17 @@ return {
   -- for nixos:
   -- build = "nix run .#release",
   opts = {
+    hl = {
+      normal = 'Normal',
+    },
     prompt = '> ',
     debug = {
       enabled = false,
       show_scores = true,
     },
     layout = {
-      height = 0.7,
-      width = 0.7,
+      height = 0.6,
+      width = 0.6,
       prompt_position = 'top', -- or 'top'
       preview_position = 'right', -- 'left' | 'right' | 'top' | 'bottom'
       preview_size = 0.5,
@@ -26,6 +29,9 @@ return {
     },
     keymaps = {
       send_to_quickfix = '<leader>q',
+    },
+    preview = {
+      enabled = false,
     },
   },
   lazy = false, -- the plugin lazy-initialises itself

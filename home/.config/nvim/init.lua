@@ -599,60 +599,7 @@ require('lazy').setup({
         --
         codespell = {},
         -- vtsls = {},
-        tsgo = {},
-        eslint = {
-          filetypes = {
-            'javascript',
-            'javascriptreact',
-            'javascript.jsx',
-            'typescript',
-            'typescriptreact',
-            'typescript.tsx',
-            'vue',
-            'html',
-            'markdown',
-            'json',
-            'jsonc',
-            'yaml',
-            'toml',
-            'xml',
-            'gql',
-            'graphql',
-            'astro',
-            'svelte',
-            'css',
-            'less',
-            'scss',
-            'pcss',
-            'postcss',
-          },
-          settings = {
-            -- Silent the stylistic rules in you IDE, but still auto fix them
-            -- rulesCustomizations = {
-            --   { rule = 'style/*', severity = 'off', fixable = true },
-            --   { rule = 'format/*', severity = 'off', fixable = true },
-            --   { rule = '*-indent', severity = 'off', fixable = true },
-            --   { rule = '*-spacing', severity = 'off', fixable = true },
-            --   { rule = '*-spaces', severity = 'off', fixable = true },
-            --   { rule = '*-order', severity = 'off', fixable = true },
-            --   { rule = '*-dangle', severity = 'off', fixable = true },
-            --   { rule = '*-newline', severity = 'off', fixable = true },
-            --   { rule = '*quotes', severity = 'off', fixable = true },
-            --   { rule = '*semi', severity = 'off', fixable = true },
-            -- },
-          },
-          on_attach = function(client, bufnr)
-            if client.name == 'eslint' or client.name == 'eslint_d' then
-              vim.api.nvim_create_autocmd('BufWritePre', {
-                group = vim.api.nvim_create_augroup('EslintFixOnSave', { clear = true }),
-                buffer = bufnr,
-                -- The command "EslintFixAll" is exposed by the eslint-language-server
-                -- It will apply all auto-fixable ESLint rules to the buffer
-                command = 'EslintFixAll',
-              })
-            end
-          end,
-        },
+        tsc = {},
         cspell = {},
         tailwindcss = {
           settings = {
@@ -998,6 +945,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
+    branch = 'master',
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
       ensure_installed = {

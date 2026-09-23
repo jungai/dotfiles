@@ -2,10 +2,10 @@
 font-size = 13
 
 # font-family = MonoLisa
-font-family = Berkeley Mono
+# font-family = Berkeley Mono
 # font-family = Monoki
 # font-family = "Dank Mono"
-# font-family = PlemolJP Console NF
+font-family = PlemolJP Console NF
 # font-family = Berkeley Mono
 
 font-style-bold = "Bold"
@@ -87,4 +87,4 @@ keybind = ctrl+q=close_surface
 # adjust-cell-height = 20%
 # adjust-cursor-height = 20%
 
-custom-shader = shaders/cursor_sweep.glsl
+# custom-shader = shaders/cursor_sweep.glsl
