@@ -16,3 +16,7 @@ key = "prefix+shift+n"
 type = "plugin_action"
 command = "herdr-zoxide.browse"
 description = "Browse zoxide directories"
+
+[theme]
+name = "catppuccin"
+auto_switch = false
