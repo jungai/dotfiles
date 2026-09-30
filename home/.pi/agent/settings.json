@@ -1,18 +1,17 @@
 {
-  "lastChangelogVersion": "0.85.1",
+  "lastChangelogVersion": "0.99.1",
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-5.6-luna",
-  "defaultThinkingLevel": "high",
+  "defaultModel": "gpt-6.1-sol",
+  "defaultThinkingLevel": "low",
   "packages": [
     "npm:context-mode",
     "npm:pi-web-access",
     "npm:pi-subagents",
-    "npm:pi-mcp-adapter",
     "npm:@ff-labs/pi-fff",
-    "npm:@juicesharp/rpiv-ask-user-question",
     "npm:@plannotator/pi-extension"
   ],
   "hideThinkingBlock": false,
   "theme": "catppuccin-macchiato",
-  "tuiMode": "fullscreen"
+  "tuiMode": "fullscreen",
+  "defaultTools": ["+codemode"]
 }

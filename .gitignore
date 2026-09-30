@@ -17,6 +17,7 @@ home/.pi/agent/models-store.json
 !home/.pi/agent/settings.json
 !home/.pi/agent/themes/
 !home/.pi/agent/themes/*.json
+!home/.pi/agent/mcp.json
 
 # OMP runtime state
 home/.omp/**
