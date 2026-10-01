@@ -209,3 +209,6 @@ export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 if command -v atuin &>/dev/null; then
   eval "$(atuin init zsh)"
 fi
+
+# opencode
+export PATH=/Users/woraphol/.opencode/bin:$PATH
