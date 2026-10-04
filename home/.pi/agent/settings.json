@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.99.1",
+  "lastChangelogVersion": "1.0.0",
   "defaultProvider": "openai-codex",
   "defaultModel": "gpt-6.1-sol",
   "defaultThinkingLevel": "low",
@@ -13,5 +13,7 @@
   "hideThinkingBlock": false,
   "theme": "catppuccin-macchiato",
   "tuiMode": "fullscreen",
-  "defaultTools": ["+codemode"]
+  "defaultTools": [
+    "+codemode"
+  ]
 }
