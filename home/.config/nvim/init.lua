@@ -697,7 +697,7 @@ require('lazy').setup({
         'helm_ls',
         'mdx_analyzer',
         'oxlint',
-        'tsgo',
+        'tsc',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
